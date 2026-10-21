@@ -1,0 +1,25 @@
+{
+  "class": "边界",
+  "execution": "已在本次对战测试中执行，测试使用独立规则引擎和隔离数据",
+  "cases": [
+    {
+      "input": "使用当前 decisionId 但 candidateId 不属于本方合法候选",
+      "expected": "E_INVALID_ACTION；引擎状态不推进",
+      "source": "../02-源码/pokemon/tests/battle.test.mjs",
+      "test": "invalid and wrong-seat candidates fail without advancing the game"
+    },
+    {
+      "input": "多个合法候选、启用 Jev，尚未获取真实评估就提交",
+      "expected": "E_JEV_REQUIRED；没有收费评估、没有动作推进",
+      "source": "../02-源码/pokemon/tests/battle.test.mjs",
+      "test": "Jev-enabled matches reject an unreviewed choice without charging or advancing"
+    },
+    {
+      "input": "联赛达到回合预算且没有自然胜者",
+      "expected": "引擎实际产生 tie，双方等待均被唤醒",
+      "source": "../02-源码/pokemon/tests/battle-league.test.mjs",
+      "test": "turn-limit settlement produces a real engine tie and wakes both waiting agents"
+    }
+  ],
+  "resultsLog": "对战测试日志.txt"
+}

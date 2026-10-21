@@ -1,0 +1,5 @@
+已准备项目内的独立模型配置。尚未启动模型任务。
+Pokemon battle stage: http://127.0.0.1:18795
+Battle player A: agnes-3.0-flash ready
+Battle player B: deepseek-flash ready
+Both real AGH players are ready.

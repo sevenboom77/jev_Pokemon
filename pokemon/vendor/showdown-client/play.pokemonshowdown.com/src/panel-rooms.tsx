@@ -1,0 +1,337 @@
+/**
+ * Room-list panel (default right-panel)
+ *
+ * @author Guangcong Luo <guangcongluo@gmail.com>
+ * @license AGPLv3
+ */
+
+import { Config, PS, PSRoom, type RoomID, type RoomOptions } from "./client-main";
+import { PSPanelWrapper, PSRoomPanel } from "./panels";
+import type { RoomInfo } from "./panel-mainmenu";
+import { Dex, TL, toID } from "./battle-dex";
+
+const ROOM_ALIASES: Record<string, string> = {
+	tmg: 'toursminigames',
+	tours: 'tournaments',
+};
+
+const LANGUAGE_ROOM_IDS: Record<string, readonly string[]> = {
+	it: ['italiano'],
+	es: ['espanol', 'espaol'],
+	'zh-cn': ['chinese'],
+	'zh-tw': ['chinese'],
+	hi: ['hindi'],
+	fr: ['franais', 'francais'],
+	pt: ['portugus', 'portugues'],
+	ja: ['japanese'],
+	nl: ['nederlands'],
+	de: ['deutsche'],
+	ko: ['korean'],
+};
+
+export class RoomsRoom extends PSRoom {
+	override readonly classType: string = 'rooms';
+	constructor(options: RoomOptions) {
+		super(options);
+		const settings = { ...PS.prefs.serversettings };
+		settings.language ||= Dex.text.getBrowserLanguage();
+		PS.send(`/updatesettings ${JSON.stringify(settings)}`);
+		PS.send(`/cmd rooms`);
+	}
+}
+
+type RoomsSection = [string, RoomInfo[]];
+class RoomsPanel extends PSRoomPanel {
+	static readonly id = 'rooms';
+	static readonly routes = ['rooms'];
+	static readonly Model = RoomsRoom;
+	static readonly location = 'right';
+	static readonly icon = <i class="fa fa-plus rooms-plus" aria-hidden></i>;
+	static readonly title = "Chat Rooms";
+	hidden = false;
+	search = '';
+	section = '';
+	lastKeyCode = 0;
+	roomList: RoomsSection[] = [];
+	roomListFocusIndex = -1;
+	roomListLength = 0;
+	override componentDidMount() {
+		super.componentDidMount();
+		this.subscriptions.push(PS.user.subscribe(update => {
+			if (!update && PS.user.named) PS.send(`/cmd rooms`);
+		}));
+	}
+	override componentDidUpdate() {
+		super.componentDidUpdate();
+		const el = this.base?.querySelector('a.blocklink.cur');
+		if (!this.roomListFocusIndex) return;
+		el?.scrollIntoView({ behavior: 'auto', block: 'center' });
+	}
+	hide = (ev: Event) => {
+		ev.stopImmediatePropagation();
+		PS.hideRightRoom();
+	};
+	changeSearch = (ev: Event) => {
+		const target = ev.currentTarget as HTMLInputElement;
+		if (target.selectionStart !== target.selectionEnd) return;
+		if (target.value.startsWith('/')) {
+			this.updateRoomList(target.value);
+			this.forceUpdate();
+			return;
+		}
+		this.updateRoomList(target.value);
+		this.forceUpdate();
+	};
+	changeSection = (ev: Event) => {
+		const target = ev.currentTarget as HTMLSelectElement;
+		this.section = target.value;
+		this.forceUpdate();
+	};
+	handleOnBlur = (ev: Event) => {
+		this.roomListFocusIndex = -1;
+		this.forceUpdate();
+	};
+	keyDownSearch = (ev: KeyboardEvent) => {
+		this.lastKeyCode = ev.keyCode;
+		if (ev.shiftKey || ev.ctrlKey || ev.altKey || ev.metaKey) return;
+		if (ev.keyCode === 38) { // up
+			this.roomListFocusIndex = Math.max(this.roomListFocusIndex - 1, this.search ? 0 : -1);
+			this.forceUpdate();
+			ev.preventDefault();
+		} else if (ev.keyCode === 40) { // down
+			this.roomListFocusIndex = Math.min(this.roomListFocusIndex + 1, this.roomListLength - 1);
+			this.forceUpdate();
+			ev.preventDefault();
+		} else if (ev.keyCode === 13) { // enter
+			const target = ev.currentTarget as HTMLInputElement;
+			let value = target.value.startsWith('/') ? target.value : this.getRoomListFocusTitle() || target.value;
+			ev.preventDefault();
+			ev.stopImmediatePropagation();
+			target.value = '';
+			this.updateRoomList('');
+			if (value.startsWith('/')) {
+				PS.join('dm-' as RoomID);
+				PS.rooms['dm-']?.send(value, target);
+				return;
+			}
+
+			const arrowIndex = value.indexOf(' \u21d2 ');
+			if (arrowIndex >= 0) value = value.slice(arrowIndex + 3);
+			if (!/^[a-z0-9-]$/.test(value)) value = toID(value);
+
+			PS.join(value as RoomID);
+		}
+	};
+	updateRoomList(search?: string) {
+		if (search && !search.startsWith('/')) search = toID(search);
+		const forceNoAutocomplete = this.search === `${search || ''}-`;
+		if (search || this.search) {
+			if (search === undefined || search === this.search) return;
+			this.search = search;
+			this.roomListFocusIndex = this.search ? 0 : -1;
+		}
+		this.roomList = this.getRoomList(forceNoAutocomplete);
+		if (!this.search) {
+			for (const [, rooms] of this.roomList) {
+				rooms.sort((a, b) => (b.userCount || 0) - (a.userCount || 0));
+			}
+		}
+	}
+	getRoomList(forceNoAutocomplete?: boolean): RoomsSection[] {
+		if (this.search.startsWith('/')) {
+			return [[TL`Command`, [{
+				title: TL`Console`, id: 'dm-' as RoomID, desc: TL`Enter = run command ${this.search}`,
+			}]]];
+		}
+		const searchid = toID(this.search);
+
+		if (!searchid) {
+			const roomsCache = PS.mainmenu.roomsCache;
+			let spotLightLabel = '';
+			const languageRooms = [], officialRooms = [], chatRooms = [], hiddenRooms = [], spotLightRooms = [];
+			const languageRoomIDs = LANGUAGE_ROOM_IDS[Dex.text.getLanguage()] || [];
+			const languageRoom = languageRoomIDs.map(roomid =>
+				roomsCache.chat?.find(room => room.id === roomid || toID(room.title) === roomid)
+			).find(room => !!room && room.privacy !== 'hidden');
+			for (const room of roomsCache.chat || []) {
+				if (room.section !== this.section && this.section !== '') continue;
+				if (room === languageRoom) {
+					languageRooms.push(room);
+				} else if (room.privacy === 'hidden') {
+					hiddenRooms.push(room);
+				} else if (room.spotlight) {
+					spotLightLabel = room.spotlight;
+					spotLightRooms.push(room);
+				} else if (room.section === 'Official') {
+					officialRooms.push(room);
+				} else {
+					chatRooms.push(room);
+				}
+			}
+			return [
+				[TL`Language room`, languageRooms],
+				[TL`Official chat rooms`, officialRooms],
+				[spotLightLabel, spotLightRooms],
+				[TL`Chat rooms`, chatRooms],
+				[TL`Hidden rooms`, hiddenRooms],
+			];
+		}
+
+		const rooms = PS.mainmenu.roomsCache;
+		let roomList = [...(rooms.chat || [])];
+		for (const room of roomList) {
+			if (!room.subRooms) continue;
+			for (const title of room.subRooms) {
+				roomList.push({
+					title,
+					desc: TL`(Subroom of ${room.title})`,
+				});
+			}
+		}
+
+		roomList.sort((a, b) => (b.userCount || 0) - (a.userCount || 0));
+		const exactMatch = roomList.some(room => toID(room.title) === searchid);
+
+		// exact alias match has priority
+		let results = roomList.filter(room =>
+			toID(room.title) === ROOM_ALIASES[searchid] ||
+			toID(room.title.toLowerCase().replace(/\b([a-z0-9])[a-z0-9]*\b/g, '$1')) === searchid ||
+			room.title.replace(/[^A-Z0-9]+/g, '').toLowerCase() === searchid
+		);
+		roomList = roomList.filter(room => !results.includes(room));
+
+		results = results.concat(roomList.filter(room =>
+			toID(room.title).startsWith(searchid) ||
+			toID(room.title.replace(/^The /, '')).startsWith(searchid) ||
+			toID(room.title.toLowerCase().replace(/\b([a-z0-9])[a-z0-9]*\b/g, '$1')).startsWith(searchid) ||
+			room.title.replace(/[^A-Z0-9]+/g, '').toLowerCase().startsWith(searchid)
+		));
+
+		const hidden: RoomsSection[] = !exactMatch ?
+			[[TL`Possible secret room`, [{ title: this.search, desc: TL`(Private room?)` }]]] : [];
+
+		const autoFill = this.lastKeyCode !== 127 && this.lastKeyCode >= 32;
+		if (autoFill && !forceNoAutocomplete) {
+			const firstTitle = (results[0] || hidden[0][1][0]).title;
+			let firstTitleOffset = 0;
+			while (
+				searchid !== toID(firstTitle.slice(0, firstTitleOffset)) &&
+				firstTitleOffset < firstTitle.length // should never happen, but sanity against infinite loop
+			) {
+				firstTitleOffset++;
+			}
+			let autoFillValue = firstTitle.slice(firstTitleOffset);
+			if (!autoFillValue && toID(firstTitle) !== searchid) {
+				autoFillValue = ' \u21d2 ' + firstTitle;
+			}
+			const oldSearch = this.search;
+			const searchElem = this.base!.querySelector<HTMLInputElement>('input[type=search]')!;
+			if (autoFillValue) {
+				searchElem.value = oldSearch + autoFillValue;
+				searchElem.setSelectionRange(oldSearch.length, oldSearch.length + autoFillValue.length);
+				this.search += '-';
+			}
+
+			return [[TL`Search results`, results], ...hidden];
+		}
+
+		return [...hidden, [TL`Search results`, results]];
+	}
+	override render() {
+		if (this.hidden && PS.isVisiblePanel(this.props.room)) this.hidden = false;
+		if (this.hidden) {
+			return <PSPanelWrapper room={this.props.room}>{null}</PSPanelWrapper>;
+		}
+		const rooms = PS.mainmenu.roomsCache;
+		this.updateRoomList();
+
+		return <PSPanelWrapper room={this.props.room}><div class="pad">
+			<button class="button" style="float:right;font-size:10pt;margin-top:3px" onClick={this.hide}>
+				<i class="fa fa-caret-right" aria-hidden></i> {TL`[Hide]`}
+			</button>
+			<div class="roomcounters">
+				<a class="button" href="users" title={TL`Find an online user`}>
+					<span
+						class={`pixelated usercount${Dex.afdMode === true ? ' afd' : ''}`}
+						title={TL`Meloetta is PS's mascot! The Aria forme is about using its voice, and represents our chatrooms.`}
+					></span>
+					<strong>{rooms.userCount || '-'}</strong> {TL`users online`}
+				</a> {}
+				<a class="button" href="battles" title={TL`Watch an active battle`}>
+					<span
+						class={`pixelated battlecount${Dex.afdMode ? ' afd' : ''}`}
+						title={TL`Meloetta is PS's mascot! The Pirouette forme is Fighting-type, and represents our battles.`}
+					></span>
+					<strong>{rooms.battleCount || '-'}</strong> {TL`active battles`}
+				</a>
+			</div>
+			{!!PS.leftPanelWidth && Config.includes?.roomlistTopHTML && (
+				<div dangerouslySetInnerHTML={{ __html: Config.includes.roomlistTopHTML }} />
+			)}
+			<div>
+				<select name="sections" class="select" onChange={this.changeSection}>
+					<option value="">{TL`(All rooms)`}</option>
+					{rooms.sectionTitles?.map(title => {
+						return <option value={title}> {title} </option>;
+					})}
+				</select>
+				<p><input
+					type="search" name="roomsearch" class="textbox autofocus" style="width: 100%; max-width: 480px"
+					placeholder={TL`Join or search for rooms`} autocomplete="off"
+					onInput={this.changeSearch} onKeyDown={this.keyDownSearch} onBlur={this.handleOnBlur}
+				/></p>
+			</div>
+			{this.renderRoomList()}
+		</div></PSPanelWrapper>;
+	}
+	getRoomListFocusTitle(): string | undefined {
+		return this.roomList.map(([, rooms]) => rooms).reduce((a, b) => a.concat(b))[this.roomListFocusIndex]?.title;
+	}
+	renderRoomList() {
+		const roomsCache = PS.mainmenu.roomsCache;
+		if (roomsCache.userCount === undefined) {
+			return <div class="roomlist"><h2>{TL`Official chat rooms`}</h2><p><em>{TL`Connecting...`}</em></p></div>;
+		}
+		if (this.search) {
+			// do nothing
+		} else if (PS.isOffline) {
+			return <div class="roomlist"><h2>{TL`Offline`}</h2></div>;
+		} else if (roomsCache.userCount === undefined) {
+			return <div class="roomlist"><h2>{TL`Official chat rooms`}</h2><p><em>{TL`Connecting...`}</em></p></div>;
+		}
+
+		let nextOffset = 0;
+		return this.roomList.filter(([, rooms]) => rooms.length > 0).map(([title, rooms], sectionCount) => {
+			const offset = nextOffset;
+			nextOffset += rooms.length;
+			this.roomListLength = nextOffset;
+
+			const index = this.roomListFocusIndex >= offset && this.roomListFocusIndex < nextOffset ?
+				this.roomListFocusIndex - offset : -1;
+
+			return <>
+				<div class="roomlist">
+					<h2>{title}</h2>
+					{rooms.map((roomInfo, i) => <div key={roomInfo.title}>
+						<a href={`/${roomInfo.id || toID(roomInfo.title)}`} class={`blocklink${i === index ? " cur" : ''}`}>
+							{roomInfo.userCount !== undefined && <small style="float:right">({TL`${roomInfo.userCount} users`})</small>}
+							<strong><i class="fa fa-comment-o" aria-hidden></i> {roomInfo.title}<br /></strong>
+							<small>{roomInfo.desc || ''}</small>
+						</a>
+						{roomInfo.subRooms && <div class="subrooms">
+							<i class="fa fa-level-up fa-rotate-90" aria-hidden></i> {TL.label(TL`Subrooms`)}
+							{roomInfo.subRooms.map(roomName => [<a href={`/${toID(roomName)}`} class="blocklink">
+								<i class="fa fa-comment-o" aria-hidden></i> <strong>{roomName}</strong>
+							</a>, ' '])}
+						</div>}
+					</div>)}
+				</div>
+				{sectionCount === 0 && !!PS.leftPanelWidth && Config.includes?.roomlistAfterFirstHTML && (
+					<div dangerouslySetInnerHTML={{ __html: Config.includes.roomlistAfterFirstHTML }} />
+				)}
+			</>;
+		});
+	}
+}
+
+PS.addRoomType(RoomsPanel);

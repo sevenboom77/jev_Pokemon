@@ -1,0 +1,9 @@
+{
+  "name": "@pokemon/agh-battle-plugin",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "exports": "./index.mjs",
+  "agnes": { "plugins": [{ "export": "battlePlugin", "id": "ext:pokemon/agh-battle-plugin", "inject": ["extension"] }] }
+}

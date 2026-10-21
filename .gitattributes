@@ -1,0 +1,7 @@
+agnes-harness/** linguist-vendored
+pokemon/vendor/** linguist-vendored
+pokemon/packages/battle-web/dist/** linguist-generated
+*.png binary
+*.jpg binary
+*.mp4 binary
+*.gz binary

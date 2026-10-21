@@ -1,0 +1,2643 @@
+{
+  "created_at": "2026-10-21",
+  "scope": "Public release checkout and copied public-evidence only. Original source package unchanged.",
+  "redaction_policy": "Actual private home-directory usernames replaced with USER. Personal contact values replaced only on exact matches to submission contacts. No original sensitive paths or contact values are recorded.",
+  "candidate_code_metrics_aliases_and_original_hash_identifiers": "Preserved; only authorized private home paths in textual content are anonymized.",
+  "personal_submission_materials": "Not copied into public-evidence. Exclude original registration/contact/image files from the public repository.",
+  "upstream_fixtures": "Upstream test tokens, sanitization examples, and fixture TLS key intentionally retained as test data, not runtime credentials.",
+  "verification": {
+    "public_evidence_files": 2058,
+    "public_evidence_original_bytes": 447150723,
+    "public_evidence_changed_files": 185,
+    "public_evidence_unchanged_files": 1873,
+    "public_evidence_all_bytes_match_expected_redaction": true,
+    "original_files_unchanged": true,
+    "private_home_prefixes_remaining": 0,
+    "submission_contact_matches_remaining": 0,
+    "actual_runtime_credentials_found_by_audit": false
+  },
+  "public_evidence_redaction_totals": {
+    "home_username": 5492,
+    "phone": 0,
+    "email": 0
+  },
+  "public_evidence_changed_groups": {
+    "费用计算依据.json": 1,
+    "evidence/league-jev-20261004/manifest.json": 1,
+    "evidence/league-jev-20261004/provider-key-rotation-20261004.json": 1,
+    "evidence/league-jev-20261004/remainder-daemon-repair-20261005.json": 1,
+    "evidence/league-jev-20261004/remainder-repair-20261005.json": 1,
+    "evidence/league-jev-20261004/results.json": 1,
+    "evidence/league-jev-20261004/trajectory-index.json": 1,
+    "evidence/league-jev-20261004/source/scripts/agh-env.mjs": 1,
+    "runs/*/battle.json": 153,
+    "runs/*/agh-a.jsonl": 8,
+    "runs/*/agh-b.jsonl": 16
+  },
+  "changes": [
+    {
+      "scope": "public-evidence",
+      "path": "费用计算依据.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 1,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "ec577d39633720bbf0f1e5f68992ef6b7df31dbee1b8e915c64e781aba548fd0",
+      "new_sha256": "f986320e3aa5fab677d390934f4f256de79c71fcc64383ce7aec32824fc21a41",
+      "original_bytes": 5951,
+      "new_bytes": 5947
+    },
+    {
+      "scope": "public-evidence",
+      "path": "evidence/league-jev-20261004/manifest.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 1549,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "9e422b084c6018c1ac57e552bf338cfd5fa8d10610b981dcf10048888b47dd1c",
+      "new_sha256": "99d2b8b502c0ed35f7846540d7834deec249265b76279504df5bce4dbf345675",
+      "original_bytes": 1728396,
+      "new_bytes": 1722200
+    },
+    {
+      "scope": "public-evidence",
+      "path": "evidence/league-jev-20261004/provider-key-rotation-20261004.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 21,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "b25ecbd8551b1f74d90c6724af80b2e32dede0e6184232a23884a524507fa4ab",
+      "new_sha256": "2d44248ff3af595ceccb0be100af7cc012b137b3469debff81c04a9f8c750dc3",
+      "original_bytes": 6156,
+      "new_bytes": 6072
+    },
+    {
+      "scope": "public-evidence",
+      "path": "evidence/league-jev-20261004/remainder-daemon-repair-20261005.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 2,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "aad6ee56bec169cffb0d658325b53eafcb0065542fc8ef41e0e494dee88acb20",
+      "new_sha256": "197267231e5f736668f8e325614642c1da50456f605a45c20c19eb0ea73c895d",
+      "original_bytes": 2003,
+      "new_bytes": 1995
+    },
+    {
+      "scope": "public-evidence",
+      "path": "evidence/league-jev-20261004/remainder-repair-20261005.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 2,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "855dc86b3c42357fd18ad570104161eb6f7da1dd2a6928f67464cffc74b5638f",
+      "new_sha256": "c4a1c2ac18fdbe8bd56b0cb2cee9e17b879977631f53d79417390e8b6c00ee58",
+      "original_bytes": 1568,
+      "new_bytes": 1560
+    },
+    {
+      "scope": "public-evidence",
+      "path": "evidence/league-jev-20261004/results.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 1999,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "45c00a94c54d086c4a2a30804c6b96b4af9577e76477a5830d9d0251e3eef554",
+      "new_sha256": "885580babf311c1b37a862b9216133afcc0144736fb33c2c61898ba9bede5a75",
+      "original_bytes": 1928384,
+      "new_bytes": 1920388
+    },
+    {
+      "scope": "public-evidence",
+      "path": "evidence/league-jev-20261004/trajectory-index.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 1409,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "1595f1ee02db5e55d0b516dae066f81ac4ead40cf6f19c5b90b1a612ca154483",
+      "new_sha256": "75cfb9bbf3bf38be42e36adf9d8adfe0b349b29b84d7cd47aea5d0cabee1c5b6",
+      "original_bytes": 831801,
+      "new_bytes": 826165
+    },
+    {
+      "scope": "public-evidence",
+      "path": "evidence/league-jev-20261004/source/scripts/agh-env.mjs",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 2,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "56db9d500b279cc0dd5f8e07587c1a88484994acdc511ea7dc59b46fbb34a7b9",
+      "new_sha256": "9fbd573c611e5c18b3684ac7db87d33ccb23c5f34e87409ecae2cf2dcc08160b",
+      "original_bytes": 19652,
+      "new_bytes": 19644
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-04aa1b45-a0/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "4a9bc485d083fdf115ab0a089cfa537a5957dafb9ea8f4001e968985d935bb3b",
+      "new_sha256": "44f6ff2e9bdc8665885f204bfc1898b55203a91fe84125b7004851e5eb0962b5",
+      "original_bytes": 8239,
+      "new_bytes": 8227
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-0794957c-a0/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "1b9f35165aaacd93cb5c06342fca0eb74e56b3505f80430fe5b244f019c3086e",
+      "new_sha256": "df62ae50448b2ef2218c7c1c92a0279609145637d5181c99f3a6f0cbe69e3f3c",
+      "original_bytes": 5199,
+      "new_bytes": 5187
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-0794957c-a1/agh-a.jsonl",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 2,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "b474f9b604f2617b4e724f6e2fd89ac10e80c419544f0c3897f8725f9b5e9379",
+      "new_sha256": "7496ffee721c0dfe22c1e1d176519e3bf7ed2700a0c91257390b6eacb853f193",
+      "original_bytes": 1129678,
+      "new_bytes": 1129670
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-0794957c-a1/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "c7818cce915758c5d1d0f67aba576ce9daf9d1ed1baa986f5a3ebc60ee438cab",
+      "new_sha256": "f36871a391b8c92416379a9ff3314abaa326ddbd9130b15293337e6959e99494",
+      "original_bytes": 43064,
+      "new_bytes": 43052
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-083ce954-a0/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "78cbb4fd648797c37fdbdb65311e75f55b88164944e6ef5b80622d685fab0801",
+      "new_sha256": "9254d2a7529d08757b1b6178f1219314e75c623d0053deac93455714d93866dd",
+      "original_bytes": 5318,
+      "new_bytes": 5306
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-083ce954-a1/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 2,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "1022af617b2f12dedebb551c86b095356b8fe2b5fd93ca45c9e6c04bdf02d198",
+      "new_sha256": "07c244327ebc9a0ad8d603a50f184c88190257fa35ad41a08b8561d3e3bab798",
+      "original_bytes": 32108,
+      "new_bytes": 32100
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-0f8176ed-a0/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "c81df7e4ec351bbcf2d9ff0fb3cb697439664ca8bb579fbf41fec66d75b9a234",
+      "new_sha256": "635e2de9aa1b0d7410e0b9a83feb2735ba2d55bfd3118cdafac007356ee1a1dd",
+      "original_bytes": 5161,
+      "new_bytes": 5149
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-0f8176ed-a1/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "69d8e47b1f18f5ed3f3b2b2093ced26d5f2f4a13b2566b4190d0b79e60b7afda",
+      "new_sha256": "f8d343573d49034bcb9b25569d95491e1eff1b0a4049f863d3814b7a4f36b7b3",
+      "original_bytes": 19881,
+      "new_bytes": 19869
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-0fd75e2e-a0/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "3f7e2edad7c1a0309678b5736546a77fa1f657df049d549e1ae2f60b716b809e",
+      "new_sha256": "62cc9ec178e180be1e758eb7fb32669f8f60289a2b9e23f139ae931a28868c25",
+      "original_bytes": 5189,
+      "new_bytes": 5177
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-0fd75e2e-a1/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "3cb6467ae1ef8d17ea9fcdd5a9d995e112f267ec61dac7cf24505493a313030b",
+      "new_sha256": "ae0bb9d363068fef6129cc9e1cd857e29744872f3b392a9c49b8c840483cccdc",
+      "original_bytes": 6542,
+      "new_bytes": 6530
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-1300f72b-a0/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "f3a19c94f80840a6b3e5fab896f79d0abf6b49f3d5bd82da67ed1bcbf66dd67a",
+      "new_sha256": "bc66c3b3d1fcc8852776887d80dadba68c01e86a454be30027638a5c71ad063c",
+      "original_bytes": 5219,
+      "new_bytes": 5207
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-1300f72b-a1/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "230fe34a076f5a83e71aae6d1d44a91bc5cd32025354c7f9faa55f07688d2b09",
+      "new_sha256": "1053e808865b769294fa0ebe96d509c7a86c4598378dc0a48ef53a0d1a285ffa",
+      "original_bytes": 5268,
+      "new_bytes": 5256
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-132e54e9-a0/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "da5973ac29f530df5013ab62de54c397c668004f69de323fedafa8d710494d31",
+      "new_sha256": "ac359284091317f762965be7289c204744930ff2f19917b6404ac01307e5b0da",
+      "original_bytes": 17435,
+      "new_bytes": 17423
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-132e54e9-a1/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 2,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "052766b07460a0ccef52b024b446c022f8eeb8b97597646a096590c42f9eece3",
+      "new_sha256": "5610f514711f4729e23cdb4af87d53ac57a075da88987ac73c84f7880f9b0a12",
+      "original_bytes": 30625,
+      "new_bytes": 30617
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-132e54e9-a3/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "72b5445b67894eba972de71dfcca3f7e894297c6e743a97328f6b88fd964c54b",
+      "new_sha256": "534e7ebe202281b0b23463f39e457b0bba47228e71c3a2fca650c128b87a3a4a",
+      "original_bytes": 16592,
+      "new_bytes": 16580
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-198eb42a-a0/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "77e32f8339e7748e7d56e27e7a3a35ae062f558ac64f1af08c35c29068205514",
+      "new_sha256": "0f08ea6b1059150c14dfdcb9285bd02ed6abe0d9015d04e774d90352d0ff9b14",
+      "original_bytes": 5202,
+      "new_bytes": 5190
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-1b8b8a2e-a0/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "5019648b8c9e195093349bdd19bf934728a68e4ac077c650decd7893805de7ba",
+      "new_sha256": "e3b021178778849f9dc89178fcda5e8c7f03791ae56b12c9537fb5eb39b7e060",
+      "original_bytes": 5207,
+      "new_bytes": 5195
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-21f35ae3-a0/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "fa5e957f6f4dc5ba6151d5ae603cd5c47e43af38ab826a302f8bd099c2d2d460",
+      "new_sha256": "c763e3669d273428a212dbb8b3408dcb185a63785dee6644e8b93625302d2c41",
+      "original_bytes": 22162,
+      "new_bytes": 22150
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-2469c06b-a0/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 1,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "d2a04dd68c28174991289aa36517d01f81445e3f57990e4cc13d974728b9e1ae",
+      "new_sha256": "0a4ab09e7ede22c210cdcfae39054d982d86a515c96cc4e8ad91a9e002d2be3f",
+      "original_bytes": 36281,
+      "new_bytes": 36277
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-252f1a6d-a1/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "824646342d87e6c4b853544226f0da57eb3d5cd9274bd875c5cc9fc7dd4c7781",
+      "new_sha256": "d62a3e6314b8725b2b11c2211de89b17caa35dc90fb2a560d3a82686caa36b46",
+      "original_bytes": 7806,
+      "new_bytes": 7794
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-2a27010a-a0/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "9cefd5230c9c8136f7257a14d1794e5ea8f672130ca21a1af9c12966723c33cb",
+      "new_sha256": "5b4154c6fbe66a4e803facbef4deedacc2b9c45330449a7d1e5faa5a3a0f4b4d",
+      "original_bytes": 5159,
+      "new_bytes": 5147
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-318f30ec-a0/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "001547ba066217df5500a99cc7ad09549fab681b21300b197a347b2ca3c725f2",
+      "new_sha256": "21e3c70da7bd99a8b91c5777f73b5348dbdedd465aaeb50b120e3fa4268bf6f9",
+      "original_bytes": 10063,
+      "new_bytes": 10051
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-332b9714-a0/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "cd21b6775900c5e64a9aa09b86b0534f57a58337d79e46a9243ddf7791609398",
+      "new_sha256": "b8749239c3bc9a8273d5584364f3f85ee9fbb02e5101e3c69c0f2b5c0224a01c",
+      "original_bytes": 5194,
+      "new_bytes": 5182
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-332b9714-a1/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "18eaa1e287642b77906ac715564fe9924db98b0d81e3931b196540f5f11917f3",
+      "new_sha256": "7b2d93bb578f109629d0bb1a7bde3afac80ac3c3a1ef2daa480e1e1baa1c60ce",
+      "original_bytes": 5922,
+      "new_bytes": 5910
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-332b9714-a3/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "a2d69b2d6fd5be5943291a0519083b2ff9516dd9f8ccd47fac635a5b50a85dd3",
+      "new_sha256": "d7ef4f58dd2fdd8e3fa42fa8d31928012481009db9541f36d54e60c15a8b9a4f",
+      "original_bytes": 19929,
+      "new_bytes": 19917
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-332b9714-a5/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "717b1a846cb25da451d124f5c8caee231e87950c136807a67764184472ed4e34",
+      "new_sha256": "ba1eaae392fbd657c32fbfd386e28562839691eedb1074dd02fe6486affec17c",
+      "original_bytes": 5211,
+      "new_bytes": 5199
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-343c4ca7-a0/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "f5bba760b81bc80707571b62f58994bd319fc20ab29a5077517663d718c2394d",
+      "new_sha256": "8e1ca472ae523e31b5cd9b3c55c72423c0e44e7826749c0a0455f97795a00589",
+      "original_bytes": 15643,
+      "new_bytes": 15631
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-343c4ca7-a1/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "cc22a08b5b8ae06c69ab5db723ba2fe29d17d8605c589eace961e3c7097eb128",
+      "new_sha256": "808324bf452ed999669368ede3a469299b5477f11507dc1c08c0da2d17c987f7",
+      "original_bytes": 18997,
+      "new_bytes": 18985
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-39aa697c-a1/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "472659b7ab2c61dabb9ed201f1e987ee7cda07299e1cbe4aa63059910af66930",
+      "new_sha256": "71a701eb48ef2ae398873387ddd71c5b45502497fbd207029110080b6606481b",
+      "original_bytes": 7542,
+      "new_bytes": 7530
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-3a8e267c-a0/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "14555bc885cb24aa2cf5675304fb60b5464fb42f08c66cde0e25b8a9a60c8c1b",
+      "new_sha256": "fa2f48a66aed4e57891f850bc0313b836a55a9ec137900b06e01cf5a59f3c1eb",
+      "original_bytes": 5187,
+      "new_bytes": 5175
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-3a8e267c-a2/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "28b1ca38184175cda05fac85fa375b63c841234965392dea3e966d936be26756",
+      "new_sha256": "1972647bba62d95428f0aa71c7f81841d9c29b8adb72407d3d202dc85a9dee40",
+      "original_bytes": 58425,
+      "new_bytes": 58413
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-3a8e267c-a3/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "163396c4cdcd31fd84126614ae221c8546af0e01e8f0eb9aa45d875fad2311e7",
+      "new_sha256": "829fd16418fdcdd9cb37a6179aa0262adef557d016b2d8d66ecab53994a782d2",
+      "original_bytes": 28426,
+      "new_bytes": 28414
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-3a8e267c-a5/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 4,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "540a81ce4bdee4617a6ce74d4875df3e4e8413bacf1047f17098cddd2658afe6",
+      "new_sha256": "17cebb96a03c7aee0b2850928c4ef82418c2922f794a84e4a25d9a36b7bb9a4b",
+      "original_bytes": 24065,
+      "new_bytes": 24049
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-3c3bfc09-a0/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "7237e802872bbb645068b37e25a5ac84f72a6731d341a2ea6aee034b76da0498",
+      "new_sha256": "ee4e9106b4f647057bbb54c0f7d1b3aff05ab8350a367df65eeab96463ac40d5",
+      "original_bytes": 10942,
+      "new_bytes": 10930
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-3c3bfc09-a1/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 1,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "723dabcca01c554ffcb0004028e3b8c6f29f86967a4514ab61f0f56bccf6fb72",
+      "new_sha256": "9827a14327c4e4fe8dc8fb715b464bdb0acf4b4d82ed01a3c5cba72381c56334",
+      "original_bytes": 38834,
+      "new_bytes": 38830
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-3c3bfc09-a3/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "aff0f7e9e541962791e66e535a1b8b344585832b9c109e2e3330c9777a17b8ac",
+      "new_sha256": "fe88e93adbb705ef6fbeb6f49e849a09d1dfbd87bd5c5b5741d77daa990b390a",
+      "original_bytes": 30380,
+      "new_bytes": 30368
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-42d9132b-a0/agh-a.jsonl",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 2,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "dcb3c69efb49dfd96fabc2700b9a2ef43638e4217063d5b47133c0ed7765d656",
+      "new_sha256": "783be092e124f1dd0471fa577b80dc1681128736f52615a527338d6f9ca58e64",
+      "original_bytes": 306404,
+      "new_bytes": 306396
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-42d9132b-a0/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "ccab39507923f377b819734cc4b515f0e9c497edc18a1c3298ffe9838daeba88",
+      "new_sha256": "249c19dbe97ca6c4ac6ee85a0ef22aa3a2d0dd96783cdd6897d5f42ec089d08e",
+      "original_bytes": 12272,
+      "new_bytes": 12260
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-4804408d-a0/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "c5184c056ccbba95be6e797541c1c665a2323cc5926a37ede6fddaa063134200",
+      "new_sha256": "310cddeb0aeca802cc7054159fccf85746230b1c73f3a0ea27f07d5044616e56",
+      "original_bytes": 13306,
+      "new_bytes": 13294
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-4804408d-a1/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "a471c9f8f301b9d193dddc323a2bb942d31df51c6168a5c12cf37c60b30b0be8",
+      "new_sha256": "7e400c4ffb74a0847fd2f7cc31a8233713c47cf89594491daa84acb508c1023a",
+      "original_bytes": 10294,
+      "new_bytes": 10282
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-4804408d-a3/agh-a.jsonl",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 2,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "6d1e310256123b6eb1e2200a3e403c98fe864fbfbb00c3aa13193b05f751a118",
+      "new_sha256": "a69b205d468c298a7b31b2a1b5d51d0f675a8ce7135f3c2004a23ad8a4181fab",
+      "original_bytes": 386043,
+      "new_bytes": 386035
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-4804408d-a3/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "deb318715867e1b88e3f19e809c357bbda0f2fa41e3c947b58fdcae5d23380a7",
+      "new_sha256": "623178abfa09b66ee3efe4c166a3de3a6381d47bd8782840175082b7bfcf1350",
+      "original_bytes": 9924,
+      "new_bytes": 9912
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-4d78fceb-a0/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "a736a0fb23f2e7ace147efa47fc71389f3ebbb5961c2b1a355d9fd94a2cc153e",
+      "new_sha256": "8a9e5ae9ed03c25a94e5e6120d007d1fc6bf0eb08813f3eb90bb466a99c95252",
+      "original_bytes": 5196,
+      "new_bytes": 5184
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-4d78fceb-a2/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "a2121d41aeeb20f64bbff43d3d1f4f547442161a8f1afcf2b43d94027574cbb1",
+      "new_sha256": "1e8da2067d89cab7da32ad54ad8c6b3ab185660eaf467fea0ec1866a2102072d",
+      "original_bytes": 20091,
+      "new_bytes": 20079
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-4d78fceb-a3/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "1cd07173d24e136ffdb3fcb80cf26878d0ceac338ebfc39de4c872577e62b6ee",
+      "new_sha256": "9a93953acd4b6da8960c32c483574dffbc4131c8810f3acdec30db2fdcfa50d9",
+      "original_bytes": 11760,
+      "new_bytes": 11748
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-4d78fceb-a4/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "77627fc1e83685595da662079d4724159004a9ac3a7f2f316a6c8ac944783224",
+      "new_sha256": "4d3a43f8b628e7dcd5823ed37f7c48bbb4abba29788ce175cf88e44b83ddd356",
+      "original_bytes": 37989,
+      "new_bytes": 37977
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-4d78fceb-a5/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "26d183b85ce25eae708bacb3e61cef63ff4d0592c302890fd64b5f6f424ba1d2",
+      "new_sha256": "2110ef4cb9e8147eb9958b08ad26bc1c7e4e567170c3eb75e2b350bb1e97e2c9",
+      "original_bytes": 5211,
+      "new_bytes": 5199
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-54dab7bb-a0/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "06fec75d0e96eadf76f2adeed3533dfb885862b47ce720b46ec1b53b48cd5612",
+      "new_sha256": "bd66afd3e7d221b16fa5e95885ef2676e15d1807134dd6975c05122ddc534f93",
+      "original_bytes": 46274,
+      "new_bytes": 46262
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-54dab7bb-a1/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "d13b625db700c865df0bebedd2063a184c655cec3694b7df2408c4ff39ba2c28",
+      "new_sha256": "d24562e8a97181a113567d2badb75e5d60a85a27a61534c3d394530e226c9217",
+      "original_bytes": 5428,
+      "new_bytes": 5416
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-5c4af7c5-a1/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "7cce2868be7659db60fa965e9da5a4dcceed87b8a5286b4108d87f938d950216",
+      "new_sha256": "cb50f237c0ed70d7272c7a15c68410d4840e9193afabfbcd4d4d1464af797fc1",
+      "original_bytes": 5522,
+      "new_bytes": 5510
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-5d55c6e0-a0/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "50d2aa1e9db9d4276d4e8ed513c800e8ab96785b74ffa8679f6f980697311d6a",
+      "new_sha256": "8859f5065d3fb6cc34767f73412728e31d523186aaa4d93071b4365af1ebc34a",
+      "original_bytes": 5290,
+      "new_bytes": 5278
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-6065683a-a0/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "1699c8ddbf351bbd1c85d06eb97ac366cbfe8d4ca7c9b64339874b4d4bf28e33",
+      "new_sha256": "25cd4518fade333525476abb75e827b1b5dc622d47f7762685951ccca42202ef",
+      "original_bytes": 5169,
+      "new_bytes": 5157
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-6065683a-a1/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "3969fe46460b85d9522cfd91e82cdb13f542d0a786d94e4424774b93df7394f0",
+      "new_sha256": "131435ddf336c037d0b75f1e8c9a97d79a235d090295e72eae922df9921f8f4a",
+      "original_bytes": 38565,
+      "new_bytes": 38553
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-6065683a-a3/agh-b.jsonl",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 2,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "d3ea18f4009f69a56c0af0263d7df73d84d16933da765551a7317d5a8d27a3ef",
+      "new_sha256": "4f226fc7bf64e5b2117daf8dd9ec4e9a6e57761042df04640c4dca92a296f308",
+      "original_bytes": 205912,
+      "new_bytes": 205904
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-6065683a-a3/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "75c06ad9c6b7175907190e61af5443dd511cd15f8403259aead359b547946804",
+      "new_sha256": "740178a1efe9d8ae968e0f36098af0b99ff925d938c15ced064a8f18addd9567",
+      "original_bytes": 12155,
+      "new_bytes": 12143
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-6065683a-a4/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 4,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "c6eefaa534f14b28e47b863069d2688d03e176fbaa92ce719433c20c7ec8e8cd",
+      "new_sha256": "8fcbdf13fbdc4f162138448076b25d5ce36b6fa6cf33409608b7141fae6f436a",
+      "original_bytes": 39426,
+      "new_bytes": 39410
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-6065683a-a5/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 4,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "7a2f29391bdc756ddaa3deb72b94a0f5cb6851c65fc7f4e959052d88dce47ca7",
+      "new_sha256": "b974f1583dc9b373d60fbfef45dd4a35c1aa164d857e7a3a273a4353d981c1ec",
+      "original_bytes": 24072,
+      "new_bytes": 24056
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-645d244b-a0/agh-b.jsonl",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 2,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "edbd1f1213f1dba0f0f8f06642eb927d40ccf26063c6a427811b6d04dfcd2e0c",
+      "new_sha256": "fafae2ae8fcbbb64e5dda07f4bed76a3778805a88e3918cda658961d2997fa7a",
+      "original_bytes": 738695,
+      "new_bytes": 738687
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-645d244b-a0/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "c720bdc63e0707d391feb36158e250f2f471c4ae7885ae0cc41611b8508964d6",
+      "new_sha256": "752805bd55bea1db41c934fcf0dad52181f60e4bd5a5d2c87530cbfa56db9c15",
+      "original_bytes": 26901,
+      "new_bytes": 26889
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-645d244b-a1/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "1d3d8a353a0334925e7ccb178b3d0c70e7c9a4a7dbe04f567efd724ba4f5a061",
+      "new_sha256": "d2955978d8003f5eb3bb2422b6ae2a45f2ecd4a4533f220ebb4321b716cffbbb",
+      "original_bytes": 45961,
+      "new_bytes": 45949
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-661ee5d8-a0/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "d22cbef10cda127ead65746e79b4dfce0124a6aebdfbc4f55aa298da9dcdae31",
+      "new_sha256": "a8d54ec8d515126c91fec5c01f09c0bc846eee176d47844de4edeb133a05288b",
+      "original_bytes": 8360,
+      "new_bytes": 8348
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-6965c4e2-a0/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "66c0dd0207b6df1f7baf938be3fe00df2128569a4c60b217a6f2257c7a16a5e0",
+      "new_sha256": "5470c948906abb4ea03dbfac0a9267264ed776789a19185605f8813b15533aca",
+      "original_bytes": 5251,
+      "new_bytes": 5239
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-7260512b-a2/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "d394a9bc068454fa443426c7c2b1b3752a84ebc7af32996915697501b84bc559",
+      "new_sha256": "03dbe61a1f2ceda23cfc1bbfbf23c2375313c59fbea819d14096cc9b6a8f944c",
+      "original_bytes": 7098,
+      "new_bytes": 7086
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-7260512b-a3/agh-b.jsonl",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 2,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "ad803ea4816172b457553928d1526cf96d104b4268b057eac46944b2f66e05ce",
+      "new_sha256": "1b77819211b10395a046ed3bfba766574fc8940260b14337380dc39d2d037994",
+      "original_bytes": 804810,
+      "new_bytes": 804802
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-7260512b-a3/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "dec36e8c02a05201300f3650e066d8f33172657495e0174baad0008c0e74c9c8",
+      "new_sha256": "39cdb15370e799bb1dd554e064d3290fc9b6e46cdb5daa343930109c57b2efc1",
+      "original_bytes": 30418,
+      "new_bytes": 30406
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-798916de-a0/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "a053577ea1044d5805baf40cf4fa3ce99875dc011e42472034c4b32e4eea9f68",
+      "new_sha256": "cc82c1a8019ad12ce4da943e5000c5541d19e37492a179ed4e6ba1710013fae7",
+      "original_bytes": 5154,
+      "new_bytes": 5142
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-798916de-a1/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "cb8c79a27ece606a9a686c1b39098368a151e54a5f3d2722f47df2efc27c5177",
+      "new_sha256": "737f9c1f3cd614f27e47c767c1154b8341899d37542fb7e71d86eb084346fa9b",
+      "original_bytes": 21152,
+      "new_bytes": 21140
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-7a8c03ad-a0/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "09468f7e720cffcaf65686a205f9a4495a16378e1be95f34392e163b919ee00c",
+      "new_sha256": "92493d8f311dbe9276b56a9c649ccc71fde7f5a2e6ba5adde0bbade16c83b5f8",
+      "original_bytes": 5217,
+      "new_bytes": 5205
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-7a8c03ad-a1/agh-b.jsonl",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 2,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "73faedb10df4057956119b4d75fe88f0ef9547fa3b49094de25b86ba564296c9",
+      "new_sha256": "fb72246a87cf8f608b00d5d9df0d86d1b002dcdfb07602be6ae4e7921ae1d835",
+      "original_bytes": 504542,
+      "new_bytes": 504534
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-7a8c03ad-a1/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "ce2e8c29357e30f9e6e520c8a724becccc0af911b8b07f2ab9708984af23d2f6",
+      "new_sha256": "8a58488c9cac196576246f2982a5c47c218fb3d844ba7dd5ed30b992904e5772",
+      "original_bytes": 22910,
+      "new_bytes": 22898
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-7a8c03ad-a2/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "b1eb06a85dcd050201b18e13a88cadc8924dc7135e2241841803929a2eb0a94b",
+      "new_sha256": "1068e2ea9728b5cc12d1770443acea5c569ef81285743184825aed71a9a6b47e",
+      "original_bytes": 5317,
+      "new_bytes": 5305
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-7a8c03ad-a3/agh-b.jsonl",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 2,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "26b256611572b4dc27c63293b49cf2045dd707d155a61604fe0dd0f7df7f933e",
+      "new_sha256": "21521d45f35a8e035c6356131b0d2efa98556cd1829c9e60884c6ab1fa62c54d",
+      "original_bytes": 728310,
+      "new_bytes": 728302
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-7a8c03ad-a3/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "7e9eef0844d5c319db70d269157c158b5e3046cd1f50cf9e3c0b83706270a7f2",
+      "new_sha256": "7aef7086cfd5d52ce0ec48551c670a8bf2217df09e6f9e89dd823f123c91ee29",
+      "original_bytes": 12706,
+      "new_bytes": 12694
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-7eba927a-a0/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "11cd36efe3ab718f901e0d0f80dd3fd06c083523d15d6585100cc768df1d8157",
+      "new_sha256": "d2bde9f8a2964001151ba4c7a4f9af48543a82c9c32c4c8041dfa9790643a815",
+      "original_bytes": 6485,
+      "new_bytes": 6473
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-7eba927a-a1/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "510312ccfc07eb66e546214a81618cc67b0f10673917df3522dfa9b43d034476",
+      "new_sha256": "274a6485862f434db671a0507f816018d7e3d99fe1fe5327cc4782fbb7a28f2b",
+      "original_bytes": 37323,
+      "new_bytes": 37311
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-7eba927a-a3/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "38dc4cf7257f6034c92cb28bb18d3f2e81255988cc7e3b9c789c4ce55809fb55",
+      "new_sha256": "e7b094b7cc4c6265b2f446afa985cd8456524a2b08c723b1eeffcae900f3b3d0",
+      "original_bytes": 13723,
+      "new_bytes": 13711
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-837089a3-a0/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "c167e0536195f0464f664e6a3c444290f9e616c86a9ba0c52a95e438d1511629",
+      "new_sha256": "a2667ea72d693a76eb1c2837342b421fb607dfa2e2b29c2fbe50d4225ba12c9c",
+      "original_bytes": 26284,
+      "new_bytes": 26272
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-837089a3-a1/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "6dcfcc430b29e54a0c5291d42225c6dcf7ad344ac14e61f7fc825929c73e621e",
+      "new_sha256": "a3c30afada9d5721e83ede4e47855b2aeca9af659e2697b9c2f70c1c75428914",
+      "original_bytes": 18026,
+      "new_bytes": 18014
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-837089a3-a2/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "bcaa590aa8459a24e54c7a25d73dcc5b4b7949ca6a1eb1e76ecb303ca3fd392f",
+      "new_sha256": "3de4060bc6096b3e32c69894a6b2f70fc2ac6b39fc57ca6013e8f07f737bc0d1",
+      "original_bytes": 33605,
+      "new_bytes": 33593
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-837089a3-a3/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "0db7359a9223237aa25289c55ea30c0b768108213d755d9ffe1ac433bc175b37",
+      "new_sha256": "76de0e9eeeb4397206276582f48404ffba302a20c1f54e128e8db8e7049a983f",
+      "original_bytes": 7011,
+      "new_bytes": 6999
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-837089a3-a4/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 4,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "d7dbd1a023b788916da7f2a15d896a3ac20e47b2b34688a2f5d640fec5e4f7c2",
+      "new_sha256": "e723ef67ba6f8098d9fd6dc2a59846f38101468430e2e6a36ee93bcd7271b19c",
+      "original_bytes": 34458,
+      "new_bytes": 34442
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-837089a3-a5/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "fd7648d48ae25d722b2539203b402b1fe434dc82591124e2f743e08320a9177e",
+      "new_sha256": "b80bd96a88599488ac6a03de13debf2d478740d74ed1a2023df6824a95a2bdae",
+      "original_bytes": 5228,
+      "new_bytes": 5216
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-85d7393f-a0/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "c3ab0606282f315dbd90b8a363f08c3b736c80bae68c27b53467bd507f666ff9",
+      "new_sha256": "50a937457670d095823523249e47d658cf17d3b34f6561b884860c069da513e3",
+      "original_bytes": 5157,
+      "new_bytes": 5145
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-85d7393f-a1/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "f642bed2b52b7fc463bbb41b96534884fb798984d547725a878db638f832ab6d",
+      "new_sha256": "df481715c4ea6cd91d21857b758412da2a7e0b25890f1edd2eb866a4ba1a633f",
+      "original_bytes": 43627,
+      "new_bytes": 43615
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-85d7393f-a3/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "1b9fbd0e2fbbe94fe856e8a79688187bcf422820621505bb4c786d5306fb6cd0",
+      "new_sha256": "aeea81c0eb5f34939a67d93bbedab4399e9a26902efc2b556f9be58d2aacc882",
+      "original_bytes": 6553,
+      "new_bytes": 6541
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-8968a6a2-a0/agh-b.jsonl",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 2,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "826be1faf436ac894fb60ed35ac93dfd912eb6f1ba664c93e82371d3431ba50c",
+      "new_sha256": "713fdd96ac5a614665b639bc07aaf3fe21fbf1dccd54c4f5e83a763529cbf9f2",
+      "original_bytes": 591558,
+      "new_bytes": 591550
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-8968a6a2-a0/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "9c6acd28642436d741654144b541b125471f03de13507995d614d8f916311cb5",
+      "new_sha256": "d081e2882e35159bc9bf6aa81a47183bf3a06d73fed25be7bde204ee4c19f387",
+      "original_bytes": 28858,
+      "new_bytes": 28846
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-8968a6a2-a1/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "717e96d7bb3845fe2c5a3c7bdde1c310c5fe34f4a7bf06e99e288fbbbed33762",
+      "new_sha256": "69d5e280535210c73234fdfc42b324159d60035e2b3d5e21433ac40fb61ab243",
+      "original_bytes": 13539,
+      "new_bytes": 13527
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-8968a6a2-a3/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "a165e26dda9ed0acc9d4ccd9807fe77438cb58f44e45075aa8725b148df9d9cc",
+      "new_sha256": "203a51cb46c5679e4f71931f1057ac447bb8f49420109c3cbbc28701b3f11fe7",
+      "original_bytes": 11677,
+      "new_bytes": 11665
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-8aec9be7-a0/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "9690cfc5aebd04138b6a0b83e89c9974ab3c82182c016255e6be05a4fb5bc92c",
+      "new_sha256": "8ce6a134cf58fddb4bfebc45a15edccf0c748db238f09c6780422e8fc3fb2a56",
+      "original_bytes": 32275,
+      "new_bytes": 32263
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-914b8298-a0/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "bee2de6527f9e5239f5de98ef423c1b257c54ba81c8bfabee8c0a216d1a94866",
+      "new_sha256": "0aa438605f9757cda19030059c8ce44b76a068694d809d9fdce60d9530aa736a",
+      "original_bytes": 5154,
+      "new_bytes": 5142
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-914b8298-a1/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "39cced7a5849b5cd7f60154989b1de990b4e4e6e6d2cc5f96dd46ea7e040b13c",
+      "new_sha256": "fc5e9f7b59d85315337ad430da8c2b911aa7ee1dbc0b571c7590f7fd62c64c6c",
+      "original_bytes": 29427,
+      "new_bytes": 29415
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-9939f933-a0/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "130dfdb2640937158b13d36c80d4384536d0406b195965f3a80ff19461806f3d",
+      "new_sha256": "d9eb1cae377540f83118ff1cc8eb909712997a1ecdad629dda4049548819a743",
+      "original_bytes": 10123,
+      "new_bytes": 10111
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-9939f933-a1/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "e1352cff8ab3ad3510830ec44f2acfd4dcc2afa33c74be1e737e0f2560b0dc44",
+      "new_sha256": "552f953ac8d9e43049baa510ef501cd66332bc6d33826c8df5b7659183089803",
+      "original_bytes": 5281,
+      "new_bytes": 5269
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-9ad68613-a0/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "6e8e9695d1c5c95389dd0ab3f49b60cd22da327753083f00912a05759c986aa5",
+      "new_sha256": "6aaef524f45c6247a1b6ae14295da59ff28b13794aaed6b7a22f23c4be159432",
+      "original_bytes": 29907,
+      "new_bytes": 29895
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-9ad68613-a1/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "61595a0f9ed85ff54320dc09808add17ddbe7c362fdd800e41fa20a4a2c0210f",
+      "new_sha256": "3e69dea932f6756fcf707d28a40fe149c354b26ee9b6c3502b25f386d4bf64ec",
+      "original_bytes": 10305,
+      "new_bytes": 10293
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-9ccfcc6e-a0/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "f7742095459915d55b41984813c89fd9db65486a99dbc795ed6753bef1a23ca1",
+      "new_sha256": "9dc2dff88d01991093955f875c3ac43361b5cff7d357c6d70fe0e4a92553bef4",
+      "original_bytes": 5164,
+      "new_bytes": 5152
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-9ccfcc6e-a1/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "8b82f3a41e482195fe1d625ca866039cf836f2f0f9e8e2a6e8d49892267b05a8",
+      "new_sha256": "7e840c749155775d3eb2607aee87675f3796caf42c9166304d196fac6a9f8f5a",
+      "original_bytes": 37579,
+      "new_bytes": 37567
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-9ccfcc6e-a2/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "b83b453e58d69fc7cadc65b0cbf3baf66648b8eaf2e270dc7a361e6aca2290af",
+      "new_sha256": "242d0de734e06b664648f1ac8f6bd697236de4841b6c44ce397b69e3c5c55c70",
+      "original_bytes": 30990,
+      "new_bytes": 30978
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-9ccfcc6e-a3/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "35996b44069f47765a7fef759ede68f06d3e93f23b9af516b7ba4aa2dc3ddaa9",
+      "new_sha256": "97a7172144de3437ccb94a71bfc292af7d9ee80cb5b20cc06c5b4200cc9dcb14",
+      "original_bytes": 7968,
+      "new_bytes": 7956
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-9d0914dc-a0/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "299e7b3af0cf58cfe5c941b4b84a985ed9434d643b5f276714c4564cc989f538",
+      "new_sha256": "92b28af53358754525c90306c96add0dd99ef9be03bd880b5c65a97d8ca81864",
+      "original_bytes": 5290,
+      "new_bytes": 5278
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-a97d10c8-a0/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "c39a85d51d61616380fab0ec107bb3bc511ca23a5c2d4ce12215a8ea54ecd741",
+      "new_sha256": "1d9c21e130559b0857bea569d99a36050b040889c5c241981f43cb3c860f8209",
+      "original_bytes": 15173,
+      "new_bytes": 15161
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-a97d10c8-a1/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "63b1a07975d1a57ef90c2ccd50db25a0613f41cc606466d1791fbc8c075c2d89",
+      "new_sha256": "824c2f01c58386781b6c017ccab9f82500636331ec63b1938ca8d7359fcbfc14",
+      "original_bytes": 9398,
+      "new_bytes": 9386
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-aa016012-a0/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "18b75dd47d9eb16df78c8789c7892b2b05a821af2907eabbce27d60858f1da58",
+      "new_sha256": "69cf57d04aa0b4feddb899b49465fb9787fa361e11eb7da55cfdafdab8e31e70",
+      "original_bytes": 12612,
+      "new_bytes": 12600
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-aa016012-a1/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "38a985637e432b3c7ce5a8d5ad47bb892c5f10d973ee8a785982558e9a058ece",
+      "new_sha256": "b94b7fab0ff7125bd8868d63c3875f3e7c7fa04145a56810767d7f743488bee5",
+      "original_bytes": 19130,
+      "new_bytes": 19118
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-aa016012-a2/agh-b.jsonl",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 2,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "3a42f57653f6fd7db967bb32f98fae27809506afd721d33740d8ddc6bd1a0313",
+      "new_sha256": "9f85d1b72deb3a0c4eb34aa7890728db78021e4a65e2da223a9ed2addaa59b93",
+      "original_bytes": 1193933,
+      "new_bytes": 1193925
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-aa016012-a2/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "fbd34ec5d236583d85e1e4581a67af70089a1a0dbe9318001a636ddc4ce36bca",
+      "new_sha256": "b67a6de1feb789aa405b2f55b75f7bb7c1e491759667d7fccd641de81cfc2a1e",
+      "original_bytes": 41899,
+      "new_bytes": 41887
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-aa016012-a3/agh-b.jsonl",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 2,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "8d5080b9894b690cdf055166a78481aaa743d5f7a1998299bdcc03cbd61d8ffe",
+      "new_sha256": "ba2d0b276e2fee30d813d9c38cfa9ddc357788130ee98b8d1879d2a71d5c3867",
+      "original_bytes": 449980,
+      "new_bytes": 449972
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-aa016012-a3/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "4189c97a0de47da78c68f8613ef98439d5f3d8db6633b74d6b83d25b6f353847",
+      "new_sha256": "dfb3c1fa807d8dd071413b0539f853133e3452ea68e56016abdcfb8b50286b0d",
+      "original_bytes": 11895,
+      "new_bytes": 11883
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-ac7c8265-a0/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "195714e3b5a03a19df77423682c441e8cab3f6499a94e04d98fbaae7b88605d3",
+      "new_sha256": "d6e7558bfd2b35d27a7454b9339e0229d0971a626a3c88ea87092aaf61362096",
+      "original_bytes": 5161,
+      "new_bytes": 5149
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-acb9a180-a0/agh-a.jsonl",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 2,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "8197155886e077519b69a3653a9115cdf9ccc603baac37babec0dbaa683e37f3",
+      "new_sha256": "7335ea4d2c25bc843abc4bb75dcb29fd17030b6829e5104bf890f397ab616e55",
+      "original_bytes": 405488,
+      "new_bytes": 405480
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-acb9a180-a0/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "ca79152913bc62aca87a808a809cd2d267eaa89bf9380526da673c9fb268460e",
+      "new_sha256": "59896f9bf1deb623c770ae8ac650408897cc85278a86745001877ec0e807ecb9",
+      "original_bytes": 19313,
+      "new_bytes": 19301
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-b346b2de-a0/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "0c8cd7228c0f20035eedb0e59a8f066d03d291203da22d2e806ca8bb675f4469",
+      "new_sha256": "86fc7faa8c3622ed810ac92879a07a80c790af62f0d5988bf093768f55b873ec",
+      "original_bytes": 20028,
+      "new_bytes": 20016
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-b37d9006-a0/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "bd9271451d15c7e1bc7e4aa41c1c4bad5a99830e06a1860b8620ebe28776bdfd",
+      "new_sha256": "bf8e34103d4d2857bee582901c0815490a5646db7b32dfa6d8f700506ca0e21d",
+      "original_bytes": 5160,
+      "new_bytes": 5148
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-b37d9006-a1/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "8e5112400518c761e4ea85f9066c91ba175ad69d676609f76efe6421b03fe1a4",
+      "new_sha256": "8c59be89218f71b11def64d373df195b129586fb338c854494d0deabec8a21f6",
+      "original_bytes": 31002,
+      "new_bytes": 30990
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-b37d9006-a2/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "856c819685bf088720622e0be6d1b4065f90a6201ad4b3eba59cc49ce780f03d",
+      "new_sha256": "6d89bf3b0033943aa2ba93cd6f8b51ba1221bba255bcb9c361c0605271e18910",
+      "original_bytes": 17795,
+      "new_bytes": 17783
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-b37d9006-a3/agh-a.jsonl",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 2,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "5b530d2c8cde693abd52818085318fb226adf1a5bb45ee6f5ae5688d384f25db",
+      "new_sha256": "3444d1fe24df1b9ad5844d32e0b06ac2d251c7b801ad8ce518c54781761683fc",
+      "original_bytes": 324296,
+      "new_bytes": 324288
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-b37d9006-a3/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "d432eccd1e9137e096f1873b3b944093150ac9e9a86f69f776cd2afb157d2779",
+      "new_sha256": "5480026a60fc66bcf63cc05f47d63188af0290b5b530b02e0edeef76656a80ea",
+      "original_bytes": 11671,
+      "new_bytes": 11659
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-b75cd2b0-a0/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "dd265e2c8761d2c1b58259e29e12dbd887733e3b5044b90f75ac15c733a8c924",
+      "new_sha256": "6c0623eb29ed21dcdbf74b18c069dc7aa96643f682957afa17a6b2a4bdff704a",
+      "original_bytes": 5271,
+      "new_bytes": 5259
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-ba7e59c1-a0/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "8f6dd939b8dee7b3739a6ebd250580ae26f82e372073493b3ac8471fb49e63eb",
+      "new_sha256": "8f0eafe078fa04897ba3089b56d791fee56086f34e6355a9cb2c6cceb5f1e921",
+      "original_bytes": 26860,
+      "new_bytes": 26848
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-ba7e59c1-a1/agh-b.jsonl",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 2,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "2f44418c7c7c9f24e0838312b1a800e496dd612680cc97a156741b6e0f20dbb2",
+      "new_sha256": "878ca9e79eeccd5663a21c4f49366d9885eb5c9d1ba79016bf865184a825b7a5",
+      "original_bytes": 792591,
+      "new_bytes": 792583
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-ba7e59c1-a1/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "51a1a210d5f49d9ac2ce6f1241f8e0587c4149a7528c972942f36435c3268070",
+      "new_sha256": "c357a2e5a686f8e59d925f315722fe479a999f617380b35f36bd14a50ed86bb6",
+      "original_bytes": 39088,
+      "new_bytes": 39076
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-bd66f8c4-a0/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "ee3dd6bc5725f91322273feab21f66de031d59157e8caed9a1566cd4233547a5",
+      "new_sha256": "688484a636e74691ed4abff43fc73d7d69ca52109f769414709df1839221ccce",
+      "original_bytes": 25726,
+      "new_bytes": 25714
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-bd66f8c4-a1/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "aa30f9c8bb5114494621ce5aa3342fafe7f87146050f832135aa4720da90172e",
+      "new_sha256": "b274c873b953145ed64e7488b97ecb5552beb454d6f360d9f981e10bed3beae5",
+      "original_bytes": 5236,
+      "new_bytes": 5224
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-bd66f8c4-a3/agh-b.jsonl",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 2,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "740e551009b293ef3470a04f6af065d30cde132b970e8fc08dd3501dcac0c9e9",
+      "new_sha256": "93776e3b7ed2101f7b8e5e85a976b8971843890e8f3d1f05c38180d04feb3780",
+      "original_bytes": 85370,
+      "new_bytes": 85362
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-bd66f8c4-a3/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "a587912d96abe993aeec31fed0579f536b9b57e9ab1e89d00c461eb82a695221",
+      "new_sha256": "dc9848a565f19f5440d72995f8064cee04cbb332298573ec5256ccbd05085b3d",
+      "original_bytes": 6950,
+      "new_bytes": 6938
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-bd66f8c4-a4/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 4,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "b0ca71edb33c1d8c6f8a0b3f127a53bb90a351e10595f5728f7eafe184fa719b",
+      "new_sha256": "6e0868e2cc202b85910974eea0847f5b8592542e5fe3299e37bf86413f08eb8e",
+      "original_bytes": 41428,
+      "new_bytes": 41412
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-bd66f8c4-a5/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "b1981a337617467f42e2e1a5c35ba0bbe810d0c1e454b441904aa0952e593611",
+      "new_sha256": "6c1892cf3b73691f9ac7187d1bc758588739bd3aae5c4d84de63f39529824de5",
+      "original_bytes": 5217,
+      "new_bytes": 5205
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-c42a7f3d-a0/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "a21cb2f2a3d7ae11edbe338a1c2fe7ab6749f132d40f0cab15a00c423dba437b",
+      "new_sha256": "d700ea65dc1207e9c1f5fb79a2fbdc9c537668aa7a7430cf7ae4255c0fa7eda8",
+      "original_bytes": 5197,
+      "new_bytes": 5185
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-c42a7f3d-a1/agh-b.jsonl",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 2,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "aa7e5b43c8dc8dfe20771bb8d959aaff95d35f1569fc0bb50553228326804316",
+      "new_sha256": "a7833bdedb20a0a4172d5dd31a362baf810100211d99f6d4fd2d774662f892e1",
+      "original_bytes": 918940,
+      "new_bytes": 918932
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-c42a7f3d-a1/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "9d3d73e199d6f8d7ad6df7f2a291eccc374c77236cc882fc7838ade0e4513523",
+      "new_sha256": "ee914fc15aefc69a73e09fcbc39ec70afdf1fff5d00d13a38f5f8dac1cd0519e",
+      "original_bytes": 32029,
+      "new_bytes": 32017
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-c5484261-a0/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "d405562d6f0125a6315d7915e2b608c874b794de6e212b9e4f05938bce117e48",
+      "new_sha256": "15a5b7997b3b921fb4b9409b51cd5cc273defa689589572f21dee70e2ce251a5",
+      "original_bytes": 5177,
+      "new_bytes": 5165
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-c6150d62-a0/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "72b89b00f39188f62eff5ff36aae102a96e8553fc991331ef34024d4a0c347f5",
+      "new_sha256": "2ade287943f989b2a12f4ddff375632969181d3a0d98adc2118f46c7ef918740",
+      "original_bytes": 5258,
+      "new_bytes": 5246
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-c6150d62-a1/agh-b.jsonl",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 2,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "0a4d5e2768bc402d57baa48b3cf82e73556c32f518b73abef8791f4fd5feef22",
+      "new_sha256": "93b15a96bee3c8984ee30cd564169a35358514312dbab91ad966254bfb84d9dc",
+      "original_bytes": 473161,
+      "new_bytes": 473153
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-c6150d62-a1/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "a1cb2f33703999707b6efe65b69767b2e9ac3882820c1a77bbff935134a73ffa",
+      "new_sha256": "6d618236cb3a9b5f033a08c6ca5d8cd34f99ddd28b7bc7d3899de01f6d714ca7",
+      "original_bytes": 22993,
+      "new_bytes": 22981
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-c942aca5-a0/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 1,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "45989d05ea072479d577eb97c1d6826f8f357121b4f22c1278a3bc2a7b1b015d",
+      "new_sha256": "ebace85f5c67f8a5f9acb4be04422baa1858795227bb47fae9ea507beddb0c1f",
+      "original_bytes": 39182,
+      "new_bytes": 39178
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-c942aca5-a2/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "37eacd59b9378e40cb1c4a139f65a72c5317f30cdbee9626a81e1aac6cf07e44",
+      "new_sha256": "0b0398f6ac3ea0052cbef37abd75765fc92c95213769024dd859bc813fa872d4",
+      "original_bytes": 40563,
+      "new_bytes": 40551
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-cb63b7ed-a0/agh-b.jsonl",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 2,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "7365a04c41c23da017bc63c0122236f14f3f039249e5a581d1d817122c4c566a",
+      "new_sha256": "8a661c995e91df5f9b9207948d4644ea3e53ac2e431013dc078725721113d4d6",
+      "original_bytes": 282270,
+      "new_bytes": 282262
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-cb63b7ed-a0/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "301d08a557ed47471bc0c357f90e1261512c0ebbfba59ccfde5d740b16858f2c",
+      "new_sha256": "c6577112c4610d06533ec770248626178dd126d312313b05c01dce0ac729b6cc",
+      "original_bytes": 12623,
+      "new_bytes": 12611
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-cb63b7ed-a1/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "f12873c382088af38e321baca034fb2828b4a17aa22f88e6d56a4297c4ef1740",
+      "new_sha256": "42cd6cd778e27344b531792e74e29bc432a5bd6a4a0c5666e6b3f515131779e1",
+      "original_bytes": 5345,
+      "new_bytes": 5333
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-cb63b7ed-a2/agh-b.jsonl",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 2,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "9c82074331fb682e0bf6271dd1f2f9061e01f2f533159cdabd583f1665b0ccaa",
+      "new_sha256": "e3ca269909061ac882252d7bcee5ede97ff999a2b542ca5d0189d27892b2565d",
+      "original_bytes": 239307,
+      "new_bytes": 239299
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-cb63b7ed-a2/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "fe05c6ea7fac1069bd07aab7c40235ec0f13fd5484bdde13f2f02553c7547aef",
+      "new_sha256": "d7a27eadddd924382deae793c39115bbe9b146dda66c2350e8b80902ccbeae38",
+      "original_bytes": 16207,
+      "new_bytes": 16195
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-cb63b7ed-a3/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "a23cf1722ea2cfe2670b994077abaf78efe4d4efa76dc0d27a2035b0aecdae9a",
+      "new_sha256": "9ee6f264a42e66118e3ea434c42a92551a218864b3f4bbd04c1fed622dd0d6a6",
+      "original_bytes": 12137,
+      "new_bytes": 12125
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-cb63b7ed-a4/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 4,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "9056d216f6bf71f0ac82bd8083b3aa60fab4c7c2ed5cd41c163468bcf339602b",
+      "new_sha256": "5f93a3edecd32ce78200ec55e97d9d6c6b9e0934da2f2926f748d4ebb7b0349f",
+      "original_bytes": 36728,
+      "new_bytes": 36712
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-cb63b7ed-a5/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "51b2383032f10ec04b7aebb5a2979a7cd16a520aa06800aa81e5bfa89a1febe8",
+      "new_sha256": "a598f2645cd27c8726e9a66561936c0cdc6e2f74427c75cc40e8b582e0144c97",
+      "original_bytes": 5237,
+      "new_bytes": 5225
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-d4c75aea-a0/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "e3f32abb28f807731a610245f79d723bd082762b5ddb2961d6ff89834ea0e40e",
+      "new_sha256": "c85f06549aedfcdf218f4254471a519dbab5314a85a804f0710f8be4bae9cd27",
+      "original_bytes": 5240,
+      "new_bytes": 5228
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-d643984b-a0/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "55ef5afb3facf42c8f37e5c1a09a27d305eb40801fc11ec73c62b965a37c3619",
+      "new_sha256": "d49feb5f4379d4558750991e20ce5a521fa41330e9d1893a346c1035b6006572",
+      "original_bytes": 7674,
+      "new_bytes": 7662
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-dacbba40-a0/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "1eff420eba16da3fcb8e06fa15ebefa5f2f33178107ffa0e8e6860c6ccd52fab",
+      "new_sha256": "6069bd7cff7a62ff78be7ecd371d7017979b35582df470904196e7162ec5ffcc",
+      "original_bytes": 5182,
+      "new_bytes": 5170
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-ded24950-a1/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "5eed27bc9efd3cdb3ade3c4129b4c7add1687cb00523e26fb0552d5c5217f2fe",
+      "new_sha256": "633e2fd3ff4c0372a0c39fe93c9c88d38b323822ecb8947b5dd5a78092e7df9b",
+      "original_bytes": 18006,
+      "new_bytes": 17994
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-dfd9d0d9-a0/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "ff1960221023381d2baba313ac9ad482d298d4c648dde9110e1bd88e38b6d680",
+      "new_sha256": "acbde41266fcf1fd7bc643672751163fd95f4a675ba5181a2b9fabbe5cc969de",
+      "original_bytes": 5217,
+      "new_bytes": 5205
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-dfd9d0d9-a1/agh-a.jsonl",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 2,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "17f94a52f7ee5518bc4fa42599ab32cddae425f8b4a1826d226ca54631643768",
+      "new_sha256": "c0a891d973467f15b9c0517e7936ed67d189fae39c0ead483e10b82b89f7578f",
+      "original_bytes": 624201,
+      "new_bytes": 624193
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-dfd9d0d9-a1/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "3a981c0140da13f9096a6a4e4be5ad24b22e16015a511f76b352f7348d0050c0",
+      "new_sha256": "fc9bbd74440a487e91bee08d1a1f8341dc9cd6c8f9bf37b0da480089e836834f",
+      "original_bytes": 28960,
+      "new_bytes": 28948
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-dfd9d0d9-a3/agh-a.jsonl",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 2,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "bdb311c78b5f891f6a7facacc0b84a933029006f071ccdcfa2eb756a25d88013",
+      "new_sha256": "d53a58e2bf14297425b37984e888f2f7e7066ed9552dd4ef97939a93d0a4e907",
+      "original_bytes": 595263,
+      "new_bytes": 595255
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-dfd9d0d9-a3/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "91dd090c2755692e402e1c23f886c1e7db63cc6ec3dce69e09cc9a7c275087e1",
+      "new_sha256": "7a347c40af068691b867211fee82383ed1142efc7ba97e235e08d06bebe24b92",
+      "original_bytes": 12833,
+      "new_bytes": 12821
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-e3c2637f-a0/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "52851229dc1646180eaa893211ce4455b2ad68eb1154b8b917a9c61504a66534",
+      "new_sha256": "e1d0bca1325f7196241021acbf1b6176b10dbe02a33c27e5e1965fdd27e86e63",
+      "original_bytes": 12759,
+      "new_bytes": 12747
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-e3c2637f-a1/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "da988c66804051c5fd6c563f8b2a2990fc5008d82da5081d5b7ad1bc9195b481",
+      "new_sha256": "078297072b29c8d265a0f1a6f60c32bc1f2d3f02525254a5e436dc4bb07bb1fa",
+      "original_bytes": 34271,
+      "new_bytes": 34259
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-e3c2637f-a2/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "28215f0cb2f030f85d282cfa69f9925c258dce34ccc0eed6664eb4e8710888a4",
+      "new_sha256": "ade0365f372452c9820a241d749019c13a0c39a50ff7c4ed9b62455135c475ad",
+      "original_bytes": 34507,
+      "new_bytes": 34495
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-e3c2637f-a3/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "28c8bc2dd709d2df5019c4ae2e876b0267bf8ee91bae8c028c326048c2e7846c",
+      "new_sha256": "cf965d1481270b555de47ed9607e11d6717c334f47b8d10eece73cd9a23cf3dd",
+      "original_bytes": 7056,
+      "new_bytes": 7044
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-eb13d1f0-a0/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "f02582ec7a4f2024135942005586a2ce5985577388b3a7ace276adfb25653d15",
+      "new_sha256": "987b9d5b807e569740c84dafdf381e814c526f6b148ff77df41ea79049eb1a2c",
+      "original_bytes": 27861,
+      "new_bytes": 27849
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-eb13d1f0-a1/agh-a.jsonl",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 2,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "0d1eba84915d5d1b4f609e66aaf6eb97545f3ab734544451b9d21aaaaaa2b5ef",
+      "new_sha256": "58697b4b46036a0a8b6245cf89c4db2240f3d132c1292fe38d83fd21b9c73e26",
+      "original_bytes": 734682,
+      "new_bytes": 734674
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-eb13d1f0-a1/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "fe21e2594a4542d3013f6cbb20d805a8f2972101fd10857f2adfedc365d2142f",
+      "new_sha256": "b61ef935ae56a0daad3cfefa8e6233a2955599e44adbc43108b051b68f2577a9",
+      "original_bytes": 34529,
+      "new_bytes": 34517
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-eb716f8d-a0/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "7461a9e0b4f758cbb20da5175158573e8be1bfb5a06b1a3a682e22b98f3e3226",
+      "new_sha256": "03526c9190a7933a2d52ce25544d4fb4d42f5d8ccebfbf6f1256d3521b6975c3",
+      "original_bytes": 5318,
+      "new_bytes": 5306
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-eb716f8d-a1/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 2,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "b23e0b909cc01de2aba3e26f3cd87fd744e32935467fb9d3b41837abd956ef03",
+      "new_sha256": "0f17eeee6a931b8b7088bb8a8fce176ab9e3b8c32927ffc38f273cb70ac6b43a",
+      "original_bytes": 30467,
+      "new_bytes": 30459
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-ec87bf6b-a0/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "0275d8af31a0cedf1287ae708f0f8b6aaac4bc0d1ba2ba853605b9d025656484",
+      "new_sha256": "97c3bf659b110d618e0df8b31c66825f2178158edab7e4634bb728eb578fbcac",
+      "original_bytes": 5216,
+      "new_bytes": 5204
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-ec87bf6b-a1/agh-b.jsonl",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 2,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "c6962101e6e03bb4009f8c890c448328eda3b0819358e84e606d55bab81dd8a5",
+      "new_sha256": "a82d1194850ff8c1a73056cf9f8f65a99e126010ef011da3f24e43d9eb6c9515",
+      "original_bytes": 58324,
+      "new_bytes": 58316
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-ec87bf6b-a1/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "de8fc70ebeaccb2e361f756fd2a56cec00f6cdb1074b2154671864ba03491b91",
+      "new_sha256": "0ec5c7d9b998b434692ed91f5a72e9207b5e9825e0762cb893860c680e26ead8",
+      "original_bytes": 6909,
+      "new_bytes": 6897
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-ecdbb3f0-a0/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 5,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "05f8bcb484c7f9bb59d2583aa62712977a7455b2cc9f7adab31fd40d99feb464",
+      "new_sha256": "b84bfbd8ab79738e18824ad0a98297b9dcca346c40ba5cf8ec415481dd7dd3e6",
+      "original_bytes": 5051,
+      "new_bytes": 5031
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-f130987f-a0/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "1e92e7055d10c00cec7993863857366b2224feefa90d42b5e909f858393d0d4b",
+      "new_sha256": "40ffd3f9b6f42b38683dc4cb37c63875f1b45e21359a32ee84172fbb570f1484",
+      "original_bytes": 5211,
+      "new_bytes": 5199
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-f30339e3-a0/agh-b.jsonl",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 2,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "55aff7f4a706806c23b6e52384b41c8d7f7de452c35adcad2076130401d0daaf",
+      "new_sha256": "f9d8602f42446fd6bc4b2384176558a5b29e474f8e8769d8c21df234b24cc2a5",
+      "original_bytes": 78572,
+      "new_bytes": 78564
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-f30339e3-a0/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "ec846a71bec997edd770df7b4b1a624fe4d402c979fd32c9c72fcf3141689ba5",
+      "new_sha256": "8b043d49fd8e3f2ef661bd01b2c61ec522ca4ec99a062e5826152a4b98762cd2",
+      "original_bytes": 6925,
+      "new_bytes": 6913
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-f3ac2722-a0/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "df4ae18f5e5345efc58069b63367c8eb1b6b6bf4401b5535e9cc4a0c743f0fe1",
+      "new_sha256": "0ae6041437e5172520157d450a5d7b0f0600287dc0c3b177059b70c559a4419e",
+      "original_bytes": 5236,
+      "new_bytes": 5224
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-f3ac2722-a1/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "aa8dcf205fc6f888fdc3ba372833ab81acef023c8dc073afaa4227f45e39b3fd",
+      "new_sha256": "9b6324739eaf16194841245270aca8ee1dc596fb0c62e5cd23dccd834035aecf",
+      "original_bytes": 5442,
+      "new_bytes": 5430
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-f7388d63-a3/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "2381048318834b70fdff9f2f77de69203795b2b5d45dde829a9459e458f9def6",
+      "new_sha256": "7fc8e13eb195bdbd81f061bc4ae68e14d4d9dea367ca58e23b67f24fee459858",
+      "original_bytes": 7085,
+      "new_bytes": 7073
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-f7388d63-a4/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 4,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "dde83f27fd8182893d759260b349c84d4a0313a9602761b49f419a0aac3d1e68",
+      "new_sha256": "d41c718f3779755d531a53a07cc7785f4c944ccedac206b49ed2b37b5c3caaf3",
+      "original_bytes": 23616,
+      "new_bytes": 23600
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-f7388d63-a5/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "e8365b14a96b8345f0f53611e7a29cba6be280f73deb9f2f84e66a548c374f93",
+      "new_sha256": "8cbe622fb7615eb3d63c0568e4877fe21d110ef06b3efc1ce23b4cb67f721ca5",
+      "original_bytes": 5228,
+      "new_bytes": 5216
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-f9fd5659-a0/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "f40dad4f31fbfb4b99f16036821a3a21323a62e06d2c298debed05b3a0fbb168",
+      "new_sha256": "3af1395644fa95e5309f0f679718c3f2a281e32cedba14cd1da7f1a6feeca87f",
+      "original_bytes": 5201,
+      "new_bytes": 5189
+    },
+    {
+      "scope": "public-evidence",
+      "path": "runs/battle-jev-b7cf97b7-f9fd5659-a1/battle.json",
+      "action": "Anonymize actual home-directory username to USER; preserve all remaining bytes.",
+      "replacements": {
+        "home_username": 3,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "d323e3c4069391383238502a2f74fc0d39584950e1a9c0c76ce16c4765bd361f",
+      "new_sha256": "6a987ab9d0e53ca148e606487cf7b30d3cfd4189b5ef4bcc73bd715fcfcb1162",
+      "original_bytes": 5235,
+      "new_bytes": 5223
+    },
+    {
+      "scope": "release-core",
+      "path": "pokemon/scripts/agh-env.mjs",
+      "action": "Anonymize actual home-directory username in comment and legacy fallback path only; no functional refactor.",
+      "replacements": {
+        "home_username": 2,
+        "phone": 0,
+        "email": 0
+      },
+      "original_sha256": "56db9d500b279cc0dd5f8e07587c1a88484994acdc511ea7dc59b46fbb34a7b9",
+      "new_sha256": "9fbd573c611e5c18b3684ac7db87d33ccb23c5f34e87409ecae2cf2dcc08160b",
+      "original_bytes": 19652,
+      "new_bytes": 19644
+    }
+  ]
+}

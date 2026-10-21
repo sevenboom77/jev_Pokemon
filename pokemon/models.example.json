@@ -1,0 +1,105 @@
+[
+  {
+    "id": "agnes",
+    "displayName": "AGNES-3.0-Flash",
+    "route": "battle-agnes",
+    "requestModel": "agnes-3.0-flash",
+    "api": "openai-completions",
+    "reasoning": false,
+    "contextWindow": 128000,
+    "maxTokens": 8192
+  },
+  {
+    "id": "deepseek",
+    "displayName": "DeepSeek-V4.1-Flash",
+    "route": "battle-deepseek",
+    "requestModel": "deepseek-flash",
+    "api": "anthropic-messages",
+    "reasoning": true,
+    "contextWindow": 128000,
+    "maxTokens": 8192
+  },
+  {
+    "id": "glm",
+    "displayName": "GLM-5.3",
+    "route": "battle-glm",
+    "requestModel": "glm-5.3",
+    "api": "openai-completions",
+    "reasoning": true,
+    "contextWindow": 128000,
+    "maxTokens": 8192
+  },
+  {
+    "id": "kimi",
+    "displayName": "Kimi-K3",
+    "route": "battle-kimi",
+    "requestModel": "kimi-k3",
+    "api": "openai-completions",
+    "reasoning": true,
+    "contextWindow": 128000,
+    "maxTokens": 8192
+  },
+  {
+    "id": "mimo",
+    "displayName": "MiMo-V2.6-Pro",
+    "route": "battle-mimo",
+    "requestModel": "mimo-v2.6-pro",
+    "api": "anthropic-messages",
+    "reasoning": true,
+    "contextWindow": 128000,
+    "maxTokens": 8192
+  },
+  {
+    "id": "minimax",
+    "displayName": "MiniMax-M3",
+    "route": "battle-minimax",
+    "requestModel": "minimax-m3",
+    "api": "anthropic-messages",
+    "reasoning": true,
+    "contextWindow": 128000,
+    "maxTokens": 8192
+  },
+  {
+    "id": "qwen",
+    "displayName": "Qwen3.8-Max-0902",
+    "route": "battle-qwen",
+    "requestModel": "qwen3.8-max-0902",
+    "api": "openai-completions",
+    "reasoning": true,
+    "contextWindow": 128000,
+    "maxTokens": 8192,
+    "compat": {
+      "supportsDeveloperRole": false
+    }
+  },
+  {
+    "id": "gemini",
+    "displayName": "Gemini-3.8-Flash-High",
+    "route": "battle-gemini",
+    "requestModel": "gemini-3.8-flash-high",
+    "api": "anthropic-messages",
+    "reasoning": true,
+    "contextWindow": 128000,
+    "maxTokens": 8192
+  },
+  {
+    "id": "gpt",
+    "displayName": "GPT-5.6-Terra",
+    "route": "battle-gpt",
+    "requestModel": "gpt-5.6-terra-bingxing",
+    "api": "anthropic-messages",
+    "reasoning": true,
+    "contextWindow": 128000,
+    "maxTokens": 8192
+  },
+  {
+    "id": "opus",
+    "displayName": "Claude-Opus-4.8",
+    "route": "battle-opus",
+    "requestModel": "claude-opus-4-8",
+    "api": "anthropic-messages",
+    "reasoning": true,
+    "contextWindow": 128000,
+    "maxTokens": 8192
+  }
+]

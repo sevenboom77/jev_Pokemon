@@ -1,0 +1,27 @@
+{
+  "name": "agh-jev-pokemon-arena",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Animated Pokemon videogame battles between two real AGH agents",
+  "scripts": {
+    "battle:build": "node scripts/build-battle-ui.mjs",
+    "battle:serve": "npm run battle:build && node packages/battle-arena/server.mjs",
+    "battle:web:a": "node scripts/battle-web.mjs A",
+    "battle:web:b": "node scripts/battle-web.mjs B",
+    "battle:test": "node --test tests/battle*.test.mjs",
+    "battle:provision": "node --env-file=.env scripts/submission-provision.mjs",
+    "battle:live": "node --env-file=.env scripts/submission-live.mjs",
+    "jev:test": "node packages/jev-client/test.mjs"
+  },
+  "engines": {
+    "node": ">=24.10 <25"
+  },
+  "dependencies": {
+    "pokemon-showdown": "0.11.10",
+    "undici": "8.11.2"
+  },
+  "devDependencies": {
+    "esbuild": "0.16.17"
+  }
+}

@@ -1,0 +1,155 @@
+/** @jsx preact.h */
+import preact from '../../play.pokemonshowdown.com/js/lib/preact';
+import { Net, PSModel } from './utils';
+import { BattlePanel } from './replays-battle';
+import { SearchPanel } from './replays-index';
+import type { ID } from '../../play.pokemonshowdown.com/src/battle-dex';
+declare const Config: any;
+
+export const PSRouter = new class extends PSModel {
+	baseLoc: string;
+	leftLoc: string | null = null;
+	rightLoc: string | null = null;
+	forceSinglePanel = false;
+	shortViewport = false;
+	constructor() {
+		super();
+		const baseLocSlashIndex = document.location.href.lastIndexOf('/');
+		this.baseLoc = document.location.href.slice(0, baseLocSlashIndex + 1);
+		if (Net.defaultRoute) {
+			this.baseLoc = document.location.href.replace(/#.*/, '') + '#';
+		}
+		this.go(document.location.href);
+		this.setSinglePanel(true);
+		if (window.history) window.addEventListener('popstate', e => {
+			PSRouter.popState(e);
+			this.update();
+		});
+		window.onresize = () => {
+			PSRouter.setSinglePanel();
+		};
+	}
+	showingLeft() {
+		return this.leftLoc !== null && (!this.forceSinglePanel || this.rightLoc === null);
+	}
+	showingRight() {
+		return this.rightLoc !== null;
+	}
+	href(route: string | null) {
+		return `${Net.defaultRoute ? '#' : route?.startsWith('?') ? './' : ''}${route || ''}` || '.';
+	}
+	setSinglePanel(init?: boolean) {
+		const singlePanel = window.innerWidth < 1300;
+		const shortViewport = window.innerHeight <= 660;
+		if (this.forceSinglePanel !== singlePanel || this.shortViewport !== shortViewport) {
+			this.forceSinglePanel = singlePanel;
+			this.shortViewport = shortViewport;
+			if (!init) this.update();
+		}
+	}
+	push(href: string): boolean {
+		if (!href.startsWith(this.baseLoc)) return false;
+		if (href.includes('.json') || href.includes('.log') || href.includes('.inputlog')) return false;
+
+		if (this.go(href)) {
+			window.history?.pushState([this.leftLoc, this.rightLoc], '', href);
+		}
+		return true;
+	}
+	/** returns whether the URL should change */
+	go(href: string): boolean {
+		if (!href.startsWith(this.baseLoc) && href + '#' !== this.baseLoc) return false;
+
+		const loc = href.slice(this.baseLoc.length);
+		if (!loc || loc.startsWith('?')) {
+			this.leftLoc = loc;
+			if (this.forceSinglePanel) {
+				this.rightLoc = null;
+			} else {
+				return this.rightLoc === null;
+			}
+		} else {
+			this.rightLoc = loc;
+		}
+		return true;
+	}
+	replace(loc: string) {
+		const href = this.baseLoc + loc;
+		if (this.go(href)) {
+			window.history?.replaceState([this.leftLoc, this.rightLoc], '', href);
+		}
+		return true;
+	}
+	popState(e: PopStateEvent) {
+		if (Array.isArray(e.state)) {
+			const [leftLoc, rightLoc] = e.state;
+			this.leftLoc = leftLoc;
+			this.rightLoc = rightLoc;
+			if (this.forceSinglePanel) this.leftLoc = null;
+		} else {
+			this.leftLoc = null;
+			this.rightLoc = null;
+			this.go(document.location.href);
+		}
+		this.update();
+	}
+};
+
+export class PSReplays extends preact.Component {
+	static darkMode: 'dark' | 'light' | 'auto' = 'auto';
+	user: { id: ID, isLeader: boolean } | null = null;
+	static updateDarkMode() {
+		let dark = this.darkMode === 'dark' ? 'dark' : '';
+		if (this.darkMode === 'auto') {
+			dark = window.matchMedia?.('(prefers-color-scheme: dark)').matches ? 'dark' : '';
+		}
+		document.documentElement.className = dark;
+	}
+	override componentDidMount() {
+		PSRouter.subscribe(() => this.forceUpdate());
+		if (window.history) {
+			this.base!.addEventListener('click', e => {
+				let el = e.target as HTMLElement;
+				for (; el; el = el.parentNode as HTMLElement) {
+					if (el.tagName === 'A' && PSRouter.push((el as HTMLAnchorElement).href)) {
+						e.preventDefault();
+						e.stopImmediatePropagation();
+						this.forceUpdate();
+						return;
+					}
+				}
+			});
+		}
+		// load custom colors from loginserver
+		Net(`https://${Config.routes.client}/config/colors.json`).get().then(response => {
+			const data = JSON.parse(response);
+			Object.assign(Config.customcolors, data);
+		});
+		if (!Net.defaultRoute) Net(`/api/replays/check-login`).get().then(result => {
+			if (!result.startsWith(']')) return;
+			const [userid, isLeader] = result.slice(1).split(',');
+			this.user = { id: userid as ID, isLeader: !!isLeader };
+			this.forceUpdate();
+		});
+	}
+	override render() {
+		const twoColumn = PSRouter.showingLeft() && PSRouter.showingRight();
+		const className = `bar-wrapper${twoColumn ? ' has-sidebar' : ''}${
+			twoColumn && PSRouter.shortViewport ? ' short-viewport' : ''
+		}`;
+		return <div class={className}>
+			{PSRouter.showingLeft() && <SearchPanel id={PSRouter.leftLoc!} user={this.user} />}
+			{PSRouter.showingRight() && <BattlePanel id={PSRouter.rightLoc!} user={this.user} />}
+			<div style={{ clear: 'both' }}></div>
+		</div>;
+	}
+}
+
+preact.render(<PSReplays />, document.getElementById('main')!);
+
+if (window.matchMedia?.('(prefers-color-scheme: dark)').matches) {
+	document.documentElement.className = 'dark';
+}
+window.matchMedia?.('(prefers-color-scheme: dark)').addEventListener('change', event => {
+	if (PSReplays.darkMode === 'auto') document.documentElement.className = event.matches ? "dark" : "";
+});

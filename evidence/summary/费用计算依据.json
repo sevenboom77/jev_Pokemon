@@ -1,0 +1,196 @@
+{
+  "schema": "project-cost-script-recalculation/v1",
+  "date": "2026-10-06",
+  "scope": "Known conditional reference costs over all 282 league attempts, plus a separately owner-reported whole-project spend estimate.",
+  "source": "/Users/USER/code/projects/deepseek-harness/pokemon/evidence/league-jev-20261004/cost-reference-20261005.json",
+  "sourceSha256": "9af5ec5f7825d266ee1c5543471e8e6166fce865fb9920f4331df81ac0a197ff",
+  "recalculation": "Every priced scenario recalculated from recorded token fields and its stored official reference rates. Missing prices remain missing. No provider-usage rows are added to overlapping AGH ledgers.",
+  "models": [
+    {
+      "model": "AGNES-3.0-Flash",
+      "scenarios": []
+    },
+    {
+      "model": "DeepSeek-V4.1-Flash",
+      "scenarios": [
+        {
+          "currency": "USD",
+          "variant": "off-peak",
+          "knownReferenceSubtotal": 1.463596566,
+          "unpricedBuckets": []
+        }
+      ]
+    },
+    {
+      "model": "GLM-5.3",
+      "scenarios": [
+        {
+          "currency": "CNY",
+          "variant": "standard",
+          "knownReferenceSubtotal": 240.131328,
+          "unpricedBuckets": []
+        }
+      ]
+    },
+    {
+      "model": "Kimi-K3",
+      "scenarios": [
+        {
+          "currency": "CNY",
+          "variant": "cny-cache-5m",
+          "knownReferenceSubtotal": 254.54825599999998,
+          "unpricedBuckets": []
+        }
+      ]
+    },
+    {
+      "model": "MiMo-V2.6-Pro",
+      "scenarios": [
+        {
+          "currency": "CNY",
+          "variant": "standard-cny",
+          "knownReferenceSubtotal": 26.8331556,
+          "unpricedBuckets": []
+        }
+      ]
+    },
+    {
+      "model": "MiniMax-M3",
+      "scenarios": [
+        {
+          "currency": "CNY",
+          "variant": "standard-up-to-512k",
+          "knownReferenceSubtotal": 103.36630248,
+          "unpricedBuckets": []
+        },
+        {
+          "currency": "CNY",
+          "variant": "standard-input-field-includes-cache-hypothesis",
+          "knownReferenceSubtotal": 24.02035608,
+          "unpricedBuckets": []
+        }
+      ]
+    },
+    {
+      "model": "Qwen3.8-Max-0902",
+      "scenarios": [
+        {
+          "currency": "CNY",
+          "variant": "beijing-or-global",
+          "knownReferenceSubtotal": 131.785788,
+          "unpricedBuckets": [
+            "cacheRead"
+          ]
+        },
+        {
+          "currency": "CNY",
+          "variant": "singapore-international",
+          "knownReferenceSubtotal": 164.602878063,
+          "unpricedBuckets": [
+            "cacheRead"
+          ]
+        }
+      ]
+    },
+    {
+      "model": "Gemini-3.8-Flash-High",
+      "scenarios": [
+        {
+          "currency": "USD",
+          "variant": "2026-standard-intro",
+          "knownReferenceSubtotal": 16.939560075,
+          "unpricedBuckets": []
+        }
+      ]
+    },
+    {
+      "model": "GPT-5.6-Terra",
+      "scenarios": [
+        {
+          "currency": "USD",
+          "variant": "standard-up-to-272k",
+          "knownReferenceSubtotal": 34.000659,
+          "unpricedBuckets": []
+        }
+      ]
+    },
+    {
+      "model": "Claude-Opus-4.8",
+      "scenarios": [
+        {
+          "currency": "USD",
+          "variant": "standard-cache-5m",
+          "knownReferenceSubtotal": 183.7933685,
+          "unpricedBuckets": []
+        },
+        {
+          "currency": "USD",
+          "variant": "standard-cache-1h",
+          "knownReferenceSubtotal": 284.315351,
+          "unpricedBuckets": []
+        }
+      ]
+    },
+    {
+      "model": "Jev-1.13.0",
+      "scenarios": [
+        {
+          "currency": "USD",
+          "variant": "advertised-input-rate",
+          "knownReferenceSubtotal": 0.7591681440000001,
+          "unpricedBuckets": [
+            "output"
+          ]
+        }
+      ]
+    }
+  ],
+  "knownReferenceSubtotalsByCurrency": {
+    "USD": {
+      "low": 236.956352285,
+      "high": 337.478334785
+    },
+    "CNY": {
+      "low": 677.3188836800001,
+      "high": 789.481920143
+    }
+  },
+  "fx": {
+    "USDToCNY": 6.7351,
+    "date": "2026-09-30",
+    "source": "https://www.safe.gov.cn/AppStructured/hlw/RMBQuery.do?COLLCC=546877760",
+    "quotedUSDPer100ToCNY": 673.51,
+    "evidence": "Verified against the live parsed official SAFE table on 2026-10-06: 2026-09-30 USD 673.51 CNY per 100 USD. Used only as a reference conversion; not a channel billing exchange rate."
+  },
+  "knownConditionalReferenceSubtotalCNY": {
+    "low": 2273.2436119547037,
+    "high": 3062.4322527534537
+  },
+  "unpricedOrUnreconciled": [
+    "AGNES per-token/channel spend",
+    "Jev output/per-request spend",
+    "Qwen cache reads",
+    "Other project calls outside this league",
+    "Experiment/server/other resource charges",
+    "Actual channel tariffs and deductions"
+  ],
+  "ownerReportedOverallProjectCostCNY": {
+    "low": 3000,
+    "high": 4000,
+    "basis": "User-edited block 61026 and direct user report on 2026-10-06; includes model calls, experiment runtime and related resources."
+  },
+  "scriptOverallCostCNY": {
+    "approximate": 3062,
+    "display": "模型调用估算投入约3062元",
+    "method": "User-selected rounded upper conditional known reference subtotal: round(3062.4322527534537) = 3062 CNY. Includes recorded failed/retried league attempts; uses retained reference rates and USD/CNY 6.7351. Not a reconciled actual invoice total; missing tariffs and runtime-resource costs remain unpriced.",
+    "selectedBy": "Direct user instruction on 2026-10-06"
+  },
+  "actualBillReconciledTotalCNY": null,
+  "noNewBattleModelCalls": true,
+  "previousScriptFigure": {
+    "approximate": 3500,
+    "display": "整体投入约3500元",
+    "method": "Arithmetic midpoint of the owner-provided whole-project interval, (3000+4000)/2; not a line-item invoice sum. No residual amount is allocated to invented resource charges."
+  },
+  "presentationRevision": "2026-10-06-user-selected-3062"
+}

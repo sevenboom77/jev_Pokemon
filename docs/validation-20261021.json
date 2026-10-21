@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-21",
+  "platform": "Windows",
+  "node": "24.19.0",
+  "agh_dependency_install": "pnpm 11.25.0 --frozen-lockfile --ignore-scripts",
+  "pokemon_dependency_install": "npm ci --ignore-scripts",
+  "animation_build": "PASS",
+  "battle_tests": {
+    "passed": 75,
+    "failed": 0
+  },
+  "jev_client_tests": {
+    "passed": 10,
+    "failed": 0
+  },
+  "paid_model_calls": 0,
+  "real_league_rerun": false,
+  "test_packaging_adaptation": "pokemon/tests/fixtures/battle-remote-session.source.json"
+}

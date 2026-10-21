@@ -1,0 +1,4682 @@
+[
+  {
+    "number": 1,
+    "matchId": "battle-jev-b7cf97b7-555a8b93-a1",
+    "blockId": "agnes-vs-deepseek",
+    "attempt": 1,
+    "models": {
+      "A": "AGNES-3.0-Flash",
+      "B": "DeepSeek-V4.1-Flash"
+    },
+    "winnerModelId": "deepseek",
+    "playedTurns": 7,
+    "elapsedMs": 223809,
+    "battlePath": "03-运行证据/runs/battle-jev-b7cf97b7-555a8b93-a1/battle.json",
+    "seats": {
+      "A": {
+        "gameNumber": 1,
+        "matchId": "battle-jev-b7cf97b7-555a8b93-a1",
+        "seat": "A",
+        "model": "AGNES-3.0-Flash",
+        "requestModel": "agnes-3.0-flash",
+        "responseModels": [
+          "agnes-3.0-flash"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:860cc219314a01d7",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-555a8b93-a1/agh-a.jsonl",
+        "events": 552,
+        "toolCalls": 31,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "eb0aa1b209189ada29496cd7a45c52f8f9bdf944befc22f7fa4590205681ce9a"
+      },
+      "B": {
+        "gameNumber": 1,
+        "matchId": "battle-jev-b7cf97b7-555a8b93-a1",
+        "seat": "B",
+        "model": "DeepSeek-V4.1-Flash",
+        "requestModel": "deepseek-flash",
+        "responseModels": [
+          "deepseek-flash"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:bcd43f4772d2e224",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-555a8b93-a1/agh-b.jsonl",
+        "events": 517,
+        "toolCalls": 28,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "976395798ae6e4f4332f3937446d945ca09ff024db89657c6d26c0a50a3c870a"
+      }
+    }
+  },
+  {
+    "number": 2,
+    "matchId": "battle-jev-b7cf97b7-5b3943af-a1",
+    "blockId": "agnes-vs-deepseek",
+    "attempt": 1,
+    "models": {
+      "A": "DeepSeek-V4.1-Flash",
+      "B": "AGNES-3.0-Flash"
+    },
+    "winnerModelId": "deepseek",
+    "playedTurns": 13,
+    "elapsedMs": 747713,
+    "battlePath": "03-运行证据/runs/battle-jev-b7cf97b7-5b3943af-a1/battle.json",
+    "seats": {
+      "A": {
+        "gameNumber": 2,
+        "matchId": "battle-jev-b7cf97b7-5b3943af-a1",
+        "seat": "A",
+        "model": "DeepSeek-V4.1-Flash",
+        "requestModel": "deepseek-flash",
+        "responseModels": [
+          "deepseek-flash"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:13643377d0bfcbee",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-5b3943af-a1/agh-a.jsonl",
+        "events": 1211,
+        "toolCalls": 63,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "58e2c493d2cd10ab3501cf7f8d03394ba448370eebc13fb9e963ca623687e8df"
+      },
+      "B": {
+        "gameNumber": 2,
+        "matchId": "battle-jev-b7cf97b7-5b3943af-a1",
+        "seat": "B",
+        "model": "AGNES-3.0-Flash",
+        "requestModel": "agnes-3.0-flash",
+        "responseModels": [
+          "agnes-3.0-flash"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:44ddee02c303ace4",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-5b3943af-a1/agh-b.jsonl",
+        "events": 1136,
+        "toolCalls": 65,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "4049b2f5df6b9bdabed292f78b5346f82891700809cabf58987b11cdbcdcf66d"
+      }
+    }
+  },
+  {
+    "number": 3,
+    "matchId": "battle-jev-b7cf97b7-7260512b-a4",
+    "blockId": "agnes-vs-glm",
+    "attempt": 4,
+    "models": {
+      "A": "AGNES-3.0-Flash",
+      "B": "GLM-5.3"
+    },
+    "winnerModelId": "agnes",
+    "playedTurns": 9,
+    "elapsedMs": 1412728,
+    "battlePath": "03-运行证据/runs/battle-jev-b7cf97b7-7260512b-a4/battle.json",
+    "seats": {
+      "A": {
+        "gameNumber": 3,
+        "matchId": "battle-jev-b7cf97b7-7260512b-a4",
+        "seat": "A",
+        "model": "AGNES-3.0-Flash",
+        "requestModel": "agnes-3.0-flash",
+        "responseModels": [
+          "agnes-3.0-flash"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:7de0c080f8fbed57",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-7260512b-a4/agh-a.jsonl",
+        "events": 1239,
+        "toolCalls": 69,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "fc5d7a4197b3cca0563c12bfc69bdd37335754b2ec856132ca1457320996c118"
+      },
+      "B": {
+        "gameNumber": 3,
+        "matchId": "battle-jev-b7cf97b7-7260512b-a4",
+        "seat": "B",
+        "model": "GLM-5.3",
+        "requestModel": "glm-5.3",
+        "responseModels": [
+          "glm-5.3"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:9ee27b5ac47b3a4e",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-7260512b-a4/agh-b.jsonl",
+        "events": 1081,
+        "toolCalls": 50,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "9ffbee7cccf313bc2d21efe44458fb185f9ad596cff49254c0b5bb6c43e43e17"
+      }
+    }
+  },
+  {
+    "number": 4,
+    "matchId": "battle-jev-b7cf97b7-3c3bfc09-a4",
+    "blockId": "agnes-vs-glm",
+    "attempt": 4,
+    "models": {
+      "A": "GLM-5.3",
+      "B": "AGNES-3.0-Flash"
+    },
+    "winnerModelId": "agnes",
+    "playedTurns": 8,
+    "elapsedMs": 1679063,
+    "battlePath": "03-运行证据/runs/battle-jev-b7cf97b7-3c3bfc09-a4/battle.json",
+    "seats": {
+      "A": {
+        "gameNumber": 4,
+        "matchId": "battle-jev-b7cf97b7-3c3bfc09-a4",
+        "seat": "A",
+        "model": "GLM-5.3",
+        "requestModel": "glm-5.3",
+        "responseModels": [
+          "glm-5.3"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:b82814ca8440d453",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-3c3bfc09-a4/agh-a.jsonl",
+        "events": 1081,
+        "toolCalls": 44,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "4d1e0940226219d4fb17978f2614d425995a62663151a5bfeb7f4da2daf14b94"
+      },
+      "B": {
+        "gameNumber": 4,
+        "matchId": "battle-jev-b7cf97b7-3c3bfc09-a4",
+        "seat": "B",
+        "model": "AGNES-3.0-Flash",
+        "requestModel": "agnes-3.0-flash",
+        "responseModels": [
+          "agnes-3.0-flash"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:fa93972e3a63c38e",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-3c3bfc09-a4/agh-b.jsonl",
+        "events": 1144,
+        "toolCalls": 65,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "7f4cc3e0faa20ce7b183c23097fd754e8050418f53395e59b9e66507eb5a05f5"
+      }
+    }
+  },
+  {
+    "number": 5,
+    "matchId": "battle-jev-b7cf97b7-d643984b-a1",
+    "blockId": "agnes-vs-kimi",
+    "attempt": 1,
+    "models": {
+      "A": "AGNES-3.0-Flash",
+      "B": "Kimi-K3"
+    },
+    "winnerModelId": "kimi",
+    "playedTurns": 8,
+    "elapsedMs": 1026926,
+    "battlePath": "03-运行证据/runs/battle-jev-b7cf97b7-d643984b-a1/battle.json",
+    "seats": {
+      "A": {
+        "gameNumber": 5,
+        "matchId": "battle-jev-b7cf97b7-d643984b-a1",
+        "seat": "A",
+        "model": "AGNES-3.0-Flash",
+        "requestModel": "agnes-3.0-flash",
+        "responseModels": [
+          "agnes-3.0-flash"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:9542aee69f9823e8",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-d643984b-a1/agh-a.jsonl",
+        "events": 669,
+        "toolCalls": 38,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "28d271e3139a749d8e71e71c99d25d2d80a537d83ad42275f088d5bf0dd809d6"
+      },
+      "B": {
+        "gameNumber": 5,
+        "matchId": "battle-jev-b7cf97b7-d643984b-a1",
+        "seat": "B",
+        "model": "Kimi-K3",
+        "requestModel": "kimi-k3",
+        "responseModels": [
+          "kimi-k3"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:09e8d4c5336f17c3",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-d643984b-a1/agh-b.jsonl",
+        "events": 791,
+        "toolCalls": 43,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "a960b5b7b70f3a79c846ac33b5ca9fb07bea1b35e864d6f34a7a76dfcff2bc21"
+      }
+    }
+  },
+  {
+    "number": 6,
+    "matchId": "battle-jev-b7cf97b7-661ee5d8-a1",
+    "blockId": "agnes-vs-kimi",
+    "attempt": 1,
+    "models": {
+      "A": "Kimi-K3",
+      "B": "AGNES-3.0-Flash"
+    },
+    "winnerModelId": "agnes",
+    "playedTurns": 10,
+    "elapsedMs": 1345350,
+    "battlePath": "03-运行证据/runs/battle-jev-b7cf97b7-661ee5d8-a1/battle.json",
+    "seats": {
+      "A": {
+        "gameNumber": 6,
+        "matchId": "battle-jev-b7cf97b7-661ee5d8-a1",
+        "seat": "A",
+        "model": "Kimi-K3",
+        "requestModel": "kimi-k3",
+        "responseModels": [
+          "kimi-k3"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:57ebb8faad4281dc",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-661ee5d8-a1/agh-a.jsonl",
+        "events": 802,
+        "toolCalls": 43,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "64b0f765830739dd24a0adea19b01732665572b3c5f01e4b978809b95e6607c6"
+      },
+      "B": {
+        "gameNumber": 6,
+        "matchId": "battle-jev-b7cf97b7-661ee5d8-a1",
+        "seat": "B",
+        "model": "AGNES-3.0-Flash",
+        "requestModel": "agnes-3.0-flash",
+        "responseModels": [
+          "agnes-3.0-flash"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:53c6f5b6c9032b81",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-661ee5d8-a1/agh-b.jsonl",
+        "events": 868,
+        "toolCalls": 47,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "163eace704607d5dd9c92e41300a4394a8088d75fb6bc6fa855276441345d386"
+      }
+    }
+  },
+  {
+    "number": 7,
+    "matchId": "battle-jev-b7cf97b7-4804408d-a4",
+    "blockId": "agnes-vs-mimo",
+    "attempt": 4,
+    "models": {
+      "A": "AGNES-3.0-Flash",
+      "B": "MiMo-V2.6-Pro"
+    },
+    "winnerModelId": "mimo",
+    "playedTurns": 7,
+    "elapsedMs": 1149547,
+    "battlePath": "03-运行证据/runs/battle-jev-b7cf97b7-4804408d-a4/battle.json",
+    "seats": {
+      "A": {
+        "gameNumber": 7,
+        "matchId": "battle-jev-b7cf97b7-4804408d-a4",
+        "seat": "A",
+        "model": "AGNES-3.0-Flash",
+        "requestModel": "agnes-3.0-flash",
+        "responseModels": [
+          "agnes-3.0-flash"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:5a4ff0128331faa8",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-4804408d-a4/agh-a.jsonl",
+        "events": 1044,
+        "toolCalls": 59,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "ff3f5f3c39e8eafcab5f71ee08443ca86b385a3a5cc25d66d016b818d066dbc4"
+      },
+      "B": {
+        "gameNumber": 7,
+        "matchId": "battle-jev-b7cf97b7-4804408d-a4",
+        "seat": "B",
+        "model": "MiMo-V2.6-Pro",
+        "requestModel": "mimo-v2.6-pro",
+        "responseModels": [
+          "mimo-v2.6-pro"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:7982efb085dd8ca1",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-4804408d-a4/agh-b.jsonl",
+        "events": 879,
+        "toolCalls": 38,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "a75be5f972529c5d816ad713666d7895eefd8573841a6b96e42dabe9709f62f1"
+      }
+    }
+  },
+  {
+    "number": 8,
+    "matchId": "battle-jev-b7cf97b7-aa016012-a4",
+    "blockId": "agnes-vs-mimo",
+    "attempt": 4,
+    "models": {
+      "A": "MiMo-V2.6-Pro",
+      "B": "AGNES-3.0-Flash"
+    },
+    "winnerModelId": "agnes",
+    "playedTurns": 13,
+    "elapsedMs": 3247056,
+    "battlePath": "03-运行证据/runs/battle-jev-b7cf97b7-aa016012-a4/battle.json",
+    "seats": {
+      "A": {
+        "gameNumber": 8,
+        "matchId": "battle-jev-b7cf97b7-aa016012-a4",
+        "seat": "A",
+        "model": "MiMo-V2.6-Pro",
+        "requestModel": "mimo-v2.6-pro",
+        "responseModels": [
+          "mimo-v2.6-pro"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:c4c368b0a2837bbc",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-aa016012-a4/agh-a.jsonl",
+        "events": 1718,
+        "toolCalls": 65,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "a2c345ca2255ecbb87889d51dcf8921ffbcdf3572c996ebda32995a5942ca441"
+      },
+      "B": {
+        "gameNumber": 8,
+        "matchId": "battle-jev-b7cf97b7-aa016012-a4",
+        "seat": "B",
+        "model": "AGNES-3.0-Flash",
+        "requestModel": "agnes-3.0-flash",
+        "responseModels": [
+          "agnes-3.0-flash"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:25d1cca99873bdab",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-aa016012-a4/agh-b.jsonl",
+        "events": 2003,
+        "toolCalls": 114,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "f53ba3720a9841605c677efbd8b50558199a36ce6f1ee7efef666c9045c8604e"
+      }
+    }
+  },
+  {
+    "number": 9,
+    "matchId": "battle-jev-b7cf97b7-1b8b8a2e-a2",
+    "blockId": "agnes-vs-minimax",
+    "attempt": 2,
+    "models": {
+      "A": "AGNES-3.0-Flash",
+      "B": "MiniMax-M3"
+    },
+    "winnerModelId": "minimax",
+    "playedTurns": 9,
+    "elapsedMs": 452231,
+    "battlePath": "03-运行证据/runs/battle-jev-b7cf97b7-1b8b8a2e-a2/battle.json",
+    "seats": {
+      "A": {
+        "gameNumber": 9,
+        "matchId": "battle-jev-b7cf97b7-1b8b8a2e-a2",
+        "seat": "A",
+        "model": "AGNES-3.0-Flash",
+        "requestModel": "agnes-3.0-flash",
+        "responseModels": [
+          "agnes-3.0-flash"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:fdb01a0ad8a35b2a",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-1b8b8a2e-a2/agh-a.jsonl",
+        "events": 713,
+        "toolCalls": 40,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "6bfabb8234a252c0f3a3b1fe89ef9d7db9d179d22af1e684ae0588261c2d0f27"
+      },
+      "B": {
+        "gameNumber": 9,
+        "matchId": "battle-jev-b7cf97b7-1b8b8a2e-a2",
+        "seat": "B",
+        "model": "MiniMax-M3",
+        "requestModel": "minimax-m3",
+        "responseModels": [
+          "minimax-m3"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:9ada4402573be35c",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-1b8b8a2e-a2/agh-b.jsonl",
+        "events": 657,
+        "toolCalls": 37,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "56449b82992830f49404a7729daa7b9450049c7fa1122b9de4d7a6539250d5c1"
+      }
+    }
+  },
+  {
+    "number": 10,
+    "matchId": "battle-jev-b7cf97b7-0fd75e2e-a2",
+    "blockId": "agnes-vs-minimax",
+    "attempt": 2,
+    "models": {
+      "A": "MiniMax-M3",
+      "B": "AGNES-3.0-Flash"
+    },
+    "winnerModelId": "agnes",
+    "playedTurns": 10,
+    "elapsedMs": 481669,
+    "battlePath": "03-运行证据/runs/battle-jev-b7cf97b7-0fd75e2e-a2/battle.json",
+    "seats": {
+      "A": {
+        "gameNumber": 10,
+        "matchId": "battle-jev-b7cf97b7-0fd75e2e-a2",
+        "seat": "A",
+        "model": "MiniMax-M3",
+        "requestModel": "minimax-m3",
+        "responseModels": [
+          "minimax-m3"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:9f434215654d0fba",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-0fd75e2e-a2/agh-a.jsonl",
+        "events": 758,
+        "toolCalls": 43,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "6e2145d448be278e037dfbf1e1d4260a91785e91700697e022aa0ca255ee67a1"
+      },
+      "B": {
+        "gameNumber": 10,
+        "matchId": "battle-jev-b7cf97b7-0fd75e2e-a2",
+        "seat": "B",
+        "model": "AGNES-3.0-Flash",
+        "requestModel": "agnes-3.0-flash",
+        "responseModels": [
+          "agnes-3.0-flash"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:fb97f044872b08b0",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-0fd75e2e-a2/agh-b.jsonl",
+        "events": 786,
+        "toolCalls": 44,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "372f8a88709c6570bae47d5cad3ce8e8c4795e909b82c2cd2603e2c5b749852b"
+      }
+    }
+  },
+  {
+    "number": 11,
+    "matchId": "battle-jev-b7cf97b7-dfd9d0d9-a4",
+    "blockId": "agnes-vs-qwen",
+    "attempt": 4,
+    "models": {
+      "A": "AGNES-3.0-Flash",
+      "B": "Qwen3.8-Max-0902"
+    },
+    "winnerModelId": "qwen",
+    "playedTurns": 9,
+    "elapsedMs": 598352,
+    "battlePath": "03-运行证据/runs/battle-jev-b7cf97b7-dfd9d0d9-a4/battle.json",
+    "seats": {
+      "A": {
+        "gameNumber": 11,
+        "matchId": "battle-jev-b7cf97b7-dfd9d0d9-a4",
+        "seat": "A",
+        "model": "AGNES-3.0-Flash",
+        "requestModel": "agnes-3.0-flash",
+        "responseModels": [
+          "agnes-3.0-flash"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:71f8efcf176e11ea",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-dfd9d0d9-a4/agh-a.jsonl",
+        "events": 723,
+        "toolCalls": 41,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "27d8844326f23bd7822e86507ed449840e3c83319ae64d911ceee6fefab3522a"
+      },
+      "B": {
+        "gameNumber": 11,
+        "matchId": "battle-jev-b7cf97b7-dfd9d0d9-a4",
+        "seat": "B",
+        "model": "Qwen3.8-Max-0902",
+        "requestModel": "qwen3.8-max-0902",
+        "responseModels": [
+          "qwen3.8-max-0902"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:229d9dc0f168e4f2",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-dfd9d0d9-a4/agh-b.jsonl",
+        "events": 696,
+        "toolCalls": 34,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "f390df1e81563ae5c063b7c6b660b9f00c0670ba8fbc9f5d5d81b117b495d4af"
+      }
+    }
+  },
+  {
+    "number": 12,
+    "matchId": "battle-jev-b7cf97b7-7a8c03ad-a4",
+    "blockId": "agnes-vs-qwen",
+    "attempt": 4,
+    "models": {
+      "A": "Qwen3.8-Max-0902",
+      "B": "AGNES-3.0-Flash"
+    },
+    "winnerModelId": "agnes",
+    "playedTurns": 10,
+    "elapsedMs": 1232505,
+    "battlePath": "03-运行证据/runs/battle-jev-b7cf97b7-7a8c03ad-a4/battle.json",
+    "seats": {
+      "A": {
+        "gameNumber": 12,
+        "matchId": "battle-jev-b7cf97b7-7a8c03ad-a4",
+        "seat": "A",
+        "model": "Qwen3.8-Max-0902",
+        "requestModel": "qwen3.8-max-0902",
+        "responseModels": [
+          "qwen3.8-max-0902"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:45d84b174dc490e7",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-7a8c03ad-a4/agh-a.jsonl",
+        "events": 922,
+        "toolCalls": 41,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "0d28d354453aa8896c9c7515dea04428277fe9d6dde98e5d3da44f6754d64840"
+      },
+      "B": {
+        "gameNumber": 12,
+        "matchId": "battle-jev-b7cf97b7-7a8c03ad-a4",
+        "seat": "B",
+        "model": "AGNES-3.0-Flash",
+        "requestModel": "agnes-3.0-flash",
+        "responseModels": [
+          "agnes-3.0-flash"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:d35ef37702b8c86b",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-7a8c03ad-a4/agh-b.jsonl",
+        "events": 1050,
+        "toolCalls": 60,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "ede8cd7e0f8b5b4ab5480471658df0826b6de231dcf8742c9b789631aea1c2f1"
+      }
+    }
+  },
+  {
+    "number": 13,
+    "matchId": "battle-jev-b7cf97b7-b75cd2b0-a1",
+    "blockId": "agnes-vs-gemini",
+    "attempt": 1,
+    "models": {
+      "A": "AGNES-3.0-Flash",
+      "B": "Gemini-3.8-Flash-High"
+    },
+    "winnerModelId": "gemini",
+    "playedTurns": 8,
+    "elapsedMs": 265996,
+    "battlePath": "03-运行证据/runs/battle-jev-b7cf97b7-b75cd2b0-a1/battle.json",
+    "seats": {
+      "A": {
+        "gameNumber": 13,
+        "matchId": "battle-jev-b7cf97b7-b75cd2b0-a1",
+        "seat": "A",
+        "model": "AGNES-3.0-Flash",
+        "requestModel": "agnes-3.0-flash",
+        "responseModels": [
+          "agnes-3.0-flash"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:a956eef961e9638e",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-b75cd2b0-a1/agh-a.jsonl",
+        "events": 685,
+        "toolCalls": 38,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "e7d1e9a345b6a2efb9a6c1e4bdc57768fbc623102382a5e7a6796cefdb4185d3"
+      },
+      "B": {
+        "gameNumber": 13,
+        "matchId": "battle-jev-b7cf97b7-b75cd2b0-a1",
+        "seat": "B",
+        "model": "Gemini-3.8-Flash-High",
+        "requestModel": "gemini-3.8-flash-high",
+        "responseModels": [
+          "gemini-3.8-flash-n"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:90c6effa4943af8c",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-b75cd2b0-a1/agh-b.jsonl",
+        "events": 686,
+        "toolCalls": 39,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "9cae66858df264d9ffa2fb770b4f1a99e970bc9e515c0dfb9726ecd28e90f98e"
+      }
+    }
+  },
+  {
+    "number": 14,
+    "matchId": "battle-jev-b7cf97b7-6965c4e2-a1",
+    "blockId": "agnes-vs-gemini",
+    "attempt": 1,
+    "models": {
+      "A": "Gemini-3.8-Flash-High",
+      "B": "AGNES-3.0-Flash"
+    },
+    "winnerModelId": "agnes",
+    "playedTurns": 11,
+    "elapsedMs": 363970,
+    "battlePath": "03-运行证据/runs/battle-jev-b7cf97b7-6965c4e2-a1/battle.json",
+    "seats": {
+      "A": {
+        "gameNumber": 14,
+        "matchId": "battle-jev-b7cf97b7-6965c4e2-a1",
+        "seat": "A",
+        "model": "Gemini-3.8-Flash-High",
+        "requestModel": "gemini-3.8-flash-high",
+        "responseModels": [
+          "gemini-3.8-flash-n"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:db3de1063274f66b",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-6965c4e2-a1/agh-a.jsonl",
+        "events": 958,
+        "toolCalls": 55,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "0dec938ddecffcffc28d019ba47bea972249b2cad99cce918ebd184449940b5b"
+      },
+      "B": {
+        "gameNumber": 14,
+        "matchId": "battle-jev-b7cf97b7-6965c4e2-a1",
+        "seat": "B",
+        "model": "AGNES-3.0-Flash",
+        "requestModel": "agnes-3.0-flash",
+        "responseModels": [
+          "agnes-3.0-flash"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:bb95c2e773f4b1ae",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-6965c4e2-a1/agh-b.jsonl",
+        "events": 724,
+        "toolCalls": 40,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "5894926a83a4fb5f0a719c285d42671baf1729fe708fa81cdd842edb38a218dc"
+      }
+    }
+  },
+  {
+    "number": 15,
+    "matchId": "battle-jev-b7cf97b7-04aa1b45-a1",
+    "blockId": "agnes-vs-gpt",
+    "attempt": 1,
+    "models": {
+      "A": "AGNES-3.0-Flash",
+      "B": "GPT-5.6-Terra"
+    },
+    "winnerModelId": "gpt",
+    "playedTurns": 10,
+    "elapsedMs": 1499714,
+    "battlePath": "03-运行证据/runs/battle-jev-b7cf97b7-04aa1b45-a1/battle.json",
+    "seats": {
+      "A": {
+        "gameNumber": 15,
+        "matchId": "battle-jev-b7cf97b7-04aa1b45-a1",
+        "seat": "A",
+        "model": "AGNES-3.0-Flash",
+        "requestModel": "agnes-3.0-flash",
+        "responseModels": [
+          "agnes-3.0-flash"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:91e5359881653282",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-04aa1b45-a1/agh-a.jsonl",
+        "events": 834,
+        "toolCalls": 46,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "bec6a48a3e2121bfbc55a38056e07ce5f3054dd7383dae7ad9a50cf957268025"
+      },
+      "B": {
+        "gameNumber": 15,
+        "matchId": "battle-jev-b7cf97b7-04aa1b45-a1",
+        "seat": "B",
+        "model": "GPT-5.6-Terra",
+        "requestModel": "gpt-5.6-terra-bingxing",
+        "responseModels": [
+          "GPT-5.6-Terra"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:25800c3e2516b41a",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-04aa1b45-a1/agh-b.jsonl",
+        "events": 1029,
+        "toolCalls": 56,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "ab1f66839d2371ce9ad3dd41a4f1c8d76b02f05ec5d7177afeb5edbfe579422f"
+      }
+    }
+  },
+  {
+    "number": 16,
+    "matchId": "battle-jev-b7cf97b7-0ecd8508-a1",
+    "blockId": "agnes-vs-gpt",
+    "attempt": 1,
+    "models": {
+      "A": "GPT-5.6-Terra",
+      "B": "AGNES-3.0-Flash"
+    },
+    "winnerModelId": "agnes",
+    "playedTurns": 13,
+    "elapsedMs": 1669708,
+    "battlePath": "03-运行证据/runs/battle-jev-b7cf97b7-0ecd8508-a1/battle.json",
+    "seats": {
+      "A": {
+        "gameNumber": 16,
+        "matchId": "battle-jev-b7cf97b7-0ecd8508-a1",
+        "seat": "A",
+        "model": "GPT-5.6-Terra",
+        "requestModel": "gpt-5.6-terra-bingxing",
+        "responseModels": [
+          "GPT-5.6-Terra"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:974a80eaaa9750e8",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-0ecd8508-a1/agh-a.jsonl",
+        "events": 1348,
+        "toolCalls": 74,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "0245b18892dadb5693b1f167348b4864d37b8e17e1fb7f1a2b24f276acd6b9a4"
+      },
+      "B": {
+        "gameNumber": 16,
+        "matchId": "battle-jev-b7cf97b7-0ecd8508-a1",
+        "seat": "B",
+        "model": "AGNES-3.0-Flash",
+        "requestModel": "agnes-3.0-flash",
+        "responseModels": [
+          "agnes-3.0-flash"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:3753efeb695f27df",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-0ecd8508-a1/agh-b.jsonl",
+        "events": 1103,
+        "toolCalls": 63,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "c524e02630775dbcab5bf5ba29c4d95b96e5bfdb6bbb687c0b336ede1d964a4c"
+      }
+    }
+  },
+  {
+    "number": 17,
+    "matchId": "battle-jev-b7cf97b7-be563dc2-a0",
+    "blockId": "agnes-vs-opus",
+    "attempt": 0,
+    "models": {
+      "A": "AGNES-3.0-Flash",
+      "B": "Claude-Opus-4.8"
+    },
+    "winnerModelId": "opus",
+    "playedTurns": 8,
+    "elapsedMs": 424942,
+    "battlePath": "03-运行证据/runs/battle-jev-b7cf97b7-be563dc2-a0/battle.json",
+    "seats": {
+      "A": {
+        "gameNumber": 17,
+        "matchId": "battle-jev-b7cf97b7-be563dc2-a0",
+        "seat": "A",
+        "model": "AGNES-3.0-Flash",
+        "requestModel": "agnes-3.0-flash",
+        "responseModels": [
+          "agnes-3.0-flash"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:5bce9fbcfeedd1c6",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-be563dc2-a0/agh-a.jsonl",
+        "events": 707,
+        "toolCalls": 38,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "37d4ecfb4e97264037aece310e91061520517e0eccdbd3155c0d2417a4790add"
+      },
+      "B": {
+        "gameNumber": 17,
+        "matchId": "battle-jev-b7cf97b7-be563dc2-a0",
+        "seat": "B",
+        "model": "Claude-Opus-4.8",
+        "requestModel": "claude-opus-4-8",
+        "responseModels": [
+          "claude-opus-4-8"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:29d46f5a4ef214cc",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-be563dc2-a0/agh-b.jsonl",
+        "events": 793,
+        "toolCalls": 43,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "403e74993bbab07b6e91e58ddd2b7ff36164d284c26b17af4cb965f14497f305"
+      }
+    }
+  },
+  {
+    "number": 18,
+    "matchId": "battle-jev-b7cf97b7-4923bc3d-a0",
+    "blockId": "agnes-vs-opus",
+    "attempt": 0,
+    "models": {
+      "A": "Claude-Opus-4.8",
+      "B": "AGNES-3.0-Flash"
+    },
+    "winnerModelId": "agnes",
+    "playedTurns": 9,
+    "elapsedMs": 404252,
+    "battlePath": "03-运行证据/runs/battle-jev-b7cf97b7-4923bc3d-a0/battle.json",
+    "seats": {
+      "A": {
+        "gameNumber": 18,
+        "matchId": "battle-jev-b7cf97b7-4923bc3d-a0",
+        "seat": "A",
+        "model": "Claude-Opus-4.8",
+        "requestModel": "claude-opus-4-8",
+        "responseModels": [
+          "claude-opus-4-8"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:7d8dbe0be039c905",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-4923bc3d-a0/agh-a.jsonl",
+        "events": 671,
+        "toolCalls": 36,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "db0f6976b576ad50c7727b434d58da8b02e34c0f8288f3ccd86377d8c49e0d5b"
+      },
+      "B": {
+        "gameNumber": 18,
+        "matchId": "battle-jev-b7cf97b7-4923bc3d-a0",
+        "seat": "B",
+        "model": "AGNES-3.0-Flash",
+        "requestModel": "agnes-3.0-flash",
+        "responseModels": [
+          "agnes-3.0-flash"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:b15c3a3a93172e76",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-4923bc3d-a0/agh-b.jsonl",
+        "events": 637,
+        "toolCalls": 36,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "9ee8923dbc381169e1c315129f8c5f512bd4a7c528f65d12f9004ff79b5f7ab7"
+      }
+    }
+  },
+  {
+    "number": 19,
+    "matchId": "battle-jev-b7cf97b7-ded24950-a2",
+    "blockId": "deepseek-vs-glm",
+    "attempt": 2,
+    "models": {
+      "A": "DeepSeek-V4.1-Flash",
+      "B": "GLM-5.3"
+    },
+    "winnerModelId": "glm",
+    "playedTurns": 15,
+    "elapsedMs": 909439,
+    "battlePath": "03-运行证据/runs/battle-jev-b7cf97b7-ded24950-a2/battle.json",
+    "seats": {
+      "A": {
+        "gameNumber": 19,
+        "matchId": "battle-jev-b7cf97b7-ded24950-a2",
+        "seat": "A",
+        "model": "DeepSeek-V4.1-Flash",
+        "requestModel": "deepseek-flash",
+        "responseModels": [
+          "deepseek-flash"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:84c3578b1c17041d",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-ded24950-a2/agh-a.jsonl",
+        "events": 1517,
+        "toolCalls": 77,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "9b3ae7b577fbe71dacd10d32192099501e7fa6d121ac96e282195a5fc589dd04"
+      },
+      "B": {
+        "gameNumber": 19,
+        "matchId": "battle-jev-b7cf97b7-ded24950-a2",
+        "seat": "B",
+        "model": "GLM-5.3",
+        "requestModel": "glm-5.3",
+        "responseModels": [
+          "glm-5.3"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:1d3901a390d2a851",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-ded24950-a2/agh-b.jsonl",
+        "events": 1395,
+        "toolCalls": 75,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "0de1a0b08b1513f677934313d33a24220ef70c55fba4eaf2a6c70e643eaa829d"
+      }
+    }
+  },
+  {
+    "number": 20,
+    "matchId": "battle-jev-b7cf97b7-9ad68613-a2",
+    "blockId": "deepseek-vs-glm",
+    "attempt": 2,
+    "models": {
+      "A": "GLM-5.3",
+      "B": "DeepSeek-V4.1-Flash"
+    },
+    "winnerModelId": "deepseek",
+    "playedTurns": 9,
+    "elapsedMs": 487327,
+    "battlePath": "03-运行证据/runs/battle-jev-b7cf97b7-9ad68613-a2/battle.json",
+    "seats": {
+      "A": {
+        "gameNumber": 20,
+        "matchId": "battle-jev-b7cf97b7-9ad68613-a2",
+        "seat": "A",
+        "model": "GLM-5.3",
+        "requestModel": "glm-5.3",
+        "responseModels": [
+          "glm-5.3"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:5a5cbacd65b85751",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-9ad68613-a2/agh-a.jsonl",
+        "events": 912,
+        "toolCalls": 47,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "22aa7572d8610ed17cc72013128d8da0234eb3e02c831ce983adc59553ac4ead"
+      },
+      "B": {
+        "gameNumber": 20,
+        "matchId": "battle-jev-b7cf97b7-9ad68613-a2",
+        "seat": "B",
+        "model": "DeepSeek-V4.1-Flash",
+        "requestModel": "deepseek-flash",
+        "responseModels": [
+          "deepseek-flash"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:980ea54e926e0445",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-9ad68613-a2/agh-b.jsonl",
+        "events": 649,
+        "toolCalls": 34,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "464bc459cf3a2fe1efd1e8095bcceae2e01e038e6f5a3f03b9be82154c58140f"
+      }
+    }
+  },
+  {
+    "number": 21,
+    "matchId": "battle-jev-b7cf97b7-0ab24773-a0",
+    "blockId": "deepseek-vs-kimi",
+    "attempt": 0,
+    "models": {
+      "A": "DeepSeek-V4.1-Flash",
+      "B": "Kimi-K3"
+    },
+    "winnerModelId": "kimi",
+    "playedTurns": 11,
+    "elapsedMs": 905652,
+    "battlePath": "03-运行证据/runs/battle-jev-b7cf97b7-0ab24773-a0/battle.json",
+    "seats": {
+      "A": {
+        "gameNumber": 21,
+        "matchId": "battle-jev-b7cf97b7-0ab24773-a0",
+        "seat": "A",
+        "model": "DeepSeek-V4.1-Flash",
+        "requestModel": "deepseek-flash",
+        "responseModels": [
+          "deepseek-flash"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:ca6caf4945d6a8ed",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-0ab24773-a0/agh-a.jsonl",
+        "events": 1040,
+        "toolCalls": 56,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "82cafa21ebae49db471e80aaa113755639b2632f11cb03b0f5627c558027211b"
+      },
+      "B": {
+        "gameNumber": 21,
+        "matchId": "battle-jev-b7cf97b7-0ab24773-a0",
+        "seat": "B",
+        "model": "Kimi-K3",
+        "requestModel": "kimi-k3",
+        "responseModels": [
+          "kimi-k3"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:ba8b2829b879faef",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-0ab24773-a0/agh-b.jsonl",
+        "events": 1024,
+        "toolCalls": 56,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "baa58a3e110d4170b9fd09380f721ed9059a38255d0c06cc64f9f9a2272b74bd"
+      }
+    }
+  },
+  {
+    "number": 22,
+    "matchId": "battle-jev-b7cf97b7-6d4c4089-a0",
+    "blockId": "deepseek-vs-kimi",
+    "attempt": 0,
+    "models": {
+      "A": "Kimi-K3",
+      "B": "DeepSeek-V4.1-Flash"
+    },
+    "winnerModelId": "deepseek",
+    "playedTurns": 8,
+    "elapsedMs": 691488,
+    "battlePath": "03-运行证据/runs/battle-jev-b7cf97b7-6d4c4089-a0/battle.json",
+    "seats": {
+      "A": {
+        "gameNumber": 22,
+        "matchId": "battle-jev-b7cf97b7-6d4c4089-a0",
+        "seat": "A",
+        "model": "Kimi-K3",
+        "requestModel": "kimi-k3",
+        "responseModels": [
+          "kimi-k3"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:c7c6333d78d5f321",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-6d4c4089-a0/agh-a.jsonl",
+        "events": 826,
+        "toolCalls": 45,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "9aded0ff17094cdfd5d5093ab7a6f8b066736a73838755320d5afc18d7583d75"
+      },
+      "B": {
+        "gameNumber": 22,
+        "matchId": "battle-jev-b7cf97b7-6d4c4089-a0",
+        "seat": "B",
+        "model": "DeepSeek-V4.1-Flash",
+        "requestModel": "deepseek-flash",
+        "responseModels": [
+          "deepseek-flash"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:077cf56d69125b2b",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-6d4c4089-a0/agh-b.jsonl",
+        "events": 643,
+        "toolCalls": 35,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "50df08e4334f5822529c23a18f5bac85875b7f5e3b221d00121b315c0849f8d2"
+      }
+    }
+  },
+  {
+    "number": 23,
+    "matchId": "battle-jev-b7cf97b7-f3ac2722-a2",
+    "blockId": "deepseek-vs-mimo",
+    "attempt": 2,
+    "models": {
+      "A": "DeepSeek-V4.1-Flash",
+      "B": "MiMo-V2.6-Pro"
+    },
+    "winnerModelId": "deepseek",
+    "playedTurns": 11,
+    "elapsedMs": 1492949,
+    "battlePath": "03-运行证据/runs/battle-jev-b7cf97b7-f3ac2722-a2/battle.json",
+    "seats": {
+      "A": {
+        "gameNumber": 23,
+        "matchId": "battle-jev-b7cf97b7-f3ac2722-a2",
+        "seat": "A",
+        "model": "DeepSeek-V4.1-Flash",
+        "requestModel": "deepseek-flash",
+        "responseModels": [
+          "deepseek-flash"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:611b938f67bd49ea",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-f3ac2722-a2/agh-a.jsonl",
+        "events": 1148,
+        "toolCalls": 61,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "0ecbd0dbac2c22fb29e18d1dc5566f0fc27cd3ba92834bd2b299f6aed8653fc2"
+      },
+      "B": {
+        "gameNumber": 23,
+        "matchId": "battle-jev-b7cf97b7-f3ac2722-a2",
+        "seat": "B",
+        "model": "MiMo-V2.6-Pro",
+        "requestModel": "mimo-v2.6-pro",
+        "responseModels": [
+          "mimo-v2.6-pro"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:e843f13b11c4a354",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-f3ac2722-a2/agh-b.jsonl",
+        "events": 959,
+        "toolCalls": 45,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "d8b50dfb7bba9c41e03a262b7dfeca45799a007a821d7dd3dd8ab170811c43c7"
+      }
+    }
+  },
+  {
+    "number": 24,
+    "matchId": "battle-jev-b7cf97b7-ec87bf6b-a2",
+    "blockId": "deepseek-vs-mimo",
+    "attempt": 2,
+    "models": {
+      "A": "MiMo-V2.6-Pro",
+      "B": "DeepSeek-V4.1-Flash"
+    },
+    "winnerModelId": "deepseek",
+    "playedTurns": 8,
+    "elapsedMs": 1490325,
+    "battlePath": "03-运行证据/runs/battle-jev-b7cf97b7-ec87bf6b-a2/battle.json",
+    "seats": {
+      "A": {
+        "gameNumber": 24,
+        "matchId": "battle-jev-b7cf97b7-ec87bf6b-a2",
+        "seat": "A",
+        "model": "MiMo-V2.6-Pro",
+        "requestModel": "mimo-v2.6-pro",
+        "responseModels": [
+          "mimo-v2.6-pro"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:5a60fd5f7b2b69e7",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-ec87bf6b-a2/agh-a.jsonl",
+        "events": 850,
+        "toolCalls": 34,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "ab5296618abccb372579f230c5007358025c61bdafca7b8b0d15f0aa405b390b"
+      },
+      "B": {
+        "gameNumber": 24,
+        "matchId": "battle-jev-b7cf97b7-ec87bf6b-a2",
+        "seat": "B",
+        "model": "DeepSeek-V4.1-Flash",
+        "requestModel": "deepseek-flash",
+        "responseModels": [
+          "deepseek-flash"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:65b0775c9fff73d6",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-ec87bf6b-a2/agh-b.jsonl",
+        "events": 1020,
+        "toolCalls": 56,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "91fdf66a136ee6801fec0385e2a7c5daa3c391f4183ece202a164b06c2c80e09"
+      }
+    }
+  },
+  {
+    "number": 25,
+    "matchId": "battle-jev-b7cf97b7-a97d10c8-a2",
+    "blockId": "deepseek-vs-minimax",
+    "attempt": 2,
+    "models": {
+      "A": "DeepSeek-V4.1-Flash",
+      "B": "MiniMax-M3"
+    },
+    "winnerModelId": "deepseek",
+    "playedTurns": 12,
+    "elapsedMs": 1036492,
+    "battlePath": "03-运行证据/runs/battle-jev-b7cf97b7-a97d10c8-a2/battle.json",
+    "seats": {
+      "A": {
+        "gameNumber": 25,
+        "matchId": "battle-jev-b7cf97b7-a97d10c8-a2",
+        "seat": "A",
+        "model": "DeepSeek-V4.1-Flash",
+        "requestModel": "deepseek-flash",
+        "responseModels": [
+          "deepseek-flash"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:3ad90fda9224f274",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-a97d10c8-a2/agh-a.jsonl",
+        "events": 905,
+        "toolCalls": 46,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "87d776a5055194bf8eb4f5bed73cd164327db79f17878cf2e8fb074989392099"
+      },
+      "B": {
+        "gameNumber": 25,
+        "matchId": "battle-jev-b7cf97b7-a97d10c8-a2",
+        "seat": "B",
+        "model": "MiniMax-M3",
+        "requestModel": "minimax-m3",
+        "responseModels": [
+          "minimax-m3"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:8a26a5c2e3e99c80",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-a97d10c8-a2/agh-b.jsonl",
+        "events": 876,
+        "toolCalls": 50,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "157d550a37f1ec698242391082d2f11a7f60c155ebdd8a4511c8e2d364789e4d"
+      }
+    }
+  },
+  {
+    "number": 26,
+    "matchId": "battle-jev-b7cf97b7-343c4ca7-a2",
+    "blockId": "deepseek-vs-minimax",
+    "attempt": 2,
+    "models": {
+      "A": "MiniMax-M3",
+      "B": "DeepSeek-V4.1-Flash"
+    },
+    "winnerModelId": "deepseek",
+    "playedTurns": 6,
+    "elapsedMs": 572775,
+    "battlePath": "03-运行证据/runs/battle-jev-b7cf97b7-343c4ca7-a2/battle.json",
+    "seats": {
+      "A": {
+        "gameNumber": 26,
+        "matchId": "battle-jev-b7cf97b7-343c4ca7-a2",
+        "seat": "A",
+        "model": "MiniMax-M3",
+        "requestModel": "minimax-m3",
+        "responseModels": [
+          "minimax-m3"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:1a0d2c2bc8d0048b",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-343c4ca7-a2/agh-a.jsonl",
+        "events": 540,
+        "toolCalls": 30,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "f4a310d013e548c8d03b636bdb709cd9272e3e50540572b320268c3dfb006de7"
+      },
+      "B": {
+        "gameNumber": 26,
+        "matchId": "battle-jev-b7cf97b7-343c4ca7-a2",
+        "seat": "B",
+        "model": "DeepSeek-V4.1-Flash",
+        "requestModel": "deepseek-flash",
+        "responseModels": [
+          "deepseek-flash"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:cc2ae0f1b188ec6f",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-343c4ca7-a2/agh-b.jsonl",
+        "events": 635,
+        "toolCalls": 32,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "a0bbd3dff667f9e493ff12d2fe5081d7b390c7f795ab5d1f831952213c012dcd"
+      }
+    }
+  },
+  {
+    "number": 27,
+    "matchId": "battle-jev-b7cf97b7-d4c75aea-a2",
+    "blockId": "deepseek-vs-qwen",
+    "attempt": 2,
+    "models": {
+      "A": "DeepSeek-V4.1-Flash",
+      "B": "Qwen3.8-Max-0902"
+    },
+    "winnerModelId": "deepseek",
+    "playedTurns": 13,
+    "elapsedMs": 2471185,
+    "battlePath": "03-运行证据/runs/battle-jev-b7cf97b7-d4c75aea-a2/battle.json",
+    "seats": {
+      "A": {
+        "gameNumber": 27,
+        "matchId": "battle-jev-b7cf97b7-d4c75aea-a2",
+        "seat": "A",
+        "model": "DeepSeek-V4.1-Flash",
+        "requestModel": "deepseek-flash",
+        "responseModels": [
+          "deepseek-flash"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:db0c9049e13074b5",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-d4c75aea-a2/agh-a.jsonl",
+        "events": 1280,
+        "toolCalls": 69,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "c1625b1011b3fef42b0311213ca5d680cd00d31de2d50c43380e73cfb46301c9"
+      },
+      "B": {
+        "gameNumber": 27,
+        "matchId": "battle-jev-b7cf97b7-d4c75aea-a2",
+        "seat": "B",
+        "model": "Qwen3.8-Max-0902",
+        "requestModel": "qwen3.8-max-0902",
+        "responseModels": [
+          "qwen3.8-max-0902"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:1d8524b8919c3fb6",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-d4c75aea-a2/agh-b.jsonl",
+        "events": 1188,
+        "toolCalls": 48,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "97afdb28835cdeae71c121b73c60c99a2a23b7a60ff352938d2496c6c36e9a36"
+      }
+    }
+  },
+  {
+    "number": 28,
+    "matchId": "battle-jev-b7cf97b7-c6150d62-a2",
+    "blockId": "deepseek-vs-qwen",
+    "attempt": 2,
+    "models": {
+      "A": "Qwen3.8-Max-0902",
+      "B": "DeepSeek-V4.1-Flash"
+    },
+    "winnerModelId": "deepseek",
+    "playedTurns": 10,
+    "elapsedMs": 1601321,
+    "battlePath": "03-运行证据/runs/battle-jev-b7cf97b7-c6150d62-a2/battle.json",
+    "seats": {
+      "A": {
+        "gameNumber": 28,
+        "matchId": "battle-jev-b7cf97b7-c6150d62-a2",
+        "seat": "A",
+        "model": "Qwen3.8-Max-0902",
+        "requestModel": "qwen3.8-max-0902",
+        "responseModels": [
+          "qwen3.8-max-0902"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:4ce2617bc4d90ab3",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-c6150d62-a2/agh-a.jsonl",
+        "events": 872,
+        "toolCalls": 40,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "350ef85df4f908f2a937487d79bc5f27368d9e1f358a75eb2766a6ab05b887cc"
+      },
+      "B": {
+        "gameNumber": 28,
+        "matchId": "battle-jev-b7cf97b7-c6150d62-a2",
+        "seat": "B",
+        "model": "DeepSeek-V4.1-Flash",
+        "requestModel": "deepseek-flash",
+        "responseModels": [
+          "deepseek-flash"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:bfed71817b2416da",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-c6150d62-a2/agh-b.jsonl",
+        "events": 858,
+        "toolCalls": 46,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "9a5728940c80b2bc495292ff2f612609d8c9245aa04c770a03556b9018c42ed8"
+      }
+    }
+  },
+  {
+    "number": 29,
+    "matchId": "battle-jev-b7cf97b7-5d55c6e0-a1",
+    "blockId": "deepseek-vs-gemini",
+    "attempt": 1,
+    "models": {
+      "A": "DeepSeek-V4.1-Flash",
+      "B": "Gemini-3.8-Flash-High"
+    },
+    "winnerModelId": "gemini",
+    "playedTurns": 14,
+    "elapsedMs": 998526,
+    "battlePath": "03-运行证据/runs/battle-jev-b7cf97b7-5d55c6e0-a1/battle.json",
+    "seats": {
+      "A": {
+        "gameNumber": 29,
+        "matchId": "battle-jev-b7cf97b7-5d55c6e0-a1",
+        "seat": "A",
+        "model": "DeepSeek-V4.1-Flash",
+        "requestModel": "deepseek-flash",
+        "responseModels": [
+          "deepseek-flash"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:6a88329b71ceea52",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-5d55c6e0-a1/agh-a.jsonl",
+        "events": 1292,
+        "toolCalls": 68,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "d4adaff5de84fc2ef87bd72d8622046406caff0d2385fcbc1e66974d3b8e810d"
+      },
+      "B": {
+        "gameNumber": 29,
+        "matchId": "battle-jev-b7cf97b7-5d55c6e0-a1",
+        "seat": "B",
+        "model": "Gemini-3.8-Flash-High",
+        "requestModel": "gemini-3.8-flash-high",
+        "responseModels": [
+          "gemini-3.8-flash-n"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:ab375c8031a17fce",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-5d55c6e0-a1/agh-b.jsonl",
+        "events": 1300,
+        "toolCalls": 75,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "fbe0d0193aa820da2cf5a38b73eed1d01142d8978836db390e4ba181932dec5a"
+      }
+    }
+  },
+  {
+    "number": 30,
+    "matchId": "battle-jev-b7cf97b7-9d0914dc-a1",
+    "blockId": "deepseek-vs-gemini",
+    "attempt": 1,
+    "models": {
+      "A": "Gemini-3.8-Flash-High",
+      "B": "DeepSeek-V4.1-Flash"
+    },
+    "winnerModelId": "deepseek",
+    "playedTurns": 12,
+    "elapsedMs": 866441,
+    "battlePath": "03-运行证据/runs/battle-jev-b7cf97b7-9d0914dc-a1/battle.json",
+    "seats": {
+      "A": {
+        "gameNumber": 30,
+        "matchId": "battle-jev-b7cf97b7-9d0914dc-a1",
+        "seat": "A",
+        "model": "Gemini-3.8-Flash-High",
+        "requestModel": "gemini-3.8-flash-high",
+        "responseModels": [
+          "gemini-3.8-flash-n"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:3f47f0670485941b",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-9d0914dc-a1/agh-a.jsonl",
+        "events": 1162,
+        "toolCalls": 67,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "109377b05006f1f4716953ec91cadf4a3ec3dd23c1d7cb554ddae831aaee57f8"
+      },
+      "B": {
+        "gameNumber": 30,
+        "matchId": "battle-jev-b7cf97b7-9d0914dc-a1",
+        "seat": "B",
+        "model": "DeepSeek-V4.1-Flash",
+        "requestModel": "deepseek-flash",
+        "responseModels": [
+          "deepseek-flash"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:65ac904b0cf914a6",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-9d0914dc-a1/agh-b.jsonl",
+        "events": 883,
+        "toolCalls": 45,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "2d943e705177427ea225516d7010ed320b24e6a0cfe5343978ccd48e45e8a290"
+      }
+    }
+  },
+  {
+    "number": 31,
+    "matchId": "battle-jev-b7cf97b7-ba7e59c1-a2",
+    "blockId": "deepseek-vs-gpt",
+    "attempt": 2,
+    "models": {
+      "A": "DeepSeek-V4.1-Flash",
+      "B": "GPT-5.6-Terra"
+    },
+    "winnerModelId": "gpt",
+    "playedTurns": 10,
+    "elapsedMs": 1181575,
+    "battlePath": "03-运行证据/runs/battle-jev-b7cf97b7-ba7e59c1-a2/battle.json",
+    "seats": {
+      "A": {
+        "gameNumber": 31,
+        "matchId": "battle-jev-b7cf97b7-ba7e59c1-a2",
+        "seat": "A",
+        "model": "DeepSeek-V4.1-Flash",
+        "requestModel": "deepseek-flash",
+        "responseModels": [
+          "deepseek-flash"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:bc832356135589c2",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-ba7e59c1-a2/agh-a.jsonl",
+        "events": 889,
+        "toolCalls": 45,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "711c0b6edaec4c54259208ff024d8cf14dcf1c91fdd7a3ba1eac25421f80526a"
+      },
+      "B": {
+        "gameNumber": 31,
+        "matchId": "battle-jev-b7cf97b7-ba7e59c1-a2",
+        "seat": "B",
+        "model": "GPT-5.6-Terra",
+        "requestModel": "gpt-5.6-terra-bingxing",
+        "responseModels": [
+          "GPT-5.6-Terra"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:e9c6dd92e3a44ed1",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-ba7e59c1-a2/agh-b.jsonl",
+        "events": 936,
+        "toolCalls": 53,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "27e4278401954a8bca9438f20cc8b0079e1992539f130ef105a3726718266f1a"
+      }
+    }
+  },
+  {
+    "number": 32,
+    "matchId": "battle-jev-b7cf97b7-eb13d1f0-a2",
+    "blockId": "deepseek-vs-gpt",
+    "attempt": 2,
+    "models": {
+      "A": "GPT-5.6-Terra",
+      "B": "DeepSeek-V4.1-Flash"
+    },
+    "winnerModelId": "deepseek",
+    "playedTurns": 8,
+    "elapsedMs": 738175,
+    "battlePath": "03-运行证据/runs/battle-jev-b7cf97b7-eb13d1f0-a2/battle.json",
+    "seats": {
+      "A": {
+        "gameNumber": 32,
+        "matchId": "battle-jev-b7cf97b7-eb13d1f0-a2",
+        "seat": "A",
+        "model": "GPT-5.6-Terra",
+        "requestModel": "gpt-5.6-terra-bingxing",
+        "responseModels": [
+          "GPT-5.6-Terra"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:86cbc8e92b1fd9b7",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-eb13d1f0-a2/agh-a.jsonl",
+        "events": 819,
+        "toolCalls": 46,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "bf61d6bfc4c41fdacfa3559b6bf841f725f78e0417c1421e19eae9d325b7a723"
+      },
+      "B": {
+        "gameNumber": 32,
+        "matchId": "battle-jev-b7cf97b7-eb13d1f0-a2",
+        "seat": "B",
+        "model": "DeepSeek-V4.1-Flash",
+        "requestModel": "deepseek-flash",
+        "responseModels": [
+          "deepseek-flash"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:a19770fe51b373a1",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-eb13d1f0-a2/agh-b.jsonl",
+        "events": 722,
+        "toolCalls": 39,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "39b1fa6ad7c060682f75202f2b0dd8cdaaf00b575fe301ac714b3b6fffeed901"
+      }
+    }
+  },
+  {
+    "number": 33,
+    "matchId": "battle-jev-b7cf97b7-252f1a6d-a2",
+    "blockId": "deepseek-vs-opus",
+    "attempt": 2,
+    "models": {
+      "A": "DeepSeek-V4.1-Flash",
+      "B": "Claude-Opus-4.8"
+    },
+    "winnerModelId": "deepseek",
+    "playedTurns": 12,
+    "elapsedMs": 1344328,
+    "battlePath": "03-运行证据/runs/battle-jev-b7cf97b7-252f1a6d-a2/battle.json",
+    "seats": {
+      "A": {
+        "gameNumber": 33,
+        "matchId": "battle-jev-b7cf97b7-252f1a6d-a2",
+        "seat": "A",
+        "model": "DeepSeek-V4.1-Flash",
+        "requestModel": "deepseek-flash",
+        "responseModels": [
+          "deepseek-flash"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:c0079926ea1e74b8",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-252f1a6d-a2/agh-a.jsonl",
+        "events": 883,
+        "toolCalls": 45,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "c9e6a285febd049326cfd098d0fe328dd351c29c9f5312b0f76f9197c0f143a4"
+      },
+      "B": {
+        "gameNumber": 33,
+        "matchId": "battle-jev-b7cf97b7-252f1a6d-a2",
+        "seat": "B",
+        "model": "Claude-Opus-4.8",
+        "requestModel": "claude-opus-4-8",
+        "responseModels": [
+          "claude-opus-4-8"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:dcf72b1cbbd4f74d",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-252f1a6d-a2/agh-b.jsonl",
+        "events": 1082,
+        "toolCalls": 59,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "5c53c5ac733746cfc1ad7362272400900ed4fbc5a5a335768155229d566b41fd"
+      }
+    }
+  },
+  {
+    "number": 34,
+    "matchId": "battle-jev-b7cf97b7-2469c06b-a2",
+    "blockId": "deepseek-vs-opus",
+    "attempt": 2,
+    "models": {
+      "A": "Claude-Opus-4.8",
+      "B": "DeepSeek-V4.1-Flash"
+    },
+    "winnerModelId": "deepseek",
+    "playedTurns": 10,
+    "elapsedMs": 1285445,
+    "battlePath": "03-运行证据/runs/battle-jev-b7cf97b7-2469c06b-a2/battle.json",
+    "seats": {
+      "A": {
+        "gameNumber": 34,
+        "matchId": "battle-jev-b7cf97b7-2469c06b-a2",
+        "seat": "A",
+        "model": "Claude-Opus-4.8",
+        "requestModel": "claude-opus-4-8",
+        "responseModels": [
+          "claude-opus-4-8"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:2abb23de5820e636",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-2469c06b-a2/agh-a.jsonl",
+        "events": 960,
+        "toolCalls": 52,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "87a252347a0a24953d34ea6d5a1685a1d69b8ca227034c76d839b6b943008979"
+      },
+      "B": {
+        "gameNumber": 34,
+        "matchId": "battle-jev-b7cf97b7-2469c06b-a2",
+        "seat": "B",
+        "model": "DeepSeek-V4.1-Flash",
+        "requestModel": "deepseek-flash",
+        "responseModels": [
+          "deepseek-flash"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:e9f8d66d2918ec74",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-2469c06b-a2/agh-b.jsonl",
+        "events": 745,
+        "toolCalls": 39,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "c040bd2e5ca15f60502bbbcb8a4022cd7a941dae7c3118fd2565c2d7b01c601d"
+      }
+    }
+  },
+  {
+    "number": 35,
+    "matchId": "battle-jev-b7cf97b7-ddd9dd01-a1",
+    "blockId": "glm-vs-kimi",
+    "attempt": 1,
+    "models": {
+      "A": "GLM-5.3",
+      "B": "Kimi-K3"
+    },
+    "winnerModelId": "kimi",
+    "playedTurns": 10,
+    "elapsedMs": 843348,
+    "battlePath": "03-运行证据/runs/battle-jev-b7cf97b7-ddd9dd01-a1/battle.json",
+    "seats": {
+      "A": {
+        "gameNumber": 35,
+        "matchId": "battle-jev-b7cf97b7-ddd9dd01-a1",
+        "seat": "A",
+        "model": "GLM-5.3",
+        "requestModel": "glm-5.3",
+        "responseModels": [
+          "glm-5.3"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:1bab51b6c853cb65",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-ddd9dd01-a1/agh-a.jsonl",
+        "events": 845,
+        "toolCalls": 46,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "8c811b90ac52391c0bc6d15bf5356abe1bfe8d3b0a6ecc4e2378b3ec191a1570"
+      },
+      "B": {
+        "gameNumber": 35,
+        "matchId": "battle-jev-b7cf97b7-ddd9dd01-a1",
+        "seat": "B",
+        "model": "Kimi-K3",
+        "requestModel": "kimi-k3",
+        "responseModels": [
+          "kimi-k3"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:5503e51ef0c4b391",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-ddd9dd01-a1/agh-b.jsonl",
+        "events": 929,
+        "toolCalls": 51,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "c95af6f6afc0d2f87e2f0707c3e2ca0cbe98ddcae082d28905981d426fc6e4ab"
+      }
+    }
+  },
+  {
+    "number": 36,
+    "matchId": "battle-jev-b7cf97b7-70fedab8-a1",
+    "blockId": "glm-vs-kimi",
+    "attempt": 1,
+    "models": {
+      "A": "Kimi-K3",
+      "B": "GLM-5.3"
+    },
+    "winnerModelId": "kimi",
+    "playedTurns": 11,
+    "elapsedMs": 720296,
+    "battlePath": "03-运行证据/runs/battle-jev-b7cf97b7-70fedab8-a1/battle.json",
+    "seats": {
+      "A": {
+        "gameNumber": 36,
+        "matchId": "battle-jev-b7cf97b7-70fedab8-a1",
+        "seat": "A",
+        "model": "Kimi-K3",
+        "requestModel": "kimi-k3",
+        "responseModels": [
+          "kimi-k3"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:c340c7769cedfc54",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-70fedab8-a1/agh-a.jsonl",
+        "events": 1002,
+        "toolCalls": 55,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "c418f5ab2dbd7ddaa719f1477936f561a3e7c819315f31b0597895d2b8dd055c"
+      },
+      "B": {
+        "gameNumber": 36,
+        "matchId": "battle-jev-b7cf97b7-70fedab8-a1",
+        "seat": "B",
+        "model": "GLM-5.3",
+        "requestModel": "glm-5.3",
+        "responseModels": [
+          "glm-5.3"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:e6f3b189fd316399",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-70fedab8-a1/agh-b.jsonl",
+        "events": 1021,
+        "toolCalls": 57,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "1712d169dc634b7e0ebf81eacbce4d439048465d10dc6afd926e73cd13658289"
+      }
+    }
+  },
+  {
+    "number": 37,
+    "matchId": "battle-jev-b7cf97b7-42d9132b-a2",
+    "blockId": "glm-vs-mimo",
+    "attempt": 2,
+    "models": {
+      "A": "GLM-5.3",
+      "B": "MiMo-V2.6-Pro"
+    },
+    "winnerModelId": "mimo",
+    "playedTurns": 11,
+    "elapsedMs": 2740826,
+    "battlePath": "03-运行证据/runs/battle-jev-b7cf97b7-42d9132b-a2/battle.json",
+    "seats": {
+      "A": {
+        "gameNumber": 37,
+        "matchId": "battle-jev-b7cf97b7-42d9132b-a2",
+        "seat": "A",
+        "model": "GLM-5.3",
+        "requestModel": "glm-5.3",
+        "responseModels": [
+          "glm-5.3"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:0499ea49e41014ad",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-42d9132b-a2/agh-a.jsonl",
+        "events": 1441,
+        "toolCalls": 61,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "0a5504a010c6c97dd3011dec40e0bf8235a783739af08845010fe051ec54aff8"
+      },
+      "B": {
+        "gameNumber": 37,
+        "matchId": "battle-jev-b7cf97b7-42d9132b-a2",
+        "seat": "B",
+        "model": "MiMo-V2.6-Pro",
+        "requestModel": "mimo-v2.6-pro",
+        "responseModels": [
+          "mimo-v2.6-pro"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:df4c5db3da47cd02",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-42d9132b-a2/agh-b.jsonl",
+        "events": 1424,
+        "toolCalls": 73,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "d9a7cf5aeb533d20ce76ba973cb58a40006da63ff24818c0e02193a8d3be53fd"
+      }
+    }
+  },
+  {
+    "number": 38,
+    "matchId": "battle-jev-b7cf97b7-645d244b-a2",
+    "blockId": "glm-vs-mimo",
+    "attempt": 2,
+    "models": {
+      "A": "MiMo-V2.6-Pro",
+      "B": "GLM-5.3"
+    },
+    "winnerModelId": "glm",
+    "playedTurns": 11,
+    "elapsedMs": 1713641,
+    "battlePath": "03-运行证据/runs/battle-jev-b7cf97b7-645d244b-a2/battle.json",
+    "seats": {
+      "A": {
+        "gameNumber": 38,
+        "matchId": "battle-jev-b7cf97b7-645d244b-a2",
+        "seat": "A",
+        "model": "MiMo-V2.6-Pro",
+        "requestModel": "mimo-v2.6-pro",
+        "responseModels": [
+          "mimo-v2.6-pro"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:03b86e7ffe7d4879",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-645d244b-a2/agh-a.jsonl",
+        "events": 1084,
+        "toolCalls": 49,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "f8832f44a2e248abd47bfe82ac5e59fba810a9de71e4613e1f5612c5bcb47fd3"
+      },
+      "B": {
+        "gameNumber": 38,
+        "matchId": "battle-jev-b7cf97b7-645d244b-a2",
+        "seat": "B",
+        "model": "GLM-5.3",
+        "requestModel": "glm-5.3",
+        "responseModels": [
+          "glm-5.3"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:2f956ba7550d91f3",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-645d244b-a2/agh-b.jsonl",
+        "events": 1185,
+        "toolCalls": 63,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "6980ce3901090fed438dbe89b19e5f4591f8f556032689582d30b160f67661aa"
+      }
+    }
+  },
+  {
+    "number": 39,
+    "matchId": "battle-jev-b7cf97b7-8968a6a2-a4",
+    "blockId": "glm-vs-minimax",
+    "attempt": 4,
+    "models": {
+      "A": "GLM-5.3",
+      "B": "MiniMax-M3"
+    },
+    "winnerModelId": "minimax",
+    "playedTurns": 8,
+    "elapsedMs": 1129349,
+    "battlePath": "03-运行证据/runs/battle-jev-b7cf97b7-8968a6a2-a4/battle.json",
+    "seats": {
+      "A": {
+        "gameNumber": 39,
+        "matchId": "battle-jev-b7cf97b7-8968a6a2-a4",
+        "seat": "A",
+        "model": "GLM-5.3",
+        "requestModel": "glm-5.3",
+        "responseModels": [
+          "glm-5.3"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:11e64c715e141005",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-8968a6a2-a4/agh-a.jsonl",
+        "events": 1022,
+        "toolCalls": 44,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "e491380973dd9d7c78e0a1e6343f1b133ef09cbc5efa91b3181e3796c4d77922"
+      },
+      "B": {
+        "gameNumber": 39,
+        "matchId": "battle-jev-b7cf97b7-8968a6a2-a4",
+        "seat": "B",
+        "model": "MiniMax-M3",
+        "requestModel": "minimax-m3",
+        "responseModels": [
+          "minimax-m3"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:decf193e152eedb5",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-8968a6a2-a4/agh-b.jsonl",
+        "events": 796,
+        "toolCalls": 45,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "1200ae96bf0dbb8a6dc64c398eb9139958fa060907994e9ba54ff6e198dff85a"
+      }
+    }
+  },
+  {
+    "number": 40,
+    "matchId": "battle-jev-b7cf97b7-c942aca5-a4",
+    "blockId": "glm-vs-minimax",
+    "attempt": 4,
+    "models": {
+      "A": "MiniMax-M3",
+      "B": "GLM-5.3"
+    },
+    "winnerModelId": "minimax",
+    "playedTurns": 10,
+    "elapsedMs": 892659,
+    "battlePath": "03-运行证据/runs/battle-jev-b7cf97b7-c942aca5-a4/battle.json",
+    "seats": {
+      "A": {
+        "gameNumber": 40,
+        "matchId": "battle-jev-b7cf97b7-c942aca5-a4",
+        "seat": "A",
+        "model": "MiniMax-M3",
+        "requestModel": "minimax-m3",
+        "responseModels": [
+          "minimax-m3"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:a80eea3d37588f6d",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-c942aca5-a4/agh-a.jsonl",
+        "events": 861,
+        "toolCalls": 49,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "900bca773cb03d8e083cc4ea204bd946e5f87bda5bf8d24263c220657caa345b"
+      },
+      "B": {
+        "gameNumber": 40,
+        "matchId": "battle-jev-b7cf97b7-c942aca5-a4",
+        "seat": "B",
+        "model": "GLM-5.3",
+        "requestModel": "glm-5.3",
+        "responseModels": [
+          "glm-5.3"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:bc0aef5737dc3858",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-c942aca5-a4/agh-b.jsonl",
+        "events": 1029,
+        "toolCalls": 51,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "22d89280a3c001bd74e64ca5a1b3dc2cd0e6bcc05804e0131197cbfddd5f9255"
+      }
+    }
+  },
+  {
+    "number": 41,
+    "matchId": "battle-jev-b7cf97b7-7eba927a-a4",
+    "blockId": "glm-vs-qwen",
+    "attempt": 4,
+    "models": {
+      "A": "GLM-5.3",
+      "B": "Qwen3.8-Max-0902"
+    },
+    "winnerModelId": "qwen",
+    "playedTurns": 10,
+    "elapsedMs": 1922518,
+    "battlePath": "03-运行证据/runs/battle-jev-b7cf97b7-7eba927a-a4/battle.json",
+    "seats": {
+      "A": {
+        "gameNumber": 41,
+        "matchId": "battle-jev-b7cf97b7-7eba927a-a4",
+        "seat": "A",
+        "model": "GLM-5.3",
+        "requestModel": "glm-5.3",
+        "responseModels": [
+          "glm-5.3"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:532cc295f89481ca",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-7eba927a-a4/agh-a.jsonl",
+        "events": 1302,
+        "toolCalls": 65,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "495d4cd6e35de23d12817cc1dd70aff1871cce0308e6c900c3480c3b7d3cf97b"
+      },
+      "B": {
+        "gameNumber": 41,
+        "matchId": "battle-jev-b7cf97b7-7eba927a-a4",
+        "seat": "B",
+        "model": "Qwen3.8-Max-0902",
+        "requestModel": "qwen3.8-max-0902",
+        "responseModels": [
+          "qwen3.8-max-0902"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:7cfca4ea70d4f87a",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-7eba927a-a4/agh-b.jsonl",
+        "events": 1066,
+        "toolCalls": 46,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "bfeadd1dcccc552ce51cea52792e2c93d8516b86c63d5ff0da36a4fa140ef57b"
+      }
+    }
+  },
+  {
+    "number": 42,
+    "matchId": "battle-jev-b7cf97b7-9ccfcc6e-a4",
+    "blockId": "glm-vs-qwen",
+    "attempt": 4,
+    "models": {
+      "A": "Qwen3.8-Max-0902",
+      "B": "GLM-5.3"
+    },
+    "winnerModelId": "qwen",
+    "playedTurns": 12,
+    "elapsedMs": 2309838,
+    "battlePath": "03-运行证据/runs/battle-jev-b7cf97b7-9ccfcc6e-a4/battle.json",
+    "seats": {
+      "A": {
+        "gameNumber": 42,
+        "matchId": "battle-jev-b7cf97b7-9ccfcc6e-a4",
+        "seat": "A",
+        "model": "Qwen3.8-Max-0902",
+        "requestModel": "qwen3.8-max-0902",
+        "responseModels": [
+          "qwen3.8-max-0902"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:aa87c1129fd4e368",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-9ccfcc6e-a4/agh-a.jsonl",
+        "events": 1352,
+        "toolCalls": 59,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "54c89d9ff73a42337a4c99e938c9c7700d8e91186c2328685185243ca99dcf1e"
+      },
+      "B": {
+        "gameNumber": 42,
+        "matchId": "battle-jev-b7cf97b7-9ccfcc6e-a4",
+        "seat": "B",
+        "model": "GLM-5.3",
+        "requestModel": "glm-5.3",
+        "responseModels": [
+          "glm-5.3"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:66718f64298f22b9",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-9ccfcc6e-a4/agh-b.jsonl",
+        "events": 1510,
+        "toolCalls": 77,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "6fc4ae74dc61254aed91ac66aba8c1ce3848c52d99702376edc128fe7c35fe4b"
+      }
+    }
+  },
+  {
+    "number": 43,
+    "matchId": "battle-jev-b7cf97b7-c42a7f3d-a2",
+    "blockId": "glm-vs-gemini",
+    "attempt": 2,
+    "models": {
+      "A": "GLM-5.3",
+      "B": "Gemini-3.8-Flash-High"
+    },
+    "winnerModelId": "gemini",
+    "playedTurns": 8,
+    "elapsedMs": 1982483,
+    "battlePath": "03-运行证据/runs/battle-jev-b7cf97b7-c42a7f3d-a2/battle.json",
+    "seats": {
+      "A": {
+        "gameNumber": 43,
+        "matchId": "battle-jev-b7cf97b7-c42a7f3d-a2",
+        "seat": "A",
+        "model": "GLM-5.3",
+        "requestModel": "glm-5.3",
+        "responseModels": [
+          "glm-5.3"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:3c6122b659ae52ac",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-c42a7f3d-a2/agh-a.jsonl",
+        "events": 1141,
+        "toolCalls": 44,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "0a020fe4dc193257b6df5c47dbadcede762b812a1a71846acc7f44c13865989f"
+      },
+      "B": {
+        "gameNumber": 43,
+        "matchId": "battle-jev-b7cf97b7-c42a7f3d-a2",
+        "seat": "B",
+        "model": "Gemini-3.8-Flash-High",
+        "requestModel": "gemini-3.8-flash-high",
+        "responseModels": [
+          "gemini-3.8-flash-n"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:6584b253bc0bf054",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-c42a7f3d-a2/agh-b.jsonl",
+        "events": 1281,
+        "toolCalls": 74,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "388de0bd34e1bccc0d7b4345a4054140022bd5346e76931b3f2e627ed4b5cb33"
+      }
+    }
+  },
+  {
+    "number": 44,
+    "matchId": "battle-jev-b7cf97b7-0794957c-a2",
+    "blockId": "glm-vs-gemini",
+    "attempt": 2,
+    "models": {
+      "A": "Gemini-3.8-Flash-High",
+      "B": "GLM-5.3"
+    },
+    "winnerModelId": "glm",
+    "playedTurns": 12,
+    "elapsedMs": 1454340,
+    "battlePath": "03-运行证据/runs/battle-jev-b7cf97b7-0794957c-a2/battle.json",
+    "seats": {
+      "A": {
+        "gameNumber": 44,
+        "matchId": "battle-jev-b7cf97b7-0794957c-a2",
+        "seat": "A",
+        "model": "Gemini-3.8-Flash-High",
+        "requestModel": "gemini-3.8-flash-high",
+        "responseModels": [
+          "gemini-3.8-flash-n"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:f57d46a800580cfc",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-0794957c-a2/agh-a.jsonl",
+        "events": 1314,
+        "toolCalls": 75,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "d2edff45d007cb2d1f927ae6199dd14053e6c97cb145320dc9e0905ebb758775"
+      },
+      "B": {
+        "gameNumber": 44,
+        "matchId": "battle-jev-b7cf97b7-0794957c-a2",
+        "seat": "B",
+        "model": "GLM-5.3",
+        "requestModel": "glm-5.3",
+        "responseModels": [
+          "glm-5.3"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:730434ec361cabc5",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-0794957c-a2/agh-b.jsonl",
+        "events": 1108,
+        "toolCalls": 59,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "b5b098360c4e523af230a10f3029b24551274e99336fe66e2c920af538d01353"
+      }
+    }
+  },
+  {
+    "number": 45,
+    "matchId": "battle-jev-b7cf97b7-85d7393f-a4",
+    "blockId": "glm-vs-gpt",
+    "attempt": 4,
+    "models": {
+      "A": "GLM-5.3",
+      "B": "GPT-5.6-Terra"
+    },
+    "winnerModelId": "gpt",
+    "playedTurns": 15,
+    "elapsedMs": 2970869,
+    "battlePath": "03-运行证据/runs/battle-jev-b7cf97b7-85d7393f-a4/battle.json",
+    "seats": {
+      "A": {
+        "gameNumber": 45,
+        "matchId": "battle-jev-b7cf97b7-85d7393f-a4",
+        "seat": "A",
+        "model": "GLM-5.3",
+        "requestModel": "glm-5.3",
+        "responseModels": [
+          "glm-5.3"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:e9385f14857476a1",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-85d7393f-a4/agh-a.jsonl",
+        "events": 1817,
+        "toolCalls": 74,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "c33698f2ba124622dcdd8dca28ecb1af40d7702f0a2ae87e7d12d844db24786f"
+      },
+      "B": {
+        "gameNumber": 45,
+        "matchId": "battle-jev-b7cf97b7-85d7393f-a4",
+        "seat": "B",
+        "model": "GPT-5.6-Terra",
+        "requestModel": "gpt-5.6-terra-bingxing",
+        "responseModels": [
+          "GPT-5.6-Terra"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:7a4f0197958f2e61",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-85d7393f-a4/agh-b.jsonl",
+        "events": 1548,
+        "toolCalls": 87,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "2212572bc29d09b7808803007a7eee0ce7d3e52d6c7dc028d0ebeab952d77079"
+      }
+    }
+  },
+  {
+    "number": 46,
+    "matchId": "battle-jev-b7cf97b7-b37d9006-a4",
+    "blockId": "glm-vs-gpt",
+    "attempt": 4,
+    "models": {
+      "A": "GPT-5.6-Terra",
+      "B": "GLM-5.3"
+    },
+    "winnerModelId": "glm",
+    "playedTurns": 9,
+    "elapsedMs": 1225783,
+    "battlePath": "03-运行证据/runs/battle-jev-b7cf97b7-b37d9006-a4/battle.json",
+    "seats": {
+      "A": {
+        "gameNumber": 46,
+        "matchId": "battle-jev-b7cf97b7-b37d9006-a4",
+        "seat": "A",
+        "model": "GPT-5.6-Terra",
+        "requestModel": "gpt-5.6-terra-bingxing",
+        "responseModels": [
+          "GPT-5.6-Terra"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:f6ef56bcc08a6aad",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-b37d9006-a4/agh-a.jsonl",
+        "events": 874,
+        "toolCalls": 48,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "8acbfc030f78ec179c6d2b31eafba4b8e585bebe8f2027193c802ab84de75551"
+      },
+      "B": {
+        "gameNumber": 46,
+        "matchId": "battle-jev-b7cf97b7-b37d9006-a4",
+        "seat": "B",
+        "model": "GLM-5.3",
+        "requestModel": "glm-5.3",
+        "responseModels": [
+          "glm-5.3"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:0c30afc158801773",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-b37d9006-a4/agh-b.jsonl",
+        "events": 898,
+        "toolCalls": 49,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "e06fb9d0424fd72bf449001836d3668241153c5f33e7f43927accd0a3c59c770"
+      }
+    }
+  },
+  {
+    "number": 47,
+    "matchId": "battle-jev-b7cf97b7-798916de-a2",
+    "blockId": "glm-vs-opus",
+    "attempt": 2,
+    "models": {
+      "A": "GLM-5.3",
+      "B": "Claude-Opus-4.8"
+    },
+    "winnerModelId": "opus",
+    "playedTurns": 11,
+    "elapsedMs": 1152083,
+    "battlePath": "03-运行证据/runs/battle-jev-b7cf97b7-798916de-a2/battle.json",
+    "seats": {
+      "A": {
+        "gameNumber": 47,
+        "matchId": "battle-jev-b7cf97b7-798916de-a2",
+        "seat": "A",
+        "model": "GLM-5.3",
+        "requestModel": "glm-5.3",
+        "responseModels": [
+          "glm-5.3"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:eee47a2ea4023c76",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-798916de-a2/agh-a.jsonl",
+        "events": 1123,
+        "toolCalls": 60,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "6367a6cf9b477b1a33fa46d6ef0db45aaf2e8715de3ba98daaeee0de42cf8ed6"
+      },
+      "B": {
+        "gameNumber": 47,
+        "matchId": "battle-jev-b7cf97b7-798916de-a2",
+        "seat": "B",
+        "model": "Claude-Opus-4.8",
+        "requestModel": "claude-opus-4-8",
+        "responseModels": [
+          "claude-opus-4-8"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:26eb37577b4c8a96",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-798916de-a2/agh-b.jsonl",
+        "events": 1069,
+        "toolCalls": 58,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "0c9c4b868cd8192ca691195a085058cc11afbe7c07976c0c59f735232b3b485e"
+      }
+    }
+  },
+  {
+    "number": 48,
+    "matchId": "battle-jev-b7cf97b7-914b8298-a2",
+    "blockId": "glm-vs-opus",
+    "attempt": 2,
+    "models": {
+      "A": "Claude-Opus-4.8",
+      "B": "GLM-5.3"
+    },
+    "winnerModelId": "glm",
+    "playedTurns": 7,
+    "elapsedMs": 808650,
+    "battlePath": "03-运行证据/runs/battle-jev-b7cf97b7-914b8298-a2/battle.json",
+    "seats": {
+      "A": {
+        "gameNumber": 48,
+        "matchId": "battle-jev-b7cf97b7-914b8298-a2",
+        "seat": "A",
+        "model": "Claude-Opus-4.8",
+        "requestModel": "claude-opus-4-8",
+        "responseModels": [
+          "claude-opus-4-8"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:11eedcaac699c52b",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-914b8298-a2/agh-a.jsonl",
+        "events": 741,
+        "toolCalls": 40,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "3ab94d56fb0bc5cf96793c7a4a5db9c7b36ef5fe3d11e61f56b7310665176ce8"
+      },
+      "B": {
+        "gameNumber": 48,
+        "matchId": "battle-jev-b7cf97b7-914b8298-a2",
+        "seat": "B",
+        "model": "GLM-5.3",
+        "requestModel": "glm-5.3",
+        "responseModels": [
+          "glm-5.3"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:449e7336ea9cc410",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-914b8298-a2/agh-b.jsonl",
+        "events": 728,
+        "toolCalls": 39,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "9e860b6ecc8b4232f0205ba2d1e5af6757334c6cc2c6b9f754a817eeb60bf78c"
+      }
+    }
+  },
+  {
+    "number": 49,
+    "matchId": "battle-jev-b7cf97b7-132e54e9-a4",
+    "blockId": "kimi-vs-mimo",
+    "attempt": 4,
+    "models": {
+      "A": "Kimi-K3",
+      "B": "MiMo-V2.6-Pro"
+    },
+    "winnerModelId": "mimo",
+    "playedTurns": 6,
+    "elapsedMs": 1461428,
+    "battlePath": "03-运行证据/runs/battle-jev-b7cf97b7-132e54e9-a4/battle.json",
+    "seats": {
+      "A": {
+        "gameNumber": 49,
+        "matchId": "battle-jev-b7cf97b7-132e54e9-a4",
+        "seat": "A",
+        "model": "Kimi-K3",
+        "requestModel": "kimi-k3",
+        "responseModels": [
+          "kimi-k3"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:aaa51c2831c27ff4",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-132e54e9-a4/agh-a.jsonl",
+        "events": 762,
+        "toolCalls": 41,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "7fce0228311543a0f7ba8b90b0e80d63298e70cd0e90ef7929338c030ba1eb8e"
+      },
+      "B": {
+        "gameNumber": 49,
+        "matchId": "battle-jev-b7cf97b7-132e54e9-a4",
+        "seat": "B",
+        "model": "MiMo-V2.6-Pro",
+        "requestModel": "mimo-v2.6-pro",
+        "responseModels": [
+          "mimo-v2.6-pro"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:f11055b879dad4fb",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-132e54e9-a4/agh-b.jsonl",
+        "events": 696,
+        "toolCalls": 26,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "b7b02a2b6a9e428e2741776ae82a79b5089d869d1da1da275fcda8069be54419"
+      }
+    }
+  },
+  {
+    "number": 50,
+    "matchId": "battle-jev-b7cf97b7-e3c2637f-a4",
+    "blockId": "kimi-vs-mimo",
+    "attempt": 4,
+    "models": {
+      "A": "MiMo-V2.6-Pro",
+      "B": "Kimi-K3"
+    },
+    "winnerModelId": "kimi",
+    "playedTurns": 11,
+    "elapsedMs": 1764614,
+    "battlePath": "03-运行证据/runs/battle-jev-b7cf97b7-e3c2637f-a4/battle.json",
+    "seats": {
+      "A": {
+        "gameNumber": 50,
+        "matchId": "battle-jev-b7cf97b7-e3c2637f-a4",
+        "seat": "A",
+        "model": "MiMo-V2.6-Pro",
+        "requestModel": "mimo-v2.6-pro",
+        "responseModels": [
+          "mimo-v2.6-pro"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:962286537f8ef8a1",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-e3c2637f-a4/agh-a.jsonl",
+        "events": 1266,
+        "toolCalls": 61,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "0f561c3d0c3706ad1bac42491a12fe353aeb0fc18fbe963751d47a07394ed022"
+      },
+      "B": {
+        "gameNumber": 50,
+        "matchId": "battle-jev-b7cf97b7-e3c2637f-a4",
+        "seat": "B",
+        "model": "Kimi-K3",
+        "requestModel": "kimi-k3",
+        "responseModels": [
+          "kimi-k3"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:af39158921a14b72",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-e3c2637f-a4/agh-b.jsonl",
+        "events": 1061,
+        "toolCalls": 59,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "e02e7acd089928d8fb086d447c0f983cd26a2a57ae7c88f48c1de7bd5cff72c2"
+      }
+    }
+  },
+  {
+    "number": 51,
+    "matchId": "battle-jev-b7cf97b7-54dab7bb-a2",
+    "blockId": "kimi-vs-minimax",
+    "attempt": 2,
+    "models": {
+      "A": "Kimi-K3",
+      "B": "MiniMax-M3"
+    },
+    "winnerModelId": "kimi",
+    "playedTurns": 10,
+    "elapsedMs": 1336227,
+    "battlePath": "03-运行证据/runs/battle-jev-b7cf97b7-54dab7bb-a2/battle.json",
+    "seats": {
+      "A": {
+        "gameNumber": 51,
+        "matchId": "battle-jev-b7cf97b7-54dab7bb-a2",
+        "seat": "A",
+        "model": "Kimi-K3",
+        "requestModel": "kimi-k3",
+        "responseModels": [
+          "kimi-k3"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:3e27afea07711f4b",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-54dab7bb-a2/agh-a.jsonl",
+        "events": 973,
+        "toolCalls": 51,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "dec3ffe6454ceac46f06bdd549b8bec8f6dbc5eb5ff522ba6d50c1361bc4df5d"
+      },
+      "B": {
+        "gameNumber": 51,
+        "matchId": "battle-jev-b7cf97b7-54dab7bb-a2",
+        "seat": "B",
+        "model": "MiniMax-M3",
+        "requestModel": "minimax-m3",
+        "responseModels": [
+          "minimax-m3"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:b4623c61e4b02b82",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-54dab7bb-a2/agh-b.jsonl",
+        "events": 880,
+        "toolCalls": 50,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "d5cba15ae8fe6ab1a38a72390bca46772f023df5168106db197e02a3a43a0507"
+      }
+    }
+  },
+  {
+    "number": 52,
+    "matchId": "battle-jev-b7cf97b7-39aa697c-a2",
+    "blockId": "kimi-vs-minimax",
+    "attempt": 2,
+    "models": {
+      "A": "MiniMax-M3",
+      "B": "Kimi-K3"
+    },
+    "winnerModelId": "kimi",
+    "playedTurns": 12,
+    "elapsedMs": 1455694,
+    "battlePath": "03-运行证据/runs/battle-jev-b7cf97b7-39aa697c-a2/battle.json",
+    "seats": {
+      "A": {
+        "gameNumber": 52,
+        "matchId": "battle-jev-b7cf97b7-39aa697c-a2",
+        "seat": "A",
+        "model": "MiniMax-M3",
+        "requestModel": "minimax-m3",
+        "responseModels": [
+          "minimax-m3"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:ac5aeac0314c1b89",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-39aa697c-a2/agh-a.jsonl",
+        "events": 984,
+        "toolCalls": 56,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "baaa08074f1455bf7c533cd75b7ecced696eb979be24447c2bad1e0d470a75c3"
+      },
+      "B": {
+        "gameNumber": 52,
+        "matchId": "battle-jev-b7cf97b7-39aa697c-a2",
+        "seat": "B",
+        "model": "Kimi-K3",
+        "requestModel": "kimi-k3",
+        "responseModels": [
+          "kimi-k3"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:537e087e69190b76",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-39aa697c-a2/agh-b.jsonl",
+        "events": 1090,
+        "toolCalls": 61,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "ddd6fb50e0e57dbf52314e5a0697b353a9478b4a08766be35564c621f68d6848"
+      }
+    }
+  },
+  {
+    "number": 53,
+    "matchId": "battle-jev-b7cf97b7-3a8e267c-a6",
+    "blockId": "kimi-vs-qwen",
+    "attempt": 6,
+    "models": {
+      "A": "Kimi-K3",
+      "B": "Qwen3.8-Max-0902"
+    },
+    "winnerModelId": "qwen",
+    "playedTurns": 8,
+    "elapsedMs": 961432,
+    "battlePath": "03-运行证据/runs/battle-jev-b7cf97b7-3a8e267c-a6/battle.json",
+    "seats": {
+      "A": {
+        "gameNumber": 53,
+        "matchId": "battle-jev-b7cf97b7-3a8e267c-a6",
+        "seat": "A",
+        "model": "Kimi-K3",
+        "requestModel": "kimi-k3",
+        "responseModels": [
+          "kimi-k3"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:266c5188b059ac52",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-3a8e267c-a6/agh-a.jsonl",
+        "events": 957,
+        "toolCalls": 52,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "16e9f460e12ff7d2482293ee3854c15379963312889c0a31b895c682dc3aa292"
+      },
+      "B": {
+        "gameNumber": 53,
+        "matchId": "battle-jev-b7cf97b7-3a8e267c-a6",
+        "seat": "B",
+        "model": "Qwen3.8-Max-0902",
+        "requestModel": "qwen3.8-max-0902",
+        "responseModels": [
+          "qwen3.8-max-0902"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:01e75277fa11c68e",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-3a8e267c-a6/agh-b.jsonl",
+        "events": 952,
+        "toolCalls": 45,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "cb1c08234d379a5243db3d915733f617024cf44e46c01611734d9cf997b766b0"
+      }
+    }
+  },
+  {
+    "number": 54,
+    "matchId": "battle-jev-b7cf97b7-6065683a-a6",
+    "blockId": "kimi-vs-qwen",
+    "attempt": 6,
+    "models": {
+      "A": "Qwen3.8-Max-0902",
+      "B": "Kimi-K3"
+    },
+    "winnerModelId": "kimi",
+    "playedTurns": 11,
+    "elapsedMs": 1460987,
+    "battlePath": "03-运行证据/runs/battle-jev-b7cf97b7-6065683a-a6/battle.json",
+    "seats": {
+      "A": {
+        "gameNumber": 54,
+        "matchId": "battle-jev-b7cf97b7-6065683a-a6",
+        "seat": "A",
+        "model": "Qwen3.8-Max-0902",
+        "requestModel": "qwen3.8-max-0902",
+        "responseModels": [
+          "qwen3.8-max-0902"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:8030d6cb4b4651e9",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-6065683a-a6/agh-a.jsonl",
+        "events": 1010,
+        "toolCalls": 46,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "2cfcfbc1702ec2df228f3d4c36f7699e964d662a9d2011dbc2cd7c4737ec9b2a"
+      },
+      "B": {
+        "gameNumber": 54,
+        "matchId": "battle-jev-b7cf97b7-6065683a-a6",
+        "seat": "B",
+        "model": "Kimi-K3",
+        "requestModel": "kimi-k3",
+        "responseModels": [
+          "kimi-k3"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:bcddee94ccd92ff6",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-6065683a-a6/agh-b.jsonl",
+        "events": 1229,
+        "toolCalls": 67,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "e0c143bc442f4ccdb052eea6688b93a3ab36c6adb7225384a989e31d2718b749"
+      }
+    }
+  },
+  {
+    "number": 55,
+    "matchId": "battle-jev-b7cf97b7-1300f72b-a2",
+    "blockId": "kimi-vs-gemini",
+    "attempt": 2,
+    "models": {
+      "A": "Kimi-K3",
+      "B": "Gemini-3.8-Flash-High"
+    },
+    "winnerModelId": "gemini",
+    "playedTurns": 11,
+    "elapsedMs": 1500368,
+    "battlePath": "03-运行证据/runs/battle-jev-b7cf97b7-1300f72b-a2/battle.json",
+    "seats": {
+      "A": {
+        "gameNumber": 55,
+        "matchId": "battle-jev-b7cf97b7-1300f72b-a2",
+        "seat": "A",
+        "model": "Kimi-K3",
+        "requestModel": "kimi-k3",
+        "responseModels": [
+          "kimi-k3"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:442df01f0e973713",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-1300f72b-a2/agh-a.jsonl",
+        "events": 1015,
+        "toolCalls": 55,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "657cd67912b4d382cf592bf3b1a57c860d0432dc6413c582d484255a3c98fcc7"
+      },
+      "B": {
+        "gameNumber": 55,
+        "matchId": "battle-jev-b7cf97b7-1300f72b-a2",
+        "seat": "B",
+        "model": "Gemini-3.8-Flash-High",
+        "requestModel": "gemini-3.8-flash-high",
+        "responseModels": [
+          "gemini-3.8-flash-n"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:3dc4bf1cb3dc758c",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-1300f72b-a2/agh-b.jsonl",
+        "events": 1249,
+        "toolCalls": 72,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "3852b397287d7f412c40e3fa7715f06c9bf32e91dc7a9d6d10dfa982d6220243"
+      }
+    }
+  },
+  {
+    "number": 56,
+    "matchId": "battle-jev-b7cf97b7-f9fd5659-a2",
+    "blockId": "kimi-vs-gemini",
+    "attempt": 2,
+    "models": {
+      "A": "Gemini-3.8-Flash-High",
+      "B": "Kimi-K3"
+    },
+    "winnerModelId": "kimi",
+    "playedTurns": 13,
+    "elapsedMs": 1857821,
+    "battlePath": "03-运行证据/runs/battle-jev-b7cf97b7-f9fd5659-a2/battle.json",
+    "seats": {
+      "A": {
+        "gameNumber": 56,
+        "matchId": "battle-jev-b7cf97b7-f9fd5659-a2",
+        "seat": "A",
+        "model": "Gemini-3.8-Flash-High",
+        "requestModel": "gemini-3.8-flash-high",
+        "responseModels": [
+          "gemini-3.8-flash-n"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:e49950e27ea0fc4d",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-f9fd5659-a2/agh-a.jsonl",
+        "events": 1470,
+        "toolCalls": 85,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "75f3f1c9ecab96905d3613dea0c83087d1326b24528a0b096eeba34cff0134fa"
+      },
+      "B": {
+        "gameNumber": 56,
+        "matchId": "battle-jev-b7cf97b7-f9fd5659-a2",
+        "seat": "B",
+        "model": "Kimi-K3",
+        "requestModel": "kimi-k3",
+        "responseModels": [
+          "kimi-k3"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:1d4b91cb925dc50a",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-f9fd5659-a2/agh-b.jsonl",
+        "events": 1155,
+        "toolCalls": 63,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "3b3aa717eac5b924cf0eccfb4b4196fe390a88b9b9f34c97737134f13b81b65a"
+      }
+    }
+  },
+  {
+    "number": 57,
+    "matchId": "battle-jev-b7cf97b7-0f8176ed-a2",
+    "blockId": "kimi-vs-gpt",
+    "attempt": 2,
+    "models": {
+      "A": "Kimi-K3",
+      "B": "GPT-5.6-Terra"
+    },
+    "winnerModelId": "gpt",
+    "playedTurns": 13,
+    "elapsedMs": 1538888,
+    "battlePath": "03-运行证据/runs/battle-jev-b7cf97b7-0f8176ed-a2/battle.json",
+    "seats": {
+      "A": {
+        "gameNumber": 57,
+        "matchId": "battle-jev-b7cf97b7-0f8176ed-a2",
+        "seat": "A",
+        "model": "Kimi-K3",
+        "requestModel": "kimi-k3",
+        "responseModels": [
+          "kimi-k3"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:b695656058e3730f",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-0f8176ed-a2/agh-a.jsonl",
+        "events": 919,
+        "toolCalls": 50,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "5797256195687d7fa627a613bd37a15429f0e2fdb1f7b4a79941e6412df44422"
+      },
+      "B": {
+        "gameNumber": 57,
+        "matchId": "battle-jev-b7cf97b7-0f8176ed-a2",
+        "seat": "B",
+        "model": "GPT-5.6-Terra",
+        "requestModel": "gpt-5.6-terra-bingxing",
+        "responseModels": [
+          "GPT-5.6-Terra"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:da3bda377255603a",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-0f8176ed-a2/agh-b.jsonl",
+        "events": 1113,
+        "toolCalls": 64,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "ee424b0433eaa5f4643f6d1207a6968e9522dd627c8e3603c56cb92f2f084953"
+      }
+    }
+  },
+  {
+    "number": 58,
+    "matchId": "battle-jev-b7cf97b7-ac7c8265-a2",
+    "blockId": "kimi-vs-gpt",
+    "attempt": 2,
+    "models": {
+      "A": "GPT-5.6-Terra",
+      "B": "Kimi-K3"
+    },
+    "winnerModelId": "kimi",
+    "playedTurns": 10,
+    "elapsedMs": 1636994,
+    "battlePath": "03-运行证据/runs/battle-jev-b7cf97b7-ac7c8265-a2/battle.json",
+    "seats": {
+      "A": {
+        "gameNumber": 58,
+        "matchId": "battle-jev-b7cf97b7-ac7c8265-a2",
+        "seat": "A",
+        "model": "GPT-5.6-Terra",
+        "requestModel": "gpt-5.6-terra-bingxing",
+        "responseModels": [
+          "GPT-5.6-Terra"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:7977a6eaa2067f51",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-ac7c8265-a2/agh-a.jsonl",
+        "events": 1123,
+        "toolCalls": 61,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "dd7ea4314cad0620db1d257a3f6c0df76dcba9dd25e480a507ba2110169e1218"
+      },
+      "B": {
+        "gameNumber": 58,
+        "matchId": "battle-jev-b7cf97b7-ac7c8265-a2",
+        "seat": "B",
+        "model": "Kimi-K3",
+        "requestModel": "kimi-k3",
+        "responseModels": [
+          "kimi-k3"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:7978d053a718cf7d",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-ac7c8265-a2/agh-b.jsonl",
+        "events": 977,
+        "toolCalls": 53,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "405222031cee6f6a7fb87c0e9adea9f6f07bb1bdc429a4ae21f4762bad97b1f9"
+      }
+    }
+  },
+  {
+    "number": 59,
+    "matchId": "battle-jev-b7cf97b7-2a27010a-a1",
+    "blockId": "kimi-vs-opus",
+    "attempt": 1,
+    "models": {
+      "A": "Kimi-K3",
+      "B": "Claude-Opus-4.8"
+    },
+    "winnerModelId": "opus",
+    "playedTurns": 8,
+    "elapsedMs": 818810,
+    "battlePath": "03-运行证据/runs/battle-jev-b7cf97b7-2a27010a-a1/battle.json",
+    "seats": {
+      "A": {
+        "gameNumber": 59,
+        "matchId": "battle-jev-b7cf97b7-2a27010a-a1",
+        "seat": "A",
+        "model": "Kimi-K3",
+        "requestModel": "kimi-k3",
+        "responseModels": [
+          "kimi-k3"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:7296e1fd8ab43008",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-2a27010a-a1/agh-a.jsonl",
+        "events": 617,
+        "toolCalls": 33,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "0fc2023932167966d8ec34a6683b5e0f141a00ab19259babca6de9a51e3d791e"
+      },
+      "B": {
+        "gameNumber": 59,
+        "matchId": "battle-jev-b7cf97b7-2a27010a-a1",
+        "seat": "B",
+        "model": "Claude-Opus-4.8",
+        "requestModel": "claude-opus-4-8",
+        "responseModels": [
+          "claude-opus-4-8"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:f07961913369c44c",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-2a27010a-a1/agh-b.jsonl",
+        "events": 638,
+        "toolCalls": 34,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "c441fc828705c50780e9b7191e7cb98a0ffacda4a95076127655194a6d2f1103"
+      }
+    }
+  },
+  {
+    "number": 60,
+    "matchId": "battle-jev-b7cf97b7-c5484261-a1",
+    "blockId": "kimi-vs-opus",
+    "attempt": 1,
+    "models": {
+      "A": "Claude-Opus-4.8",
+      "B": "Kimi-K3"
+    },
+    "winnerModelId": "kimi",
+    "playedTurns": 10,
+    "elapsedMs": 1098794,
+    "battlePath": "03-运行证据/runs/battle-jev-b7cf97b7-c5484261-a1/battle.json",
+    "seats": {
+      "A": {
+        "gameNumber": 60,
+        "matchId": "battle-jev-b7cf97b7-c5484261-a1",
+        "seat": "A",
+        "model": "Claude-Opus-4.8",
+        "requestModel": "claude-opus-4-8",
+        "responseModels": [
+          "claude-opus-4-8"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:28ebb4064cbc0e3f",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-c5484261-a1/agh-a.jsonl",
+        "events": 966,
+        "toolCalls": 52,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "486fb04543ee4c8cfa4547ff57de2315e98e8722d3a10dc2bd1804862f85e506"
+      },
+      "B": {
+        "gameNumber": 60,
+        "matchId": "battle-jev-b7cf97b7-c5484261-a1",
+        "seat": "B",
+        "model": "Kimi-K3",
+        "requestModel": "kimi-k3",
+        "responseModels": [
+          "kimi-k3"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:f01e54f2cb563275",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-c5484261-a1/agh-b.jsonl",
+        "events": 941,
+        "toolCalls": 51,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "3135f469e0a78ae31809fa85722488a8cd5b4c4614332fd488ed83e6ca47182c"
+      }
+    }
+  },
+  {
+    "number": 61,
+    "matchId": "battle-jev-b7cf97b7-c5a55aa8-a0",
+    "blockId": "mimo-vs-minimax",
+    "attempt": 0,
+    "models": {
+      "A": "MiMo-V2.6-Pro",
+      "B": "MiniMax-M3"
+    },
+    "winnerModelId": "mimo",
+    "playedTurns": 12,
+    "elapsedMs": 1106969,
+    "battlePath": "03-运行证据/runs/battle-jev-b7cf97b7-c5a55aa8-a0/battle.json",
+    "seats": {
+      "A": {
+        "gameNumber": 61,
+        "matchId": "battle-jev-b7cf97b7-c5a55aa8-a0",
+        "seat": "A",
+        "model": "MiMo-V2.6-Pro",
+        "requestModel": "mimo-v2.6-pro",
+        "responseModels": [
+          "mimo-v2.6-pro"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:7c4ac0c3fa0792b1",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-c5a55aa8-a0/agh-a.jsonl",
+        "events": 1049,
+        "toolCalls": 57,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "01424419c6933bae592631db2149b2f370abc9754b757d06c8f556adb234cad6"
+      },
+      "B": {
+        "gameNumber": 61,
+        "matchId": "battle-jev-b7cf97b7-c5a55aa8-a0",
+        "seat": "B",
+        "model": "MiniMax-M3",
+        "requestModel": "minimax-m3",
+        "responseModels": [
+          "minimax-m3"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:f4a8083a7edc41d6",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-c5a55aa8-a0/agh-b.jsonl",
+        "events": 994,
+        "toolCalls": 57,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "22bd7db73536b23dd685a35b1857fc7d3d6ea18caad95b1af6f152fbab0f2e06"
+      }
+    }
+  },
+  {
+    "number": 62,
+    "matchId": "battle-jev-b7cf97b7-3aa50b0c-a0",
+    "blockId": "mimo-vs-minimax",
+    "attempt": 0,
+    "models": {
+      "A": "MiniMax-M3",
+      "B": "MiMo-V2.6-Pro"
+    },
+    "winnerModelId": "mimo",
+    "playedTurns": 10,
+    "elapsedMs": 855956,
+    "battlePath": "03-运行证据/runs/battle-jev-b7cf97b7-3aa50b0c-a0/battle.json",
+    "seats": {
+      "A": {
+        "gameNumber": 62,
+        "matchId": "battle-jev-b7cf97b7-3aa50b0c-a0",
+        "seat": "A",
+        "model": "MiniMax-M3",
+        "requestModel": "minimax-m3",
+        "responseModels": [
+          "minimax-m3"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:275ecccf6100b7e9",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-3aa50b0c-a0/agh-a.jsonl",
+        "events": 926,
+        "toolCalls": 53,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "532c1167ea0a6adf97bcd7b445298f4b1812092d2b03120c0443630958b58f0c"
+      },
+      "B": {
+        "gameNumber": 62,
+        "matchId": "battle-jev-b7cf97b7-3aa50b0c-a0",
+        "seat": "B",
+        "model": "MiMo-V2.6-Pro",
+        "requestModel": "mimo-v2.6-pro",
+        "responseModels": [
+          "mimo-v2.6-pro"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:1436d0716055e4b0",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-3aa50b0c-a0/agh-b.jsonl",
+        "events": 940,
+        "toolCalls": 51,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "1dfe735302debdcc26d3f67f91803ac44ccc9ef5e5d50d2b2b9082797b17436e"
+      }
+    }
+  },
+  {
+    "number": 63,
+    "matchId": "battle-jev-b7cf97b7-cb63b7ed-a6",
+    "blockId": "mimo-vs-qwen",
+    "attempt": 6,
+    "models": {
+      "A": "MiMo-V2.6-Pro",
+      "B": "Qwen3.8-Max-0902"
+    },
+    "winnerModelId": "qwen",
+    "playedTurns": 11,
+    "elapsedMs": 4279527,
+    "battlePath": "03-运行证据/runs/battle-jev-b7cf97b7-cb63b7ed-a6/battle.json",
+    "seats": {
+      "A": {
+        "gameNumber": 63,
+        "matchId": "battle-jev-b7cf97b7-cb63b7ed-a6",
+        "seat": "A",
+        "model": "MiMo-V2.6-Pro",
+        "requestModel": "mimo-v2.6-pro",
+        "responseModels": [
+          "mimo-v2.6-pro"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:594666a4fe9b6d69",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-cb63b7ed-a6/agh-a.jsonl",
+        "events": 1754,
+        "toolCalls": 63,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "3e93ce69bfc5478e765ede0c572a8fc18fff8441fbdec65e4fbac7f31cd6c5f0"
+      },
+      "B": {
+        "gameNumber": 63,
+        "matchId": "battle-jev-b7cf97b7-cb63b7ed-a6",
+        "seat": "B",
+        "model": "Qwen3.8-Max-0902",
+        "requestModel": "qwen3.8-max-0902",
+        "responseModels": [
+          "qwen3.8-max-0902"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:e025f22330817fac",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-cb63b7ed-a6/agh-b.jsonl",
+        "events": 1573,
+        "toolCalls": 77,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "7a4d57bf42e2f5f8d116780dc1972d85fefe671fc856049b275519597af0eb03"
+      }
+    }
+  },
+  {
+    "number": 64,
+    "matchId": "battle-jev-b7cf97b7-bd66f8c4-a6",
+    "blockId": "mimo-vs-qwen",
+    "attempt": 6,
+    "models": {
+      "A": "Qwen3.8-Max-0902",
+      "B": "MiMo-V2.6-Pro"
+    },
+    "winnerModelId": "mimo",
+    "playedTurns": 14,
+    "elapsedMs": 4330066,
+    "battlePath": "03-运行证据/runs/battle-jev-b7cf97b7-bd66f8c4-a6/battle.json",
+    "seats": {
+      "A": {
+        "gameNumber": 64,
+        "matchId": "battle-jev-b7cf97b7-bd66f8c4-a6",
+        "seat": "A",
+        "model": "Qwen3.8-Max-0902",
+        "requestModel": "qwen3.8-max-0902",
+        "responseModels": [
+          "qwen3.8-max-0902"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:72386177618ed4f3",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-bd66f8c4-a6/agh-a.jsonl",
+        "events": 1575,
+        "toolCalls": 72,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "6d6de0616dd50ce9b85b6c7a893cd25c3bd0774c71f3b57b7a7dc56abe7df7c3"
+      },
+      "B": {
+        "gameNumber": 64,
+        "matchId": "battle-jev-b7cf97b7-bd66f8c4-a6",
+        "seat": "B",
+        "model": "MiMo-V2.6-Pro",
+        "requestModel": "mimo-v2.6-pro",
+        "responseModels": [
+          "mimo-v2.6-pro"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:4212733a35f84af4",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-bd66f8c4-a6/agh-b.jsonl",
+        "events": 1820,
+        "toolCalls": 75,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "482adfae66c59b5571d2a64d6f3a942aeaaecdae34152653ef6e0142f87514d8"
+      }
+    }
+  },
+  {
+    "number": 65,
+    "matchId": "battle-jev-b7cf97b7-7e6c30e1-a1",
+    "blockId": "mimo-vs-gemini",
+    "attempt": 1,
+    "models": {
+      "A": "MiMo-V2.6-Pro",
+      "B": "Gemini-3.8-Flash-High"
+    },
+    "winnerModelId": "gemini",
+    "playedTurns": 12,
+    "elapsedMs": 2197338,
+    "battlePath": "03-运行证据/runs/battle-jev-b7cf97b7-7e6c30e1-a1/battle.json",
+    "seats": {
+      "A": {
+        "gameNumber": 65,
+        "matchId": "battle-jev-b7cf97b7-7e6c30e1-a1",
+        "seat": "A",
+        "model": "MiMo-V2.6-Pro",
+        "requestModel": "mimo-v2.6-pro",
+        "responseModels": [
+          "mimo-v2.6-pro"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:d95b96227a998de1",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-7e6c30e1-a1/agh-a.jsonl",
+        "events": 1441,
+        "toolCalls": 60,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "db63acfbdcf58cc1dc614604831614e465ef492bc191a36512ebe916ea5eade8"
+      },
+      "B": {
+        "gameNumber": 65,
+        "matchId": "battle-jev-b7cf97b7-7e6c30e1-a1",
+        "seat": "B",
+        "model": "Gemini-3.8-Flash-High",
+        "requestModel": "gemini-3.8-flash-high",
+        "responseModels": [
+          "gemini-3.8-flash-n"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:3d5f5af21d2426bf",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-7e6c30e1-a1/agh-b.jsonl",
+        "events": 1555,
+        "toolCalls": 90,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "304fdf1f44d4a4c794a5e8f8c2c34dcab97811b9b8a2a8e3a778024377c473a0"
+      }
+    }
+  },
+  {
+    "number": 66,
+    "matchId": "battle-jev-b7cf97b7-b346b2de-a1",
+    "blockId": "mimo-vs-gemini",
+    "attempt": 1,
+    "models": {
+      "A": "Gemini-3.8-Flash-High",
+      "B": "MiMo-V2.6-Pro"
+    },
+    "winnerModelId": "gemini",
+    "playedTurns": 15,
+    "elapsedMs": 1069812,
+    "battlePath": "03-运行证据/runs/battle-jev-b7cf97b7-b346b2de-a1/battle.json",
+    "seats": {
+      "A": {
+        "gameNumber": 66,
+        "matchId": "battle-jev-b7cf97b7-b346b2de-a1",
+        "seat": "A",
+        "model": "Gemini-3.8-Flash-High",
+        "requestModel": "gemini-3.8-flash-high",
+        "responseModels": [
+          "gemini-3.8-flash-n"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:81642edb20fc9279",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-b346b2de-a1/agh-a.jsonl",
+        "events": 1334,
+        "toolCalls": 77,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "94fde10580177de088c6f16949412b7bc5937112e43c7b5354e7caa1e787706e"
+      },
+      "B": {
+        "gameNumber": 66,
+        "matchId": "battle-jev-b7cf97b7-b346b2de-a1",
+        "seat": "B",
+        "model": "MiMo-V2.6-Pro",
+        "requestModel": "mimo-v2.6-pro",
+        "responseModels": [
+          "mimo-v2.6-pro"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:1879c41b3b2665aa",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-b346b2de-a1/agh-b.jsonl",
+        "events": 1391,
+        "toolCalls": 72,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "0567793661bb77e6f7ba184131b32c022efa44e61666dc5fc3440601e4fd64c6"
+      }
+    }
+  },
+  {
+    "number": 67,
+    "matchId": "battle-jev-b7cf97b7-4d78fceb-a6",
+    "blockId": "mimo-vs-gpt",
+    "attempt": 6,
+    "models": {
+      "A": "MiMo-V2.6-Pro",
+      "B": "GPT-5.6-Terra"
+    },
+    "winnerModelId": "mimo",
+    "playedTurns": 16,
+    "elapsedMs": 3941710,
+    "battlePath": "03-运行证据/runs/battle-jev-b7cf97b7-4d78fceb-a6/battle.json",
+    "seats": {
+      "A": {
+        "gameNumber": 67,
+        "matchId": "battle-jev-b7cf97b7-4d78fceb-a6",
+        "seat": "A",
+        "model": "MiMo-V2.6-Pro",
+        "requestModel": "mimo-v2.6-pro",
+        "responseModels": [
+          "mimo-v2.6-pro"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:6ccc9a27645a6ab3",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-4d78fceb-a6/agh-a.jsonl",
+        "events": 1604,
+        "toolCalls": 59,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "b67b900a0d5ea7c9aa76ee2af92cdf2a3fa6da4102f3add31f249ddbbbdf1664"
+      },
+      "B": {
+        "gameNumber": 67,
+        "matchId": "battle-jev-b7cf97b7-4d78fceb-a6",
+        "seat": "B",
+        "model": "GPT-5.6-Terra",
+        "requestModel": "gpt-5.6-terra-bingxing",
+        "responseModels": [
+          "GPT-5.6-Terra"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:f1ae849ebc8e5779",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-4d78fceb-a6/agh-b.jsonl",
+        "events": 1930,
+        "toolCalls": 107,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "b47084e8c5db917487ba6da4fc3c82e5a9c02c0f9b455c615a53d76baeaf0246"
+      }
+    }
+  },
+  {
+    "number": 68,
+    "matchId": "battle-jev-b7cf97b7-332b9714-a6",
+    "blockId": "mimo-vs-gpt",
+    "attempt": 6,
+    "models": {
+      "A": "GPT-5.6-Terra",
+      "B": "MiMo-V2.6-Pro"
+    },
+    "winnerModelId": "mimo",
+    "playedTurns": 7,
+    "elapsedMs": 1617505,
+    "battlePath": "03-运行证据/runs/battle-jev-b7cf97b7-332b9714-a6/battle.json",
+    "seats": {
+      "A": {
+        "gameNumber": 68,
+        "matchId": "battle-jev-b7cf97b7-332b9714-a6",
+        "seat": "A",
+        "model": "GPT-5.6-Terra",
+        "requestModel": "gpt-5.6-terra-bingxing",
+        "responseModels": [
+          "GPT-5.6-Terra"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:d0d53853bd6efe93",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-332b9714-a6/agh-a.jsonl",
+        "events": 956,
+        "toolCalls": 52,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "d77eaa2e1fb67125c2f19248f5b9578f7ccb8a72a5a9ed6dfe6fd0469c521d87"
+      },
+      "B": {
+        "gameNumber": 68,
+        "matchId": "battle-jev-b7cf97b7-332b9714-a6",
+        "seat": "B",
+        "model": "MiMo-V2.6-Pro",
+        "requestModel": "mimo-v2.6-pro",
+        "responseModels": [
+          "mimo-v2.6-pro"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:9a5f2d65df0f88d7",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-332b9714-a6/agh-b.jsonl",
+        "events": 673,
+        "toolCalls": 32,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "ba990e1f5a55a44bb928bcb5fe0b880ece96e883f7d7e512ff26b1ba362ed476"
+      }
+    }
+  },
+  {
+    "number": 69,
+    "matchId": "battle-jev-b7cf97b7-f130987f-a1",
+    "blockId": "mimo-vs-opus",
+    "attempt": 1,
+    "models": {
+      "A": "MiMo-V2.6-Pro",
+      "B": "Claude-Opus-4.8"
+    },
+    "winnerModelId": "mimo",
+    "playedTurns": 12,
+    "elapsedMs": 1423727,
+    "battlePath": "03-运行证据/runs/battle-jev-b7cf97b7-f130987f-a1/battle.json",
+    "seats": {
+      "A": {
+        "gameNumber": 69,
+        "matchId": "battle-jev-b7cf97b7-f130987f-a1",
+        "seat": "A",
+        "model": "MiMo-V2.6-Pro",
+        "requestModel": "mimo-v2.6-pro",
+        "responseModels": [
+          "mimo-v2.6-pro"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:b1684d58e58b4963",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-f130987f-a1/agh-a.jsonl",
+        "events": 979,
+        "toolCalls": 45,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "4e39b499e20d671e897b2b4a38d274101d9b29c089e0ccf25b8fea5c7b66732a"
+      },
+      "B": {
+        "gameNumber": 69,
+        "matchId": "battle-jev-b7cf97b7-f130987f-a1",
+        "seat": "B",
+        "model": "Claude-Opus-4.8",
+        "requestModel": "claude-opus-4-8",
+        "responseModels": [
+          "claude-opus-4-8"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:595696633ed1c92d",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-f130987f-a1/agh-b.jsonl",
+        "events": 1016,
+        "toolCalls": 55,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "58b330c4ecf237f5d31325561ab0b2175e40ef9d72b984313be952069d657456"
+      }
+    }
+  },
+  {
+    "number": 70,
+    "matchId": "battle-jev-b7cf97b7-aee6b0e4-a1",
+    "blockId": "mimo-vs-opus",
+    "attempt": 1,
+    "models": {
+      "A": "Claude-Opus-4.8",
+      "B": "MiMo-V2.6-Pro"
+    },
+    "winnerModelId": "mimo",
+    "playedTurns": 8,
+    "elapsedMs": 1489700,
+    "battlePath": "03-运行证据/runs/battle-jev-b7cf97b7-aee6b0e4-a1/battle.json",
+    "seats": {
+      "A": {
+        "gameNumber": 70,
+        "matchId": "battle-jev-b7cf97b7-aee6b0e4-a1",
+        "seat": "A",
+        "model": "Claude-Opus-4.8",
+        "requestModel": "claude-opus-4-8",
+        "responseModels": [
+          "claude-opus-4-8"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:aece48dcf3f83864",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-aee6b0e4-a1/agh-a.jsonl",
+        "events": 1102,
+        "toolCalls": 60,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "72d44241cc2c9d92c17ea059b0215479044221d142be15248fc46f5cccd598f7"
+      },
+      "B": {
+        "gameNumber": 70,
+        "matchId": "battle-jev-b7cf97b7-aee6b0e4-a1",
+        "seat": "B",
+        "model": "MiMo-V2.6-Pro",
+        "requestModel": "mimo-v2.6-pro",
+        "responseModels": [
+          "mimo-v2.6-pro"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:465aeb1a6530d2f2",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-aee6b0e4-a1/agh-b.jsonl",
+        "events": 971,
+        "toolCalls": 42,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "055fb4732e2d85866a0de043efa96f04b1d51a43b436bef0ec2245089db9417a"
+      }
+    }
+  },
+  {
+    "number": 71,
+    "matchId": "battle-jev-b7cf97b7-f7388d63-a6",
+    "blockId": "minimax-vs-qwen",
+    "attempt": 6,
+    "models": {
+      "A": "MiniMax-M3",
+      "B": "Qwen3.8-Max-0902"
+    },
+    "winnerModelId": "qwen",
+    "playedTurns": 9,
+    "elapsedMs": 1841487,
+    "battlePath": "03-运行证据/runs/battle-jev-b7cf97b7-f7388d63-a6/battle.json",
+    "seats": {
+      "A": {
+        "gameNumber": 71,
+        "matchId": "battle-jev-b7cf97b7-f7388d63-a6",
+        "seat": "A",
+        "model": "MiniMax-M3",
+        "requestModel": "minimax-m3",
+        "responseModels": [
+          "minimax-m3"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:35fb2263da9e61ea",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-f7388d63-a6/agh-a.jsonl",
+        "events": 744,
+        "toolCalls": 42,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "6d49d4ace77bab825f6fe23bd9f9feaa201d5b2a0a297fd67c98ebb42f55b6a9"
+      },
+      "B": {
+        "gameNumber": 71,
+        "matchId": "battle-jev-b7cf97b7-f7388d63-a6",
+        "seat": "B",
+        "model": "Qwen3.8-Max-0902",
+        "requestModel": "qwen3.8-max-0902",
+        "responseModels": [
+          "qwen3.8-max-0902"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:aabbcfa1e04b762d",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-f7388d63-a6/agh-b.jsonl",
+        "events": 820,
+        "toolCalls": 40,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "e3b88dd0d5cce1bf6057b6faa04ae4794c687976a94c54b1b8880a967c14e7cb"
+      }
+    }
+  },
+  {
+    "number": 72,
+    "matchId": "battle-jev-b7cf97b7-837089a3-a6",
+    "blockId": "minimax-vs-qwen",
+    "attempt": 6,
+    "models": {
+      "A": "Qwen3.8-Max-0902",
+      "B": "MiniMax-M3"
+    },
+    "winnerModelId": "minimax",
+    "playedTurns": 14,
+    "elapsedMs": 3456388,
+    "battlePath": "03-运行证据/runs/battle-jev-b7cf97b7-837089a3-a6/battle.json",
+    "seats": {
+      "A": {
+        "gameNumber": 72,
+        "matchId": "battle-jev-b7cf97b7-837089a3-a6",
+        "seat": "A",
+        "model": "Qwen3.8-Max-0902",
+        "requestModel": "qwen3.8-max-0902",
+        "responseModels": [
+          "qwen3.8-max-0902"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:714f9e32e96bb0fd",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-837089a3-a6/agh-a.jsonl",
+        "events": 1319,
+        "toolCalls": 53,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "c019c51ec53923efc3b5f32c62a83f66e28f7b109143d4fba2620ca4f6814f2d"
+      },
+      "B": {
+        "gameNumber": 72,
+        "matchId": "battle-jev-b7cf97b7-837089a3-a6",
+        "seat": "B",
+        "model": "MiniMax-M3",
+        "requestModel": "minimax-m3",
+        "responseModels": [
+          "minimax-m3"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:61f7e3edeecb4882",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-837089a3-a6/agh-b.jsonl",
+        "events": 1536,
+        "toolCalls": 88,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "34a1ce7bb8e88c19e63d1132890f043f5ad1266a75b399a4df8bfbbe029869ed"
+      }
+    }
+  },
+  {
+    "number": 73,
+    "matchId": "battle-jev-b7cf97b7-b79356ae-a0",
+    "blockId": "minimax-vs-gemini",
+    "attempt": 0,
+    "models": {
+      "A": "MiniMax-M3",
+      "B": "Gemini-3.8-Flash-High"
+    },
+    "winnerModelId": "gemini",
+    "playedTurns": 7,
+    "elapsedMs": 298402,
+    "battlePath": "03-运行证据/runs/battle-jev-b7cf97b7-b79356ae-a0/battle.json",
+    "seats": {
+      "A": {
+        "gameNumber": 73,
+        "matchId": "battle-jev-b7cf97b7-b79356ae-a0",
+        "seat": "A",
+        "model": "MiniMax-M3",
+        "requestModel": "minimax-m3",
+        "responseModels": [
+          "minimax-m3"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:aa18c23393fc1a03",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-b79356ae-a0/agh-a.jsonl",
+        "events": 569,
+        "toolCalls": 32,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "15c57a88c1328be22ca65ea4cf55c5841146857caa28602a835720adf1db256d"
+      },
+      "B": {
+        "gameNumber": 73,
+        "matchId": "battle-jev-b7cf97b7-b79356ae-a0",
+        "seat": "B",
+        "model": "Gemini-3.8-Flash-High",
+        "requestModel": "gemini-3.8-flash-high",
+        "responseModels": [
+          "gemini-3.8-flash-n"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:e2b3ddcc17d8e513",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-b79356ae-a0/agh-b.jsonl",
+        "events": 686,
+        "toolCalls": 39,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "3ae562014e8234fa43cafe68a6124a56a17f9def7ec2703587d4df02a9ca8a41"
+      }
+    }
+  },
+  {
+    "number": 74,
+    "matchId": "battle-jev-b7cf97b7-f16af02a-a0",
+    "blockId": "minimax-vs-gemini",
+    "attempt": 0,
+    "models": {
+      "A": "Gemini-3.8-Flash-High",
+      "B": "MiniMax-M3"
+    },
+    "winnerModelId": "gemini",
+    "playedTurns": 12,
+    "elapsedMs": 571439,
+    "battlePath": "03-运行证据/runs/battle-jev-b7cf97b7-f16af02a-a0/battle.json",
+    "seats": {
+      "A": {
+        "gameNumber": 74,
+        "matchId": "battle-jev-b7cf97b7-f16af02a-a0",
+        "seat": "A",
+        "model": "Gemini-3.8-Flash-High",
+        "requestModel": "gemini-3.8-flash-high",
+        "responseModels": [
+          "gemini-3.8-flash-n"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:88175a0dc4f68043",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-f16af02a-a0/agh-a.jsonl",
+        "events": 1079,
+        "toolCalls": 62,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "dbbba6b7286b1443d6472fd5d04b173ba10ab9f13e8fdabedceb3e409ddec380"
+      },
+      "B": {
+        "gameNumber": 74,
+        "matchId": "battle-jev-b7cf97b7-f16af02a-a0",
+        "seat": "B",
+        "model": "MiniMax-M3",
+        "requestModel": "minimax-m3",
+        "responseModels": [
+          "minimax-m3"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:eeb4d29d7b2eca62",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-f16af02a-a0/agh-b.jsonl",
+        "events": 863,
+        "toolCalls": 49,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "335f5d000d96f1c8a5d96ef44fced7af808249d66d4343a2ab3a7a2a9f163804"
+      }
+    }
+  },
+  {
+    "number": 75,
+    "matchId": "battle-jev-b7cf97b7-acb9a180-a1",
+    "blockId": "minimax-vs-gpt",
+    "attempt": 1,
+    "models": {
+      "A": "MiniMax-M3",
+      "B": "GPT-5.6-Terra"
+    },
+    "winnerModelId": "gpt",
+    "playedTurns": 8,
+    "elapsedMs": 899677,
+    "battlePath": "03-运行证据/runs/battle-jev-b7cf97b7-acb9a180-a1/battle.json",
+    "seats": {
+      "A": {
+        "gameNumber": 75,
+        "matchId": "battle-jev-b7cf97b7-acb9a180-a1",
+        "seat": "A",
+        "model": "MiniMax-M3",
+        "requestModel": "minimax-m3",
+        "responseModels": [
+          "minimax-m3"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:cf0881c28471c141",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-acb9a180-a1/agh-a.jsonl",
+        "events": 775,
+        "toolCalls": 44,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "c4d9f4562dbccb88ee2dfa2c3fa316aa06771642f93a546a65c5215184227c8e"
+      },
+      "B": {
+        "gameNumber": 75,
+        "matchId": "battle-jev-b7cf97b7-acb9a180-a1",
+        "seat": "B",
+        "model": "GPT-5.6-Terra",
+        "requestModel": "gpt-5.6-terra-bingxing",
+        "responseModels": [
+          "GPT-5.6-Terra"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:8768ddab1fc866af",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-acb9a180-a1/agh-b.jsonl",
+        "events": 762,
+        "toolCalls": 41,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "ddb5cc0d1d10878512488bb72ca431b7b48a49b6cbbe5548b68d672845755e03"
+      }
+    }
+  },
+  {
+    "number": 76,
+    "matchId": "battle-jev-b7cf97b7-ecdbb3f0-a1",
+    "blockId": "minimax-vs-gpt",
+    "attempt": 1,
+    "models": {
+      "A": "GPT-5.6-Terra",
+      "B": "MiniMax-M3"
+    },
+    "winnerModelId": "minimax",
+    "playedTurns": 11,
+    "elapsedMs": 2414790,
+    "battlePath": "03-运行证据/runs/battle-jev-b7cf97b7-ecdbb3f0-a1/battle.json",
+    "seats": {
+      "A": {
+        "gameNumber": 76,
+        "matchId": "battle-jev-b7cf97b7-ecdbb3f0-a1",
+        "seat": "A",
+        "model": "GPT-5.6-Terra",
+        "requestModel": "gpt-5.6-terra-bingxing",
+        "responseModels": [
+          "GPT-5.6-Terra"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:abb05796e5b6606c",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-ecdbb3f0-a1/agh-a.jsonl",
+        "events": 1173,
+        "toolCalls": 63,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "69089173a4a05e66be3b194c918065ac8261085d357b84ac12a40bbb920735d8"
+      },
+      "B": {
+        "gameNumber": 76,
+        "matchId": "battle-jev-b7cf97b7-ecdbb3f0-a1",
+        "seat": "B",
+        "model": "MiniMax-M3",
+        "requestModel": "minimax-m3",
+        "responseModels": [
+          "minimax-m3"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:db6e31fb9d362100",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-ecdbb3f0-a1/agh-b.jsonl",
+        "events": 1376,
+        "toolCalls": 78,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "d9d4e0698c3db890a4023d085a303d9e51ef32c8de11a2a12c6ad0d4a5b0767b"
+      }
+    }
+  },
+  {
+    "number": 77,
+    "matchId": "battle-jev-b7cf97b7-dacbba40-a1",
+    "blockId": "minimax-vs-opus",
+    "attempt": 1,
+    "models": {
+      "A": "MiniMax-M3",
+      "B": "Claude-Opus-4.8"
+    },
+    "winnerModelId": "opus",
+    "playedTurns": 11,
+    "elapsedMs": 477947,
+    "battlePath": "03-运行证据/runs/battle-jev-b7cf97b7-dacbba40-a1/battle.json",
+    "seats": {
+      "A": {
+        "gameNumber": 77,
+        "matchId": "battle-jev-b7cf97b7-dacbba40-a1",
+        "seat": "A",
+        "model": "MiniMax-M3",
+        "requestModel": "minimax-m3",
+        "responseModels": [
+          "minimax-m3"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:b6c8e6dc40769e87",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-dacbba40-a1/agh-a.jsonl",
+        "events": 809,
+        "toolCalls": 46,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "514253af67e3016e0995eae9dffb363b5f41f7c56367356425598088c71c9a20"
+      },
+      "B": {
+        "gameNumber": 77,
+        "matchId": "battle-jev-b7cf97b7-dacbba40-a1",
+        "seat": "B",
+        "model": "Claude-Opus-4.8",
+        "requestModel": "claude-opus-4-8",
+        "responseModels": [
+          "claude-opus-4-8"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:1666776339184669",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-dacbba40-a1/agh-b.jsonl",
+        "events": 957,
+        "toolCalls": 52,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "ca267a79dbaa143937c15fd1f0727a0079f01413d21fdf1592623af32c36af61"
+      }
+    }
+  },
+  {
+    "number": 78,
+    "matchId": "battle-jev-b7cf97b7-198eb42a-a1",
+    "blockId": "minimax-vs-opus",
+    "attempt": 1,
+    "models": {
+      "A": "Claude-Opus-4.8",
+      "B": "MiniMax-M3"
+    },
+    "winnerModelId": "minimax",
+    "playedTurns": 15,
+    "elapsedMs": 719486,
+    "battlePath": "03-运行证据/runs/battle-jev-b7cf97b7-198eb42a-a1/battle.json",
+    "seats": {
+      "A": {
+        "gameNumber": 78,
+        "matchId": "battle-jev-b7cf97b7-198eb42a-a1",
+        "seat": "A",
+        "model": "Claude-Opus-4.8",
+        "requestModel": "claude-opus-4-8",
+        "responseModels": [
+          "claude-opus-4-8"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:6f77de3c5795c9d3",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-198eb42a-a1/agh-a.jsonl",
+        "events": 1302,
+        "toolCalls": 71,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "71a584b5c15b72b4c6d764f50ff7318f9646a317891ad028912af8dd7eac1819"
+      },
+      "B": {
+        "gameNumber": 78,
+        "matchId": "battle-jev-b7cf97b7-198eb42a-a1",
+        "seat": "B",
+        "model": "MiniMax-M3",
+        "requestModel": "minimax-m3",
+        "responseModels": [
+          "minimax-m3"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:a019c183898390ae",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-198eb42a-a1/agh-b.jsonl",
+        "events": 1271,
+        "toolCalls": 73,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "a7ca95419d254b2db2522d9c00986a0938c7bbdd4f820acf34414d7bef9ef65e"
+      }
+    }
+  },
+  {
+    "number": 79,
+    "matchId": "battle-jev-b7cf97b7-083ce954-a2",
+    "blockId": "qwen-vs-gemini",
+    "attempt": 2,
+    "models": {
+      "A": "Qwen3.8-Max-0902",
+      "B": "Gemini-3.8-Flash-High"
+    },
+    "winnerModelId": "gemini",
+    "playedTurns": 7,
+    "elapsedMs": 703912,
+    "battlePath": "03-运行证据/runs/battle-jev-b7cf97b7-083ce954-a2/battle.json",
+    "seats": {
+      "A": {
+        "gameNumber": 79,
+        "matchId": "battle-jev-b7cf97b7-083ce954-a2",
+        "seat": "A",
+        "model": "Qwen3.8-Max-0902",
+        "requestModel": "qwen3.8-max-0902",
+        "responseModels": [
+          "qwen3.8-max-0902"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:66e8003ca6ce6b79",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-083ce954-a2/agh-a.jsonl",
+        "events": 622,
+        "toolCalls": 34,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "e99e184c1e178f3b778d1d1d76e18094543a82d95b567ddfb9300f4c2c5d0d40"
+      },
+      "B": {
+        "gameNumber": 79,
+        "matchId": "battle-jev-b7cf97b7-083ce954-a2",
+        "seat": "B",
+        "model": "Gemini-3.8-Flash-High",
+        "requestModel": "gemini-3.8-flash-high",
+        "responseModels": [
+          "gemini-3.8-flash-n"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:7944c6fee20e38f8",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-083ce954-a2/agh-b.jsonl",
+        "events": 773,
+        "toolCalls": 44,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "210485735d60a1fcd3f48c5d24cf413e36f28149341901cd898f3b77b3342542"
+      }
+    }
+  },
+  {
+    "number": 80,
+    "matchId": "battle-jev-b7cf97b7-eb716f8d-a2",
+    "blockId": "qwen-vs-gemini",
+    "attempt": 2,
+    "models": {
+      "A": "Gemini-3.8-Flash-High",
+      "B": "Qwen3.8-Max-0902"
+    },
+    "winnerModelId": "qwen",
+    "playedTurns": 9,
+    "elapsedMs": 1057590,
+    "battlePath": "03-运行证据/runs/battle-jev-b7cf97b7-eb716f8d-a2/battle.json",
+    "seats": {
+      "A": {
+        "gameNumber": 80,
+        "matchId": "battle-jev-b7cf97b7-eb716f8d-a2",
+        "seat": "A",
+        "model": "Gemini-3.8-Flash-High",
+        "requestModel": "gemini-3.8-flash-high",
+        "responseModels": [
+          "gemini-3.8-flash-n"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:b43e2d08a0288bf1",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-eb716f8d-a2/agh-a.jsonl",
+        "events": 1028,
+        "toolCalls": 59,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "51ecd137dc900065bffa191f2ca941e1341f61995f54102f8de868fc14825a55"
+      },
+      "B": {
+        "gameNumber": 80,
+        "matchId": "battle-jev-b7cf97b7-eb716f8d-a2",
+        "seat": "B",
+        "model": "Qwen3.8-Max-0902",
+        "requestModel": "qwen3.8-max-0902",
+        "responseModels": [
+          "qwen3.8-max-0902"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:32b6d833f886370c",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-eb716f8d-a2/agh-b.jsonl",
+        "events": 696,
+        "toolCalls": 37,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "641b1e49d1056036db08fb0bc4455b07ce8d7bed37035d7121c01623a2e889e2"
+      }
+    }
+  },
+  {
+    "number": 81,
+    "matchId": "battle-jev-b7cf97b7-21f35ae3-a1",
+    "blockId": "qwen-vs-gpt",
+    "attempt": 1,
+    "models": {
+      "A": "Qwen3.8-Max-0902",
+      "B": "GPT-5.6-Terra"
+    },
+    "winnerModelId": "gpt",
+    "playedTurns": 12,
+    "elapsedMs": 1967715,
+    "battlePath": "03-运行证据/runs/battle-jev-b7cf97b7-21f35ae3-a1/battle.json",
+    "seats": {
+      "A": {
+        "gameNumber": 81,
+        "matchId": "battle-jev-b7cf97b7-21f35ae3-a1",
+        "seat": "A",
+        "model": "Qwen3.8-Max-0902",
+        "requestModel": "qwen3.8-max-0902",
+        "responseModels": [
+          "qwen3.8-max-0902"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:aff5f7a9dc1d6426",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-21f35ae3-a1/agh-a.jsonl",
+        "events": 1027,
+        "toolCalls": 48,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "e3d6b0b3ffd319bbe1b19dfba463d1d2e10cea21b8b06808e2f28d9d9e0bced1"
+      },
+      "B": {
+        "gameNumber": 81,
+        "matchId": "battle-jev-b7cf97b7-21f35ae3-a1",
+        "seat": "B",
+        "model": "GPT-5.6-Terra",
+        "requestModel": "gpt-5.6-terra-bingxing",
+        "responseModels": [
+          "GPT-5.6-Terra"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:697426dae0f092ab",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-21f35ae3-a1/agh-b.jsonl",
+        "events": 1295,
+        "toolCalls": 71,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "8cabff7081986753b90a2e9fbcf1e0012c9284eb61630bfd91e1b1d38b83c4cf"
+      }
+    }
+  },
+  {
+    "number": 82,
+    "matchId": "battle-jev-b7cf97b7-8aec9be7-a1",
+    "blockId": "qwen-vs-gpt",
+    "attempt": 1,
+    "models": {
+      "A": "GPT-5.6-Terra",
+      "B": "Qwen3.8-Max-0902"
+    },
+    "winnerModelId": "qwen",
+    "playedTurns": 8,
+    "elapsedMs": 1301799,
+    "battlePath": "03-运行证据/runs/battle-jev-b7cf97b7-8aec9be7-a1/battle.json",
+    "seats": {
+      "A": {
+        "gameNumber": 82,
+        "matchId": "battle-jev-b7cf97b7-8aec9be7-a1",
+        "seat": "A",
+        "model": "GPT-5.6-Terra",
+        "requestModel": "gpt-5.6-terra-bingxing",
+        "responseModels": [
+          "GPT-5.6-Terra"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:c179366ebec3ea95",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-8aec9be7-a1/agh-a.jsonl",
+        "events": 920,
+        "toolCalls": 50,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "2fae412ddcb72f35ca9a7fff8730c6ecfa16a916c50256002d01e6c2877e728f"
+      },
+      "B": {
+        "gameNumber": 82,
+        "matchId": "battle-jev-b7cf97b7-8aec9be7-a1",
+        "seat": "B",
+        "model": "Qwen3.8-Max-0902",
+        "requestModel": "qwen3.8-max-0902",
+        "responseModels": [
+          "qwen3.8-max-0902"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:9aeb921b0022c9bf",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-8aec9be7-a1/agh-b.jsonl",
+        "events": 796,
+        "toolCalls": 37,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "e6363a4e5b0795cc731bf553f0e3c2e5a4abb7d201ba48c803823e9bafb11e5f"
+      }
+    }
+  },
+  {
+    "number": 83,
+    "matchId": "battle-jev-b7cf97b7-f30339e3-a2",
+    "blockId": "qwen-vs-opus",
+    "attempt": 2,
+    "models": {
+      "A": "Qwen3.8-Max-0902",
+      "B": "Claude-Opus-4.8"
+    },
+    "winnerModelId": "qwen",
+    "playedTurns": 11,
+    "elapsedMs": 1046247,
+    "battlePath": "03-运行证据/runs/battle-jev-b7cf97b7-f30339e3-a2/battle.json",
+    "seats": {
+      "A": {
+        "gameNumber": 83,
+        "matchId": "battle-jev-b7cf97b7-f30339e3-a2",
+        "seat": "A",
+        "model": "Qwen3.8-Max-0902",
+        "requestModel": "qwen3.8-max-0902",
+        "responseModels": [
+          "qwen3.8-max-0902"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:721ea8941ae886b9",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-f30339e3-a2/agh-a.jsonl",
+        "events": 939,
+        "toolCalls": 43,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "38f2a3c9cee028112a9d9746b9f1c182123ae45f590bbb2161b2317efff6ebfc"
+      },
+      "B": {
+        "gameNumber": 83,
+        "matchId": "battle-jev-b7cf97b7-f30339e3-a2",
+        "seat": "B",
+        "model": "Claude-Opus-4.8",
+        "requestModel": "claude-opus-4-8",
+        "responseModels": [
+          "claude-opus-4-8"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:aa13a79c29012414",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-f30339e3-a2/agh-b.jsonl",
+        "events": 1210,
+        "toolCalls": 66,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "7e2b5cbd502fbee7003435aa7100098bce452cb7fe84d79edd8ed2d69233ebb5"
+      }
+    }
+  },
+  {
+    "number": 84,
+    "matchId": "battle-jev-b7cf97b7-318f30ec-a2",
+    "blockId": "qwen-vs-opus",
+    "attempt": 2,
+    "models": {
+      "A": "Claude-Opus-4.8",
+      "B": "Qwen3.8-Max-0902"
+    },
+    "winnerModelId": "qwen",
+    "playedTurns": 8,
+    "elapsedMs": 1023310,
+    "battlePath": "03-运行证据/runs/battle-jev-b7cf97b7-318f30ec-a2/battle.json",
+    "seats": {
+      "A": {
+        "gameNumber": 84,
+        "matchId": "battle-jev-b7cf97b7-318f30ec-a2",
+        "seat": "A",
+        "model": "Claude-Opus-4.8",
+        "requestModel": "claude-opus-4-8",
+        "responseModels": [
+          "claude-opus-4-8"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:7ae3f6df68b50119",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-318f30ec-a2/agh-a.jsonl",
+        "events": 1038,
+        "toolCalls": 56,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "56bbf943ec78da954f88f7f023f86614177609022291fbeb60f5e5ed0df0a7cd"
+      },
+      "B": {
+        "gameNumber": 84,
+        "matchId": "battle-jev-b7cf97b7-318f30ec-a2",
+        "seat": "B",
+        "model": "Qwen3.8-Max-0902",
+        "requestModel": "qwen3.8-max-0902",
+        "responseModels": [
+          "qwen3.8-max-0902"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:5b515a47785e3082",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-318f30ec-a2/agh-b.jsonl",
+        "events": 830,
+        "toolCalls": 36,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "331d0c1889e650509d0573bc8affc98256a07198a9fbfe41985aeb81cbdcc281"
+      }
+    }
+  },
+  {
+    "number": 85,
+    "matchId": "battle-jev-b7cf97b7-85ab093a-a0",
+    "blockId": "gemini-vs-gpt",
+    "attempt": 0,
+    "models": {
+      "A": "Gemini-3.8-Flash-High",
+      "B": "GPT-5.6-Terra"
+    },
+    "winnerModelId": "gpt",
+    "playedTurns": 17,
+    "elapsedMs": 2143009,
+    "battlePath": "03-运行证据/runs/battle-jev-b7cf97b7-85ab093a-a0/battle.json",
+    "seats": {
+      "A": {
+        "gameNumber": 85,
+        "matchId": "battle-jev-b7cf97b7-85ab093a-a0",
+        "seat": "A",
+        "model": "Gemini-3.8-Flash-High",
+        "requestModel": "gemini-3.8-flash-high",
+        "responseModels": [
+          "gemini-3.8-flash-n"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:64ae01b74e19f46b",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-85ab093a-a0/agh-a.jsonl",
+        "events": 1725,
+        "toolCalls": 100,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "b869f4fefb849fe151141f0d4cfe26d2bb8a0e7f30a28c1215e04eab97419dbd"
+      },
+      "B": {
+        "gameNumber": 85,
+        "matchId": "battle-jev-b7cf97b7-85ab093a-a0",
+        "seat": "B",
+        "model": "GPT-5.6-Terra",
+        "requestModel": "gpt-5.6-terra-bingxing",
+        "responseModels": [
+          "GPT-5.6-Terra"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:ac47cf74ef80e750",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-85ab093a-a0/agh-b.jsonl",
+        "events": 1406,
+        "toolCalls": 77,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "750ea997fdbaab5bc388d8dc989eb1d3cc36dde2892f289aaeedeb3c9192a708"
+      }
+    }
+  },
+  {
+    "number": 86,
+    "matchId": "battle-jev-b7cf97b7-db1127e9-a0",
+    "blockId": "gemini-vs-gpt",
+    "attempt": 0,
+    "models": {
+      "A": "GPT-5.6-Terra",
+      "B": "Gemini-3.8-Flash-High"
+    },
+    "winnerModelId": "gemini",
+    "playedTurns": 9,
+    "elapsedMs": 1182385,
+    "battlePath": "03-运行证据/runs/battle-jev-b7cf97b7-db1127e9-a0/battle.json",
+    "seats": {
+      "A": {
+        "gameNumber": 86,
+        "matchId": "battle-jev-b7cf97b7-db1127e9-a0",
+        "seat": "A",
+        "model": "GPT-5.6-Terra",
+        "requestModel": "gpt-5.6-terra-bingxing",
+        "responseModels": [
+          "GPT-5.6-Terra"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:1d7f2214ac24de67",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-db1127e9-a0/agh-a.jsonl",
+        "events": 848,
+        "toolCalls": 46,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "f6c8ae0c8cc7af32497b268ed702b8395980c67670bce67f832ef279f9a059df"
+      },
+      "B": {
+        "gameNumber": 86,
+        "matchId": "battle-jev-b7cf97b7-db1127e9-a0",
+        "seat": "B",
+        "model": "Gemini-3.8-Flash-High",
+        "requestModel": "gemini-3.8-flash-high",
+        "responseModels": [
+          "gemini-3.8-flash-n"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:50b001051e83baf7",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-db1127e9-a0/agh-b.jsonl",
+        "events": 994,
+        "toolCalls": 57,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "3e26fe12f2ab0efc32284d910b4330b51aa788906586109b577818c1b3236fd8"
+      }
+    }
+  },
+  {
+    "number": 87,
+    "matchId": "battle-jev-b7cf97b7-5c4af7c5-a2",
+    "blockId": "gemini-vs-opus",
+    "attempt": 2,
+    "models": {
+      "A": "Gemini-3.8-Flash-High",
+      "B": "Claude-Opus-4.8"
+    },
+    "winnerModelId": "opus",
+    "playedTurns": 15,
+    "elapsedMs": 1119917,
+    "battlePath": "03-运行证据/runs/battle-jev-b7cf97b7-5c4af7c5-a2/battle.json",
+    "seats": {
+      "A": {
+        "gameNumber": 87,
+        "matchId": "battle-jev-b7cf97b7-5c4af7c5-a2",
+        "seat": "A",
+        "model": "Gemini-3.8-Flash-High",
+        "requestModel": "gemini-3.8-flash-high",
+        "responseModels": [
+          "gemini-3.8-flash-n"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:a297ccced5581e66",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-5c4af7c5-a2/agh-a.jsonl",
+        "events": 1385,
+        "toolCalls": 80,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "b691df085ce2a96b4e3a220a8cc5210e8cb43c05e7a37e9ff132467d272b56da"
+      },
+      "B": {
+        "gameNumber": 87,
+        "matchId": "battle-jev-b7cf97b7-5c4af7c5-a2",
+        "seat": "B",
+        "model": "Claude-Opus-4.8",
+        "requestModel": "claude-opus-4-8",
+        "responseModels": [
+          "claude-opus-4-8"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:a9251cf9af86a272",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-5c4af7c5-a2/agh-b.jsonl",
+        "events": 1248,
+        "toolCalls": 68,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "55d68cb4c66ab684b2ceccd6eb4cff98a2a88d09c94d7abafc1a0b5a555d8fe1"
+      }
+    }
+  },
+  {
+    "number": 88,
+    "matchId": "battle-jev-b7cf97b7-9939f933-a2",
+    "blockId": "gemini-vs-opus",
+    "attempt": 2,
+    "models": {
+      "A": "Claude-Opus-4.8",
+      "B": "Gemini-3.8-Flash-High"
+    },
+    "winnerModelId": "gemini",
+    "playedTurns": 12,
+    "elapsedMs": 702467,
+    "battlePath": "03-运行证据/runs/battle-jev-b7cf97b7-9939f933-a2/battle.json",
+    "seats": {
+      "A": {
+        "gameNumber": 88,
+        "matchId": "battle-jev-b7cf97b7-9939f933-a2",
+        "seat": "A",
+        "model": "Claude-Opus-4.8",
+        "requestModel": "claude-opus-4-8",
+        "responseModels": [
+          "claude-opus-4-8"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:045a1eacf48a1c52",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-9939f933-a2/agh-a.jsonl",
+        "events": 834,
+        "toolCalls": 45,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "ccf82c136626e8897147036eb3726c1cb486e5865e33e5ca844cb7583a0d2950"
+      },
+      "B": {
+        "gameNumber": 88,
+        "matchId": "battle-jev-b7cf97b7-9939f933-a2",
+        "seat": "B",
+        "model": "Gemini-3.8-Flash-High",
+        "requestModel": "gemini-3.8-flash-high",
+        "responseModels": [
+          "gemini-3.8-flash-n"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:372f6b7c55c9b8f0",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-9939f933-a2/agh-b.jsonl",
+        "events": 1079,
+        "toolCalls": 62,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "24b7fbbb72a08d519f16619069efa42dc323d209ed8befabaf5eb46fa08c395c"
+      }
+    }
+  },
+  {
+    "number": 89,
+    "matchId": "battle-jev-b7cf97b7-f6126f82-a0",
+    "blockId": "gpt-vs-opus",
+    "attempt": 0,
+    "models": {
+      "A": "GPT-5.6-Terra",
+      "B": "Claude-Opus-4.8"
+    },
+    "winnerModelId": "opus",
+    "playedTurns": 7,
+    "elapsedMs": 826342,
+    "battlePath": "03-运行证据/runs/battle-jev-b7cf97b7-f6126f82-a0/battle.json",
+    "seats": {
+      "A": {
+        "gameNumber": 89,
+        "matchId": "battle-jev-b7cf97b7-f6126f82-a0",
+        "seat": "A",
+        "model": "GPT-5.6-Terra",
+        "requestModel": "gpt-5.6-terra-bingxing",
+        "responseModels": [
+          "GPT-5.6-Terra"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:4e3997d901b12ef2",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-f6126f82-a0/agh-a.jsonl",
+        "events": 760,
+        "toolCalls": 41,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "8bbf84e2085fc1ddb9939134ff70cff219439bedfe8d6e335eb22212d56613fe"
+      },
+      "B": {
+        "gameNumber": 89,
+        "matchId": "battle-jev-b7cf97b7-f6126f82-a0",
+        "seat": "B",
+        "model": "Claude-Opus-4.8",
+        "requestModel": "claude-opus-4-8",
+        "responseModels": [
+          "claude-opus-4-8"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:a65543d8bf2c0aa2",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-f6126f82-a0/agh-b.jsonl",
+        "events": 491,
+        "toolCalls": 26,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "646fa0c8817187bf911d4770e4040cb83c8b2c8992501138d8997e9c0afb7c56"
+      }
+    }
+  },
+  {
+    "number": 90,
+    "matchId": "battle-jev-b7cf97b7-b8d57fa8-a0",
+    "blockId": "gpt-vs-opus",
+    "attempt": 0,
+    "models": {
+      "A": "Claude-Opus-4.8",
+      "B": "GPT-5.6-Terra"
+    },
+    "winnerModelId": "gpt",
+    "playedTurns": 8,
+    "elapsedMs": 1559959,
+    "battlePath": "03-运行证据/runs/battle-jev-b7cf97b7-b8d57fa8-a0/battle.json",
+    "seats": {
+      "A": {
+        "gameNumber": 90,
+        "matchId": "battle-jev-b7cf97b7-b8d57fa8-a0",
+        "seat": "A",
+        "model": "Claude-Opus-4.8",
+        "requestModel": "claude-opus-4-8",
+        "responseModels": [
+          "claude-opus-4-8"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:0521e18a199a6e8b",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-b8d57fa8-a0/agh-a.jsonl",
+        "events": 994,
+        "toolCalls": 54,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "2b01642db4665a857790c4fea8ff3081b91c38f7740b3383798acec215eacf74"
+      },
+      "B": {
+        "gameNumber": 90,
+        "matchId": "battle-jev-b7cf97b7-b8d57fa8-a0",
+        "seat": "B",
+        "model": "GPT-5.6-Terra",
+        "requestModel": "gpt-5.6-terra-bingxing",
+        "responseModels": [
+          "GPT-5.6-Terra"
+        ],
+        "sessionId": "agnes:local:local-dev:cli:workspace:528053ee5d312af5",
+        "trajectoryPath": "03-运行证据/runs/battle-jev-b7cf97b7-b8d57fa8-a0/agh-b.jsonl",
+        "events": 879,
+        "toolCalls": 48,
+        "userTasks": 1,
+        "taskStarts": 1,
+        "terminalReason": "completed",
+        "sha256": "f1b3954349f341b84ff815b166f96e8a334ce5134d26568a068587cff26143fe"
+      }
+    }
+  }
+]

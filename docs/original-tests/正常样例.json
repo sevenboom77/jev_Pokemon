@@ -1,0 +1,29 @@
+{
+  "class": "正常",
+  "source": "已有真实有效对局",
+  "matchId": "battle-jev-b7cf97b7-7260512b-a4",
+  "input": {
+    "models": {
+      "A": "AGNES-3.0-Flash",
+      "B": "GLM-5.3"
+    },
+    "jev": true,
+    "seed": [
+      10,
+      3,
+      20,
+      26
+    ],
+    "maxTurns": 40
+  },
+  "expected": "引擎产生自然终局，双方一次整局任务且正常完成，多个合法候选有真实 Jev 回执",
+  "actual": {
+    "status": "finished",
+    "winner": "A",
+    "winnerModel": "AGNES-3.0-Flash",
+    "turns": 9,
+    "autonomousTaskVerified": true
+  },
+  "evidence": "../03-运行证据/runs/battle-jev-b7cf97b7-7260512b-a4/battle.json",
+  "newPaidCalls": false
+}

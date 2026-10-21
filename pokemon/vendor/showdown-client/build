@@ -1,0 +1,86 @@
+#!/usr/bin/env node
+
+if (!Set.prototype.union) {
+	// we actually are looking for TS support, but that's too hard to test for
+	console.error("We require Node.js version 22.18 or later; you're using " + process.version);
+	process.exit(1);
+}
+
+var execSync = require('child_process').execSync;
+var execFileSync = require('child_process').execFileSync;
+var fs = require('fs');
+
+process.chdir(__dirname);
+
+try {
+	require.resolve('@babel/core');
+} catch (e) {
+	console.log('Installing dependencies...');
+	execSync('npm install', {stdio: 'inherit'});
+}
+
+try {
+	require.resolve('./config/config');
+} catch (err) {
+	if (err.code !== 'MODULE_NOT_FOUND') throw err; // should never happen
+
+	console.log('config.js does not exist. Creating one with default settings...');
+	fs.writeFileSync(
+		'config/config.js',
+		fs.readFileSync('config/config-example.js')
+	);
+}
+
+var options = {cwd: __dirname, stdio: 'inherit'};
+var full = '';
+
+switch (process.argv[2] || '') {
+case 'full':
+	execFileSync(process.execPath, ['./build-tools/build-indexes'].concat(
+		process.argv.includes('--no-update') ? ['--no-update'] : []
+	), options);
+	execSync(`node ./build-tools/build-learnsets`, options);
+	execSync(`node ./build-tools/build-minidex`, options);
+	full = ' full';
+	break;
+case 'indexes':
+	execSync(`node ./build-tools/build-indexes`, options);
+	break;
+case 'learnsets':
+	execSync(`node ./build-tools/build-learnsets`, options);
+	break;
+case 'minidex':
+case 'sprites':
+	execSync(`node ./build-tools/build-minidex`, options);
+	break;
+case 'commands':
+	execSync(`node ./build-tools/build-commands`, options);
+	break;
+case 'translations':
+	try {
+		execFileSync(process.execPath, ['./build-tools/build-translations'].concat(process.argv.slice(3)), options);
+	} catch (error) {
+		if (typeof error.status === 'number') process.exit(error.status);
+		throw error;
+	}
+	break;
+case 'test-only':
+
+	break;
+case '':
+	break;
+default:
+	console.log(`Unrecognized command ${process.argv[2]}`);
+	process.exit();
+	break;
+}
+
+if (full) {
+	try {
+		execSync(`node ./build-tools/build-commands`, options);
+	} catch (e) {
+		console.error(e);
+	}
+}
+
+execSync(`node ./build-tools/update` + full, options);

@@ -1,0 +1,17 @@
+
+> agh-jev-pokemon-arena@0.1.0 jev:test
+> node packages/jev-client/test.mjs
+
+[jev-client selftest] 10 checks passed (offline only, no network)
+ok - selftest() runs offline and passes
+ok - normal 200 returns selectedCandidateId/model/usage/latency/attempts
+ok - HTTP 401 surfaces E_AUTH without retrying
+ok - HTTP 429 surfaces E_RETRYABLE after exactly one retry
+ok - HTTP 503 is retried once and can succeed
+ok - timeout aborts with E_TIMEOUT
+ok - choice outside the candidate set throws E_INVALID_CHOICE
+ok - missing API key refuses before network
+ok - offlineDecider is deterministic and marked offline
+ok - offlineDecider refuses to run outside TCG_JEV_MODE=offline
+
+10 passed, 0 failed

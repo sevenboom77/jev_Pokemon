@@ -1,0 +1,8 @@
+{
+  "origin": "Original G003 pokemon/.runtime/battle-agh-runtime/daemon.mjs",
+  "license": "Apache-2.0 (AGH)",
+  "original_daemon_sha256": "5db0b5ddefa5a316b0401df8365dedf7bebcb0f3a101259142c9cc0b28aece07",
+  "fragment_sha256": "f5a4bbb0b88eea8fdaa6222440c5202020d6307e36ae2eb8aa515c7febae116a",
+  "fixture_sha256": "1a55e3d97a2b26f18f9624c34b0578bb3f4cd1a8b954c724a9eacf076516ddb0",
+  "purpose": "Keep the original three abort-relay tests executable when the platform-specific prebuilt runtime is not distributed. No test assertions changed."
+}

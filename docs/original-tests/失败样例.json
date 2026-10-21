@@ -1,0 +1,44 @@
+{
+  "class": "失败",
+  "realHistoricalExamples": [
+    {
+      "matchId": "battle-jev-b7cf97b7-3c3bfc09-a0",
+      "status": "aborted",
+      "error": "AGH command failed: --cwd /Users/lizhijun/code/projects/deepseek-harness/pokemon/.runtime/battle-workspaces/battle-jev-b7cf97b7-3c3bfc09-a0/B --profile",
+      "violations": [
+        "incomplete-AGH-task",
+        "A-history-or-Jev-invalid",
+        "B-history-or-Jev-invalid"
+      ],
+      "evidence": "../03-运行证据/runs/battle-jev-b7cf97b7-3c3bfc09-a0/battle.json"
+    },
+    {
+      "matchId": "battle-jev-b7cf97b7-7260512b-a2",
+      "status": "aborted",
+      "error": "AGH command failed: --cwd /Users/lizhijun/code/projects/deepseek-harness/pokemon/.runtime/battle-workspaces/battle-jev-b7cf97b7-7260512b-a2/A --profile",
+      "violations": [
+        "incomplete-AGH-task",
+        "A-history-or-Jev-invalid",
+        "B-history-or-Jev-invalid"
+      ],
+      "evidence": "../03-运行证据/runs/battle-jev-b7cf97b7-7260512b-a2/battle.json"
+    }
+  ],
+  "expected": "保留双方原始会话和错误，不将技术失败计作模型败局；只以完整有效换边组计分",
+  "controlledRegression": [
+    {
+      "input": "受控响应先返回429，再返回200及测试用量字段",
+      "expected": "保留两次尝试状态429/200及各自用量",
+      "source": "../02-源码/pokemon/tests/battle-league.test.mjs",
+      "test": "each 429 and successful retry retains its own usage and request attempt"
+    },
+    {
+      "input": "规则引擎尚未结束，玩家过早返回完成",
+      "expected": "中止并保留错误，不注入第二个用户任务",
+      "source": "../02-源码/pokemon/tests/battle-runner.test.mjs",
+      "test": "premature completion aborts instead of injecting another task for the next turn"
+    }
+  ],
+  "resultsLog": "对战测试日志.txt",
+  "newPaidCalls": false
+}

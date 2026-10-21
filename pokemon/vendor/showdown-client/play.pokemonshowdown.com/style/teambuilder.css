@@ -1,0 +1,993 @@
+/*********************************************************
+ * Teambuilder list
+ *********************************************************/
+
+ .folderpane {
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	padding: 0;
+	border-left: 5px solid #d7e3ec;
+	width: 154px;
+	overflow: auto;
+	-webkit-overflow-scrolling: touch;
+	overflow-x: hidden;
+}
+.teampane {
+	position: absolute;
+	left: 159px;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	padding: 5px 0 5px 8px;
+	overflow: auto;
+	-webkit-overflow-scrolling: touch;
+}
+.teambuilder-folder-select {
+	display: inline-block;
+	max-width: calc(100% - 10px);
+	font-size: 12pt;
+	font-weight: bold;
+}
+.teambuilder-format-folder-source {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	opacity: 0;
+	pointer-events: none;
+}
+@media (max-width:649px) {
+	.folderpane {
+		display: none;
+	}
+	.teampane {
+		left: 0;
+	}
+}
+
+.folderlist {
+	height: 100%;
+	width: 154px;
+	display: table;
+	table-layout: fixed;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+.folderlist .folder,
+.folderlist .foldersep {
+	display: table-row;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	height: 30px;
+}
+.folderlist .foldersep {
+	height: 15px;
+}
+.folderlist .foldersep:before {
+	display: table-cell;
+	height: 15px;
+	background: #d7e3ec;
+	border-right: 1px solid #888888;
+	content: '';
+}
+.folderlistafter {
+	display: table-row;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	height: auto;
+}
+.folderlistbefore {
+	display: table-row;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	height: 12px;
+	content: '';
+}
+.folderlistafter:before,
+.folderlistbefore:before {
+	display: table-cell;
+	background: #d7e3ec;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	border-right: 1px solid #888888;
+	content: '';
+}
+
+.folderpane i {
+	display: inline-block;
+	width: 16px;
+	color: #777777;
+}
+.folderpane .text,
+.folderpane h3 {
+	margin: 0;
+	padding: 13px 0 0 0;
+	height: 17px;
+	font-size: 9pt;
+	background: #d7e3ec;
+	color: black;
+	border-right: 1px solid #888888;
+}
+.folderpane .text {
+	height: 23px;
+	padding: 7px 0 0 7px;
+}
+.folder .selectFolder {
+	display: block;
+	padding: 7px 0 0 7px;
+	border: 0;
+	border-right: 1px solid #888888;
+	background: #d7e3ec;
+	color: black;
+	width: auto;
+	max-width: 146px; /* I have no idea why this is required and width doesn't work */
+	height: 23px;
+	font-size: 9pt;
+	font-family: Verdana, sans-serif;
+	white-space: nowrap;
+	overflow: hidden;
+	text-align: left;
+	cursor: pointer;
+	user-select: none;
+	-webkit-user-select: none;
+}
+.folder button.selectFolder {
+	height: 30px;
+	padding: 0 0 0 7px;
+	width: 100%;
+	max-width: none;
+}
+.folder .selectFolder:hover {
+	background: #c7d3dc;
+}
+.folder .selectFolder:active {
+	background: #b7c3cc;
+}
+.folder .selectFolder.active {
+	background: #27333c;
+	color: white;
+}
+.folder.cur .selectFolder,
+.folder.cur .selectFolder:hover,
+.folder.cur .selectFolder:active {
+	padding-top: 6px;
+	height: 22px;
+	cursor: default;
+	background: transparent;
+	color: black;
+	border-top: 1px solid #888888;
+	border-bottom: 1px solid #888888;
+	border-left: 1px solid #888888;
+	border-right: 0;
+	padding-left: 6px;
+	border-top-left-radius: 3px;
+	border-bottom-left-radius: 3px;
+}
+.folder.cur button.selectFolder,
+.folder.cur button.selectFolder:hover,
+.folder.cur button.selectFolder:active {
+	height: 30px;
+	padding: 0 0 0 6px;
+	width: 100%;
+	max-width: none;
+}
+
+/* believe me, there was no other way to do this */
+.folderhack1,
+.folderhack2 {
+	position: absolute;
+	display: block;
+	left: 0;
+	width: 1px;
+	height: 1px;
+	background: #d7e3ec;
+	content: '';
+}
+.folderhack1 {
+	top: 0;
+}
+.folderhack2 {
+	bottom: 0;
+}
+.folderhack3 {
+	position: relative;
+	height: 30px;
+}
+
+.teamlist {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.teamlist li {
+	margin: 3px 0;
+	padding: 0;
+	/* lazy windowing */
+	content-visibility: auto;
+	contain-intrinsic-size: 49px;
+	contain-intrinsic-size: auto none auto 49px;
+}
+.teamlist .team {
+	width: 350px;
+}
+.team-controls {
+	display: inline-block;
+	width: 118px;
+}
+.teamlist li.cur .team {
+	opacity: 0.5;
+}
+.teamdropdown li {
+	display: inline-block;
+	margin: 3px;
+	padding: 0;
+}
+.teamlist .dragging button {
+	visibility: hidden;
+}
+.teamlist .dragging .team {
+	opacity: 0.25;
+}
+
+/* dark */
+
+.dark .folderpane {
+	border-left-color: #484848;
+}
+
+.dark .folderlist .foldersep:before,
+.dark .folderlistafter:before,
+.dark .folderlistbefore:before,
+.dark .folderpane h3,
+.dark .folderpane .text,
+.dark .folder .selectFolder,
+.dark .folderhack1,
+.dark .folderhack2 {
+	background: #484848;
+	color: #ddd;
+}
+
+.dark .folder .selectFolder:hover {
+	background: #686868;
+}
+
+.dark .folderpane i {
+	color: #ddd;
+}
+
+.dark .folder .selectFolder.active,
+.dark .folder .selectFolder:active {
+	background: #27333c;
+	color: white;
+}
+
+.dark .folder.cur .selectFolder {
+	background: transparent;
+}
+
+/*********************************************************
+ * Teambuilder editor
+ *********************************************************/
+
+.team-pad {
+	padding: 5px 7px 5px 12px;
+}
+.tiny-layout .team-pad {
+	padding: 4px 4px 4px 7px;
+}
+.tabbar.unpadded-tabbar li:first-child .button {
+	margin-left: 12px;
+}
+.teamname {
+	margin: 10px 0 10px 0;
+}
+.teamname .textbox {
+	width: 100%;
+	box-sizing: border-box;
+	font-size: 15pt;
+	font-weight: bold;
+	padding: 4px 6px;
+}
+
+.teamtextbox {
+	width: 100%;
+	padding-top: 8px;
+	padding-left: 100px;
+	box-sizing: border-box;
+	line-height: 20px;
+	resize: none;
+}
+.teamtextbox::placeholder {
+	/* Firefox doesn't support transform, padding-top, margin-top, _or_ top... */
+	line-height: 60px;
+}
+.teaminnertextbox {
+	width: 320px;
+	height: 18px;
+	left: 96px;
+	position: absolute;
+	pointer-events: none;
+
+	border: 1px solid #4488CC;
+	border-radius: 3px;
+	box-shadow: inset 0px 1px 2px #D2D2D2, 0px 0px 5px #66AADD;
+	background: transparent;
+}
+.teaminnertextbox-stats, .teaminnertextbox-pokemon {
+	width: 420px;
+}
+.teaminnertextbox-item, .teaminnertextbox-ability {
+	width: 270px;
+}
+.teaminnertextbox-move {
+	width: 220px;
+}
+
+.searchresults {
+	border: 1px solid #888888;
+	border-radius: 2px;
+	box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.3);
+
+	position: absolute;
+	top: 300px;
+	left: -14px;
+	right: -14px;
+	min-height: 150px;
+	overflow: auto;
+	-webkit-overflow-scrolling: touch;
+	max-height: 80vh;
+}
+.searchresults, .team-focus-editor {
+	background: #e9e9e9;
+}
+.dark .searchresults, .dark .team-focus-editor {
+	background: #282828;
+}
+
+.closesearch {
+	position: absolute;
+	top: 1px;
+	right: 1px;
+	z-index: 1;
+}
+
+.teameditor .details {
+	margin: 3px 0 12px;
+}
+
+.teameditor {
+	max-width: 660px;
+}
+.teameditor-options {
+	position: relative;
+}
+.teameditor-options summary {
+	list-style: none;
+	cursor: pointer;
+}
+.teameditor-options summary::-webkit-details-marker {
+	display: none;
+}
+.teameditor-options-menu {
+	position: absolute;
+	z-index: 20;
+	top: 100%;
+	right: 0;
+	box-sizing: border-box;
+	min-width: 130px;
+	padding: 10px 12px;
+	border: 1px solid #aaa;
+	border-radius: 0 0 4px 4px;
+	background: #f8f8f8;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+	color: #222;
+	text-shadow: none;
+	white-space: nowrap;
+}
+.dark .teameditor-options-menu {
+	border-color: #555;
+	background: #333;
+	color: #eee;
+}
+@media (max-width: 634px) {
+	.teameditor-zoom-out-forms .set-list, .teameditor-zoom-out-forms .team-focus-editor .team-pad {
+		width: 635px;
+		box-sizing: border-box;
+		margin-bottom: var(--teameditor-mobile-height-offset);
+		transform: scale(var(--teameditor-mobile-scale));
+		transform-origin: top left;
+	}
+	.teameditor-full-size-search .searchresults,
+	.teameditor-full-size-search .set-searchresults {
+		right: auto;
+		box-sizing: border-box;
+		width: 635px;
+		transform: scale(var(--teameditor-mobile-scale));
+		transform-origin: top left;
+	}
+	.teameditor-full-size-search .team-focus-editor .set-searchresults {
+		bottom: auto;
+		height: var(--teameditor-mobile-search-height);
+	}
+
+	.tiny-layout .teameditor-zoom-out-forms .setdetails,
+	.tiny-layout .teameditor-zoom-out-forms .setstats {
+		display: block;
+	}
+	.tiny-layout .teameditor-zoom-out-forms .set-form .label {
+		font-size: inherit;
+	}
+	.tiny-layout .teameditor-zoom-out-forms .set-form .set-nickname {
+		width: 120px;
+	}
+	.tiny-layout .teameditor-zoom-out-forms .detailcell + .detailcell {
+		margin-left: 2px;
+		padding-left: 6px;
+	}
+	.tiny-layout .teameditor-zoom-out-forms .set-form .set-stats,
+	.tiny-layout .teameditor-zoom-out-forms .set-form .set-stats button {
+		width: 138px;
+	}
+	.tiny-layout .teameditor-zoom-out-forms .set-form .set-stats button {
+		padding-top: 2px;
+	}
+	.tiny-layout .teameditor-zoom-out-forms .set-form .set-stats em {
+		display: inline;
+	}
+	.tiny-layout .teameditor-zoom-out-forms .set-form .set-stats .statgraph {
+		height: 5px;
+		transform: none;
+	}
+}
+.teameditor-text {
+	position: relative;
+}
+.teameditor-text .heighttester {
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow-y: hidden;
+	height: 10px;
+	/* I have no clue what the default <textarea> box-sizing is but "content-box" doesn't mean what you'd think */
+	box-sizing: border-box;
+}
+.teameditor-text hr {
+	position: absolute;
+	pointer-events: none;
+	left: 10px;
+	right: 10px;
+}
+
+/* teambuilder set */
+
+.dark .utilichart h3, .dark .dexentry h3, .dark .resultheader h3 {
+	background: #636363;
+	color: #F1F1F1;
+	border: 1px solid #A9A9A9;
+	text-shadow: 1px 1px 0 rgb(40, 43, 45);
+	box-shadow: inset 0px 1px 0 rgb(49, 49, 49);
+	border-right: none;
+}
+
+.dark .teambuilder-results .result a.hover,
+.dark .teambuilder-results .result a:hover {
+	border-color: #777777;
+	background: rgba(100, 100, 100, 0.5);
+	color: #FFFFFF;
+}
+.dark .teambuilder-results .result a.cur {
+	border-color: #BBBBBB;
+	background: rgba(100, 100, 100, 0.2);
+}
+.dark .teambuilder-results .result a.cur:hover {
+	border-color: #BBBBBB;
+	background: rgba(100, 100, 100, 0.4);
+	color: #FFFFFF;
+}
+
+.dark .folder.cur .selectFolder,
+.dark .utilichart .namecol,
+.dark .utilichart .pokemonnamecol,
+.dark .utilichart .movenamecol {
+	color: #DDD;
+}
+.dark .utilichart .col {
+	color: #DDD;
+}
+.dark .utilichart .cur .col {
+	color: #FFF;
+}
+.dark .utilichart a:hover .col {
+	color: #FFF;
+}
+
+/* setstats */
+
+.set-stats-form, .set-details-form {
+	font-size: 10pt;
+}
+
+.setdetails, .setstats {
+	display: block;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	border: 1px solid #AAAAAA;
+	border-radius: 3px;
+	padding: 1px;
+	margin: 2px 2px 1px 1px;
+	font-size: 7pt;
+
+	box-shadow: inset 0px 1px 2px #CCCCCC, 1px 1px 0 rgba(255,255,255,.6);
+	background: #F8FBFD;
+	color: black;
+}
+.tiny-layout .setdetails, .tiny-layout .setstats {
+	display: none;
+}
+.setdetails label, .setstats label {
+	cursor: pointer;
+}
+.setdetails:hover, .setstats:hover {
+	border-color: #474747;
+	box-shadow: inset 0px 1px 2px #D2D2D2, 1px 1px 0 rgba(255,255,255,.6);
+	background: #FFFFFF;
+}
+.setdetails:focus-visible, .setstats:focus-visible,
+.dark .setdetails:focus-visible, .dark .setstats:focus-visible {
+	border: 1px solid #004488;
+	/* margin: 1px 1px 0 0; */
+	outline: 0 none;
+}
+.setdetails:active, .setstats:active {
+	box-shadow: inset 0px 2px 2px #AAAAAA;
+	background: #E4E9ED;
+	border: 1px solid #004488;
+	/* margin: 1px 1px 0 0; */
+	outline: 0 none;
+}
+.setdetails {
+	width: 55px;
+	height: 98px;
+	vertical-align: top;
+}
+/* .setdetails:focus,.setdetails:active {
+	width: 52px;
+	height: 100px;
+} */
+.setdetails .detailcell, .set-form .detailcell {
+	padding: 2px 4px;
+	display: block;
+	font-size: 9pt;
+	text-align: center;
+}
+.set-form .detailcell {
+	padding-top: 1px;
+}
+.setdetails .detailcell + .detailcell {
+	border-top: 1px solid #CCC;
+}
+.dark .setdetails .detailcell + .detailcell {
+	border-color: #555;
+}
+.setdetails label, .set-form .detailcell label {
+	float: none;
+	display: block;
+	font-weight: normal;
+	font-size: 7pt;
+	text-align: center;
+	padding: 0;
+}
+.setstats {
+	width: 128px;
+	height: 98px;
+	padding-right: 0;
+}
+/* .setstats:focus,.setstats:active {
+	width: 130px;
+	height: 100px;
+} */
+.statrow {
+	display: block;
+	height: 15px;
+}
+.statrow em {
+	float: left;
+	width: 20px;
+	height: 5px;
+	text-align: right;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 7pt;
+	padding: 0;
+}
+.statrow .statgraph {
+	float: left;
+	width: 75px;
+	padding: 0 0 0 3px;
+	height: 5px;
+}
+.statrow .statgraph span {
+	display: block;
+	margin-top: 3px;
+	height: 6px;
+	background: #CCCCCC;
+	border: 1px solid #888888;
+	border-width: 0 1px 2px 0;
+}
+/* more specificity to outweigh `.label strong` */
+.statrow.statrow strong {
+	float: left;
+	font-size: 7pt;
+	font-style: normal;
+	font-weight: normal;
+	width: 22px;
+	height: 5px;
+	text-align: right;
+	margin: 0;
+}
+.statrow small {
+	float: left;
+	font-size: 7pt;
+	height: 5px;
+}
+.statrow .statrow-head em {
+	color: #555555;
+}
+
+.setstatbar {
+	width: 185px;
+}
+.tiny-layout .setstatbar {
+	display: none;
+}
+.setstatbar span {
+	margin: 3px 0 0 5px;
+	display: block;
+	height: 12px;
+	border-bottom: 3px solid #AAAAAA;
+	border-right: 1px solid #AAAAAA;
+	background: #CCCCCC;
+}
+.evslider {
+	width: 170px;
+}
+.stat-nature-buttons {
+	display: none;
+	margin-left: 2px;
+	white-space: nowrap;
+	vertical-align: middle;
+}
+.tiny-layout .stat-nature-buttons {
+	display: inline-block;
+}
+.tiny-layout .evslider {
+	width: 120px;
+}
+
+/* when a placeholder is the default value, it can be confusing when
+you can't delete it by pressing Backspace */
+.default-placeholder:focus::placeholder {
+	color: transparent;
+}
+
+/* team editor form */
+
+.set-form {
+	position: relative;
+	max-width: 660px;
+}
+.teameditor-spacious .set-list .set-form {
+	margin: 8px 0 12px;
+}
+.set-form.cur {
+	opacity: 0.5;
+}
+.set-form table {
+	border: 0;
+	border-spacing: 0;
+	table-layout: fixed;
+	margin: 1px 0;
+	padding: 0 1px 1px 1px;
+	width: 100%;
+	background-color: #c8d3e9;
+	border-radius: 5px;
+	height: 105px;
+}
+.set-form :where(.set-nickname) {
+	background-color: #c8d3e9;
+}
+.dark .set-form table, .dark .set-form :where(.set-nickname) {
+	background-color: #3f4654;
+}
+.set-form td {
+	padding: 0;
+	vertical-align: top;
+}
+.tiny-layout .set-form .label {
+	font-size: 11px;
+}
+.set-form .set-nickname {
+	border-radius: 5px;
+	position: absolute;
+	height: 32px;
+	width: 120px;
+	top: 5px;
+	left: -5px;
+	padding: 0;
+}
+.tiny-layout .set-form .set-nickname {
+	width: 23%;
+}
+.set-form .border-collapse {
+	margin: 0 3px 0 0;
+}
+.set-form .moverow + .moverow {
+	margin-top: 3px;
+}
+.set-form .overfull .moverow + .moverow {
+	margin-top: -2px;
+}
+.set-form .overfull .moverow + .moverow .textbox {
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
+.set-form .overfull .moverow:not(:last-child) .textbox {
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+}
+.set-form .overfull .moverow .textbox, .set-form .overfull .moverow {
+	padding-top: 0;
+	padding-bottom: 0;
+	height: 18px;
+}
+.set-form .overfull5 .moverow .textbox, .set-form .overfull5 .moverow {
+	height: 19.4px;
+}
+.set-form .textbox {
+	height: 20px;
+	box-sizing: border-box;
+	width: 100%;
+}
+.set-form .set-details .textbox {
+	height: 34px;
+	padding: 1px;
+	overflow: hidden;
+}
+.set-form .set-stats .textbox {
+	height: 89px;
+}
+
+.teameditor-spacious .set-form .set-details {
+	height: 75px;
+}
+.teameditor-spacious .set-form .sprite-inner {
+	padding-top: 75px;
+}
+.teameditor-spacious .set-form .textbox {
+	height: 22px;
+}
+.teameditor-spacious .set-form .set-details .textbox {
+	height: 34px;
+	margin-bottom: 2px;
+}
+.teameditor-spacious .set-form .set-stats .textbox {
+	height: 97px;
+}
+.teameditor-spacious .set-form table {
+	padding: 0 2px 2px 2px;
+}
+
+.set-form .set-field.incomplete {
+	color: #CC3311;
+	border-color: #CC3311;
+}
+.set-form button.label {
+	display: block;
+	font-family: inherit;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	background: transparent;
+	text-align: left;
+	cursor: pointer;
+}
+.set-form .set-moves .label.cur,
+.set-form .set-moves .label:focus-visible {
+	text-decoration: underline;
+	outline: 0;
+}
+.set-form .set-moves .button {
+	display: none;
+	padding: 0 3px;
+	font-size: 10px;
+	vertical-align: top;
+	margin-top: 0;
+}
+.set-form .set-moves .button.cur,
+.set-form .set-moves .label:hover .button {
+	display: inline-block;
+}
+.readonly.readonly .set-form .set-moves .button {
+	display: none;
+}
+.set-form .label .textbox {
+	margin-top: 0;
+}
+.set-form .set-nickname .label {
+	font-size: 10px;
+}
+.set-form .set-nickname span {
+	padding-left: 3px;
+}
+.set-form .set-details {
+	height: 69px;
+}
+.set-form .itemicon {
+	float: right;
+	margin-top: -12px;
+	margin-right: 2px;
+}
+.readonly .set-form .textbox {
+	border: 1px solid #CCC;
+	box-shadow: none;
+}
+.dark .readonly .set-form .textbox {
+	border: 1px solid #444;
+}
+.readonly .set-form button.textbox {
+	cursor: not-allowed;
+}
+.set-form .set-pokemon .label span {
+	visibility: hidden;
+}
+.set-form .statrow {
+	height: 14px;
+}
+
+.set-form .sprite-inner {
+	display: block;
+	padding: 69px 0 0 0;
+	height: auto;
+	border-bottom-left-radius: 3px;
+	background: none;
+}
+.set-form .detailcell {
+	float: left;
+	height: 27px;
+	margin-bottom: 1px;
+}
+.set-form .detailcell + .detailcell {
+	border-left: 1px solid #888;
+	margin-left: 2px;
+	padding-left: 6px;
+}
+.tiny-layout .detailcell + .detailcell {
+	margin-left: 0;
+	padding-left: 4px;
+}
+.set-item .itemicon {
+	float: right;
+}
+.set-form .set-stats {
+	width: 138px;
+}
+.tiny-layout .set-form .set-stats, .tiny-layout .set-form .set-stats button {
+	width: 40px;
+}
+.tiny-layout .set-form .set-stats button {
+	padding-top: 1px;
+}
+.tiny-layout .set-form .set-stats em {
+	display: none;
+}
+.tiny-layout .set-form .set-stats .statgraph {
+	transform: scale(0.5);
+	transform-origin: 0 0;
+	height: 4px;
+}
+
+.team-focus-editor {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	overflow: auto;
+	-webkit-overflow-scrolling: touch;
+}
+.team-focus-editor .set-form {
+	z-index: 1;
+}
+.team-focus-top {
+	/* interferes with animations, so we don't add this unless we have 6+ moves */
+	height: 230px;
+	overflow: auto;
+	overflow-x: hidden;
+	-webkit-overflow-scrolling: touch;
+}
+.team-focus-editor .tabbar {
+	/* note to self: make this scrollable later */
+	overflow: auto;
+	-webkit-overflow-scrolling: touch;
+	white-space: nowrap;
+	min-height: 59px;
+}
+.tabbar .button.picontab {
+	width: 80px;
+	height: 52px;
+	overflow: hidden;
+	height: 46px;
+	padding: 0;
+	font-size: 10px;
+	box-sizing: border-box;
+}
+.tabbar .button.picontab.cur {
+	height: 47px;
+	padding: 0 0 2px;
+}
+.tiny-layout .tabbar .button.picontab {
+	width: 42px;
+}
+@media (min-width: 375px) {
+	.tiny-layout .tabbar .button.picontab {
+		width: 52px;
+	}
+}
+.tiny-layout .team-focus-editor .home-li .button {
+	margin-left: 0;
+	border-left: 0;
+	padding: 6px 3px;
+}
+.searchboxwrapper {
+	padding-top: 1px;
+	padding-bottom: 0;
+}
+.searchboxwrapper .textbox {
+	width: 100%;
+	font-size: 14px;
+}
+.searchboxwrapper .dexlist-filters {
+	float: left;
+	position: relative;
+	top: -21px;
+	left: 4px;
+	list-style: none;
+}
+.searchboxwrapper .moveslot {
+	float: right;
+	position: relative;
+	top: -21px;
+	right: 4px;
+}
+.set-searchresults {
+	position: absolute;
+	top: 230px;
+	top: calc(230px + var(--teameditor-mobile-height-offset, 0));
+	left: 0;
+	right: 0;
+	bottom: 0;
+	overflow: auto;
+	-webkit-overflow-scrolling: touch;
+}
+.set-searchresults .dexlist, .searchresults .dexlist {
+	min-width: 624px;
+}
+
+.sample-sets {
+	border: 1px solid #888;
+	border-radius: 6px;
+	margin: 5px 15px 12px 15px;
+	padding: 12px;
+}
+.sample-sets h3 {
+	margin: 0 0 10px;
+}

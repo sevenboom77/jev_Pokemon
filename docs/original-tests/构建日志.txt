@@ -1,0 +1,5 @@
+
+> agh-jev-pokemon-arena@0.1.0 battle:build
+> node scripts/build-battle-ui.mjs
+
+Battle animation UI built from Showdown c0f6bfc707a5

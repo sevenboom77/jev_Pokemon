@@ -1,0 +1,30 @@
+Scope: all 46 workspace projects
+ WARN  There are cyclic workspace dependencies: /Users/USER/code/projects/deepseek-harness/pokemon/output/submission-G003/07-源码/agnes-harness/packages/code, /Users/USER/code/projects/deepseek-harness/pokemon/output/submission-G003/07-源码/agnes-harness/packages/host; /Users/USER/code/projects/deepseek-harness/pokemon/output/submission-G003/07-源码/agnes-harness/packages/core, /Users/USER/code/projects/deepseek-harness/pokemon/output/submission-G003/07-源码/agnes-harness/packages/extension-api
+Lockfile is up to date, resolution step is skipped
+Progress: resolved 1, reused 0, downloaded 0, added 0
+Packages: +430
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+   ╭─────────────────────────────────────────╮
+   │                                         │
+   │   Update available! 10.34.5 → 12.9.1.   │
+   │   Changelog: https://pnpm.io/v/12.9.1   │
+   │    To update, run: pnpm add -g pnpm     │
+   │                                         │
+   ╰─────────────────────────────────────────╯
+
+Progress: resolved 430, reused 429, downloaded 0, added 56
+Progress: resolved 430, reused 430, downloaded 0, added 324
+Progress: resolved 430, reused 430, downloaded 0, added 426
+Progress: resolved 430, reused 430, downloaded 0, added 428
+Progress: resolved 430, reused 430, downloaded 0, added 430, done
+
+devDependencies:
++ @biomejs/biome 2.5.12
++ @types/node 26.4.1
++ happy-dom 20.14.3
++ tsx 4.23.13
++ typescript 7.0.2
++ vitest 5.0.0
+
+Done in 4.9s using pnpm v10.34.5

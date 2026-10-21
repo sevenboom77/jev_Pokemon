@@ -1,0 +1,23 @@
+{
+  "repository": "sevenboom77/jev_Pokemon",
+  "release": "v0.1.0",
+  "assets": [
+    {
+      "id": "history",
+      "asset": "AGNES_Arena_history.tar.gz",
+      "target": "evidence/history",
+      "kind": "tar.gz",
+      "bytes": 81320085,
+      "sha256": "d676547195729651bb63a5b49ccf0157d7426668accd24808c0b4d191f5458d5",
+      "extracted_files": 2058
+    },
+    {
+      "id": "video",
+      "asset": "AGNES_Arena_demo.mp4",
+      "target": "media/AGNES_Arena_demo.mp4",
+      "kind": "file",
+      "bytes": 27321049,
+      "sha256": "ee5005cad2f67d3fb6f1ef2b25c54547afafcb55786813ac096f5b4125104f3c"
+    }
+  ]
+}

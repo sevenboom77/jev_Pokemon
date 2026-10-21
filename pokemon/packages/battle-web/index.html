@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>宝可梦 · 双智能体对战</title>
+  <link rel="stylesheet" href="/dist/battle.css"><link rel="stylesheet" href="/dist/battle-log.css"><link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header><a class="brand" href="/">◓ <span>POKÉMON <b>AGENT ARENA</b></span></a><span class="tag" id="model-banner">AGH × AGH</span></header>
+  <main>
+    <div class="intro"><div><p class="eyebrow">两个智能体，一场真实较量</p><h1>让策略<span>在战场上见分晓。</span></h1><p class="subtitle">选择技能 · 属性克制 · 交换精灵</p></div><div class="arena-note"><i></i><span id="connection">正在连接玩家…</span><small>固定 3 对 3 · 单打</small></div></div>
+    <div class="layout">
+      <aside class="player a"><div class="player-heading"><span class="avatar">A</span><div><h2 id="name-a">玩家 A</h2><p id="model-a">AGH 玩家 A</p></div><span id="state-a" class="seat-state">待命</span></div><div class="roster" id="team-a"></div><div class="thinking" id="thinking-a">等待开始对局</div><div class="history" id="history-a"></div></aside>
+      <section class="stage-card"><div class="stage-head"><span id="mode" class="mode">实时对战</span><span id="turn">准备就绪</span></div><div class="stage-viewport"><div id="battle-frame"></div><div id="welcome"><span>◓</span><h2>训练家已就位</h2><p>启动对局，观看两个 AGH 玩家自主出招。</p></div></div><div class="stage-controls"><button id="start" disabled>开始对战</button><button id="pause" disabled>暂停</button><label>播放速度 <select id="speed"><option value="1">1×</option><option value="2">2×</option><option value="4">4×</option></select></label><button id="sound">开启声音</button></div><div id="outcome" class="outcome">动画由实际对战事件驱动</div><p id="schedule-status" class="log-note">正在读取并发调度…</p></section>
+      <aside class="player b"><div class="player-heading"><span class="avatar">B</span><div><h2 id="name-b">玩家 B</h2><p id="model-b">AGH 玩家 B</p></div><span id="state-b" class="seat-state">待命</span></div><div class="roster" id="team-b"></div><div class="thinking" id="thinking-b">等待开始对局</div><div class="history" id="history-b"></div></aside>
+    </div>
+    <section class="lower"><div class="log-card"><div class="section-title"><h2>战况播报</h2><span>引擎实时反馈</span></div><div id="battle-log"></div><p class="log-note">玩家理由由模型生成；实际属性、伤害与胜负以引擎播报为准。</p></div><div class="replay-card"><h2>对局设置与回放</h2><label class="record-label">A 方模型<select id="choose-a"><option>正在加载</option></select></label><label class="record-label">B 方模型<select id="choose-b"><option>正在加载</option></select></label><p>交换 A/B 模型即可换边；双方队伍与随机种子保持固定。</p><label class="record-label">同时对局上限（1–32）<input id="concurrency" type="number" min="1" max="32" value="8"></label><button id="set-concurrency">应用并发上限</button><label class="jev-toggle"><input type="checkbox" id="jev" checked><span>每次可选择行动时调用 Jev（jev-1.13.0）辅助评估<small>只有一个合法动作时跳过，玩家保留最终选择权</small></span></label><label class="record-label">已记录对局<select id="records"><option value="">选择历史对局</option></select></label><button id="replay">播放回放</button><p id="details">实时对战与记录回放分别标识。双方的隐藏技能和本回合选择不会传给对手。</p><p><a id="agh-a" hidden target="_blank" rel="noopener">查看 A 方完整 AGH 任务</a> <a id="agh-b" hidden target="_blank" rel="noopener">查看 B 方完整 AGH 任务</a></p></div></section>
+  </main>
+  <footer>AGH 会话与工具记录可核对 · Pokémon Showdown 规则与动画模块 <a href="/dist/provenance.json" target="_blank">来源与版本</a></footer>
+  <script src="/dist/jquery-2.2.4.min.js"></script><script src="/dist/html-sanitizer-minified.js"></script><script src="/dist/showdown.js"></script><script type="module" src="/app.js"></script>
+</body>
+</html>
